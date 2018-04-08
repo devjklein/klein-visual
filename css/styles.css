@@ -1,0 +1,116 @@
+@charset "utf-8";
+#logo-svg {
+	height: 250px;
+	position: absolute;
+	top:50% - 250px;
+  left: 50% - 50px;
+  overflow: visible;
+}
+#logo {
+  margin:auto;
+}
+@keyframes letterjump {
+	0% {opacity: 0;transform: translateY(0px);}
+	1% {opacity: 1; transform: translateY(0px);}
+	12% {opacity: 1; transform: translateY(-25px);}
+	25% {opacity: 1; transform: translateY(0px);}
+	26% {opacity: 0; transform: translateY(0px);}
+	100% {opacity: 0; transform: translateY(0px);}
+}
+@keyframes letterjump-k {
+	0% {opacity: 1;transform: translateY(0px);}
+	1% {opacity: 1;transform: translateY(0px);}
+	9% {opacity: 1;transform: translateY(-24px);}
+	10.5% {opacity: 1;transform: translateY(-8px);}
+	12% {opacity: 1;transform: translateY(0px);}
+	14.5% {opacity: 1;transform: translateY(-24px);}
+	17% {opacity: 1;transform: translateY(0px);}
+	17.5% {opacity: 0;transform: translateY(0px);}
+	56.5% {opacity: 0;transform: translateY(0px);}
+	57% {opacity: 1;transform: translateY(0px);}
+	57.5% {opacity: 1;transform: translateY(10px);}
+	59% {opacity: 1;transform: translateY(-10px);}
+	62% {opacity: 1;transform: translateY(0px);}
+	83.5% {opacity: 1;transform: translateY(0px);}
+	91.5% {opacity: 1;transform: translateY(-24px);}
+	93.5% {opacity: 1;transform: translateY(24px);}
+	100% {opacity: 1;transform: translateY(0px);}
+}
+@keyframes letterjump-l {
+	0% {opacity: 0;transform: translateY(0px);}
+	16.5% {opacity: 0;transform: translateY(0px);}
+	17% {opacity: 1;transform: translateY(0px);}
+	19.5% {opacity: 1;transform: translateY(-24px);}
+	22% {opacity: 1;transform: translateY(0px);}
+	22.5% {opacity: 0;transform: translateY(0px);}
+	100% {opacity: 0;transform: translateY(0px);}
+}
+@keyframes letterjump-e {
+	0% {opacity: 0;transform: translateY(0px);}
+	22% {opacity: 0;transform: translateY(0px);}
+	22.5% {opacity: 1;transform: translateY(0px);}
+	24.5% {opacity: 1;transform: translateY(-24px);}
+	27% {opacity: 1;transform: translateY(0px);}
+	27.5% {opacity: 0;transform: translateY(0px);}
+	100% {opacity: 0;transform: translateY(0px);}
+}
+@keyframes letterjump-i {
+	0% {opacity: 0;transform: translateY(0px);}
+	27% {opacity: 0;transform: translateY(0px);}
+	27.5% {opacity: 1;transform: translateY(0px);}
+	30% {opacity: 1;transform: translateY(-24px);}
+	32.5% {opacity: 1;transform: translateY(0px);}
+	33% {opacity: 0;transform: translateY(0px);}
+	100% {opacity: 0;transform: translateY(0px);}
+}
+@keyframes letterjump-n {
+	0% {opacity: 0;transform: translateY(0px);}
+	32.5% {opacity: 0;transform: translateY(0px);}
+	33% {opacity: 1;transform: translateY(0px);}
+	34% {opacity: 1;transform: translateY(16px);}
+	36% {opacity: 1;transform: translateY(-10px);}
+	38% {opacity: 1;transform: translateY(5px);}
+	40% {opacity: 1;transform: translateY(0px);}
+	48% {opacity: 1;transform: translateY(0px);}
+	54% {opacity: 1;transform: translateY(-24px);}
+	57% {opacity: 1;transform: translateY(0px);}
+	57.5% {opacity: 0;transform: translateY(0px);}
+	100% {opacity: 0;transform: translateY(0px);}
+}
+@keyframes letterjump-text {
+	0% {opacity: 0;transform: translateY(-55px)}
+	56.5% {opacity: 0;transform: translateY(-55px);}
+	57% {transform: translateY(-55px);}
+	57.5% {transform: translateY(-25px);}
+	60% {opacity: 1;transform: translateY(0px);}
+	93.5% {opacity: 1; transform: translateY(0px);}
+	98% {opacity: 0;transform: translateY(-55px);}
+	100% {opacity: 0;transform: translateY(-55px);}
+	
+}
+
+#logo-text {
+	animation: letterjump-text;
+}
+#logo-k {
+	animation: letterjump-k;
+}
+#logo-l {
+	animation: letterjump-l;
+}
+#logo-e {
+	animation: letterjump-e;
+}
+#logo-i {
+	animation: letterjump-i;
+}
+#logo-n {
+	animation: letterjump-n;
+}
+#logo-text, #logo-k, #logo-l, #logo-e, #logo-i, #logo-n {
+	animation-duration: 5.5s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
