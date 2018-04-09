@@ -1,0 +1,132 @@
+<svg id="llama-work" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -20 45.24 99.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a7a9ac;
+      }
+      .cls-2 {
+        fill: #c49a6c;
+      }
+      .cls-2, .cls-3, .cls-5, .cls-6, .cls-7 {
+        stroke: #3c2415;
+      }
+      .cls-2, .cls-3, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .cls-3 {
+        fill: #c4686c;
+      }
+      .cls-4 {
+        fill: #a97c50;
+      }
+      .cls-5 {
+        fill: #fff;
+      }
+      .cls-6, .cls-8, .cls-9 {
+        fill: none;
+      }
+      .cls-7 {
+        fill: #f9de32;
+      }
+      .cls-8 {
+        stroke: #fbb040;
+      }
+      .cls-9 {
+        stroke: #939598;
+      }
+	  @keyframes jump-body {
+		0% {transform: translateY(0px);}
+		5% {transform: translateY(0px);}
+		35% {transform: translateY(-10px);}
+		60% {transform: translateY(-8px);}
+		70% {transform: translateY(0px);}
+		90% {transform: translateY(2px);}
+		100% {transform: translateY(0px);}
+	  }
+	  @keyframes jump-legs {
+		0% {transform: scale(1,1);}
+		5% {transform: scale(1,1);}
+		20% {transform: scale(1,1.5);}
+		50% {transform: scale(1,1);}
+		70% {transform: scale(1,1);}
+		90% {transform: scale(1,.85);}
+		100% {transform: scale(1,1);}
+	  }
+	  @keyframes jump-hat {
+		0% {transform: translateY(0px);}
+		5% {transform: translateY(0px) rotateX(0deg);}
+		35% {transform: translateY(-20px) rotate(15deg);}
+		60% {transform: translateY(-15px) rotate(5deg);}
+		70% {transform: translateY(0px) rotate(0deg);}
+		90% {transform: translateY(2px);}
+		100% {transform: translateY(0px);}
+	  }
+	  @keyframes jump-shadow {
+		0% {transform: scale(1,1);}
+		5% {transform: scale(1,1);}
+		35% {transform: scale(1.25,1.25);}
+		60% {transform: scale(1.23,1.23);}
+		70% {transform: scale(1,1);}
+		90% {transform: scale(1,1);}
+		100% {transform: translateY(0px);}
+	  }
+	  #llama-1, #vest {
+		animation: jump-body .66s 0s ease-out infinite normal;
+	  }
+	  #legs {
+		animation: jump-legs .66s 0s ease-out infinite normal;
+		transform-origin: 0 53px;
+	  }
+	  #hardhat {
+		animation: jump-hat .66s 0s ease-out infinite normal;
+		transform-origin: 30px 10px;
+	  }
+	  #shadow {
+		animation: jump-shadow .66s 0s ease-out infinite normal;
+		transform-origin: 10px 60px;
+	  }
+    </style>
+  </defs>
+  
+  <ellipse id="shadow" class="cls-1" cx="16.57" cy="66.06" rx="15.19" ry="3.19"/>
+  <g id="llama-work">
+  <g id="llama-1">
+    <g id="legs">
+      <g id="legs-rear">
+        <path id="leg-rear-right" class="cls-2" d="M70.11,139.38l-.62,14a1.91,1.91,0,0,1-1.94,1.87h0a1.91,1.91,0,0,1-1.94-1.87l-.62-14" transform="translate(-57.38 -90.13)"/>
+        <path id="leg-rear-left" class="cls-2" d="M67.55,140.38l-.62,14A1.91,1.91,0,0,1,65,156.28h0a1.91,1.91,0,0,1-1.94-1.87l-.62-14v-2" transform="translate(-57.38 -90.13)"/>
+      </g>
+      <g id="legs-front">
+        <path id="leg-front-left" class="cls-2" d="M79.49,139.38l.62,14a1.91,1.91,0,0,0,1.94,1.87h0A1.91,1.91,0,0,0,84,153.41l.62-14" transform="translate(-57.38 -90.13)"/>
+        <path id="leg-front-right" class="cls-2" d="M81.31,140.38l.62,14a1.91,1.91,0,0,0,1.94,1.87h0a1.91,1.91,0,0,0,1.94-1.87l.62-14,.36-2" transform="translate(-57.38 -90.13)"/>
+      </g>
+    </g>
+    <path id="tail" class="cls-2" d="M63.51,126.58c-1.71-2.64-6.76,3.57-5.4,5.17,1.13,1.31,2.52-.06,3-1.41" transform="translate(-57.38 -90.13)"/>
+    <path id="ear-right" class="cls-3" d="M80.33,99.24c-3.25-3.83.52-8.61,1-8.61s.79,2.28.36,4c-.34,1.33-.36,2.77.27,3.56" transform="translate(-57.38 -90.13)"/>
+    <path id="ear-left" class="cls-3" d="M85.23,98.61c2.45-3.68-1-8-1.45-8s-.8,2.28-.36,4c.34,1.33.36,2.77-.27,3.56" transform="translate(-57.38 -90.13)"/>
+    <path id="body" class="cls-2" d="M62.43,140.38a14.25,14.25,0,0,1-1.8-6.92c0-4,2.57-8.27,6.41-8.27h6.83a6.06,6.06,0,0,0,6.06-6.07V102.31A4.3,4.3,0,0,1,83.76,98c.87-.07,2.46,1.43,3.11,2.06s3.28,1.89,4.54,3.15a2.12,2.12,0,0,1-1,3.63c-1,.11-3,.57-3,.57s4.87,29.76-1,33" transform="translate(-57.38 -90.13)"/>
+    <path id="spots" class="cls-4" d="M80.15,126a6.23,6.23,0,0,0-5.7,3.71,5.13,5.13,0,1,0,.77,6.37A6.25,6.25,0,1,0,80.15,126Z" transform="translate(-57.38 -90.13)"/>
+    <line id="belly" class="cls-2" x1="10.17" y1="50.25" x2="23.93" y2="50.25"/>
+    <circle id="eye" class="cls-5" cx="26.84" cy="12.66" r="0.94"/>
+    <path id="eyebrow" class="cls-6" d="M81.78,102.32c1,0,1.45-1.37,3.39-1.34" transform="translate(-57.38 -90.13)"/>
+    <path id="mouth" class="cls-6" d="M91.65,105.83c-2.66,0-3.26-.53-3.26-.53" transform="translate(-57.38 -90.13)"/>
+    <line id="nose" class="cls-6" x1="34.54" y1="13.77" x2="32.92" y2="13.77"/>
+  </g>
+  <g id="hardhat">
+    <path id="hat" class="cls-7" d="M77.9,100.67s-.27-.08-.27-.2a10.66,10.66,0,0,1,.19-2.19s.29-.09.3-.15a6,6,0,0,1,5-5.09,5.52,5.52,0,0,1,4.18.75c.08,0,.35-.08.42,0a5.75,5.75,0,0,1,1.57,1.9c0,.07-.13.32-.1.39a7.35,7.35,0,0,1,.64,1.87h.1a1.31,1.31,0,0,1,1.45,1.3v.41Z" transform="translate(-57.38 -90.13)"/>
+    <line id="hat-d5" class="cls-8" x1="26.57" y1="8.82" x2="26.57" y2="7.29"/>
+    <line id="hat-d4" class="cls-8" x1="28.81" y1="8.65" x2="28.81" y2="7.12"/>
+    <line id="hat-d3" class="cls-8" x1="30.83" y1="8.59" x2="30.72" y2="7.07"/>
+    <line id="hat-d2" class="cls-8" x1="24.39" y1="9.13" x2="24.39" y2="7.6"/>
+    <line id="hat-d1" class="cls-8" x1="21.97" y1="9.39" x2="22.24" y2="7.88"/>
+  </g>
+  <g id="vest">
+    <path id="cloth" class="cls-7" d="M71.67,141.38h7c2.92-4.38,6.55-2.46,10.12-1.66,1.68-3.68,1.16-17.47.06-20.32-1.34,0-8,0-9-.06,0,2.24-1.8,5.85-7,5.85C72.63,126.78,71.68,137.19,71.67,141.38Z" transform="translate(-57.38 -90.13)"/>
+    <line id="vest-stripe-4" class="cls-9" x1="30.99" y1="44.84" x2="20.74" y2="43.94"/>
+    <line id="vest-stripe-3" class="cls-9" x1="31.2" y1="39.41" x2="20.86" y2="39.41"/>
+    <line id="vest-stripe-2" class="cls-9" x1="21.13" y1="34.44" x2="20.36" y2="49"/>
+    <line id="vest-stripe-1" class="cls-9" x1="17.92" y1="36.18" x2="17.15" y2="49.07"/>
+  </g>
+  </g>
+</svg>
