@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -24 156.6 300.7">
+  <style type="text/css">
+	.st0{fill:#FFFFFF;}
+	@keyframes letterjump {
+		0% {opacity: 0;transform: translateY(0px);}
+		1% {opacity: 1; transform: translateY(0px);}
+		12% {opacity: 1; transform: translateY(-25px);}
+		25% {opacity: 1; transform: translateY(0px);}
+		26% {opacity: 0; transform: translateY(0px);}
+		100% {opacity: 0; transform: translateY(0px);}
+	}
+	@keyframes letterjump-k {
+		0% {opacity: 1;transform: translateY(0px);}
+		1% {opacity: 1;transform: translateY(0px);}
+		9% {opacity: 1;transform: translateY(-24px);}
+		10.5% {opacity: 1;transform: translateY(-8px);}
+		12% {opacity: 1;transform: translateY(0px);}
+		14.5% {opacity: 1;transform: translateY(-24px);}
+		17% {opacity: 1;transform: translateY(0px);}
+		17.5% {opacity: 0;transform: translateY(0px);}
+		56.5% {opacity: 0;transform: translateY(0px);}
+		57% {opacity: 1;transform: translateY(0px);}
+		57.5% {opacity: 1;transform: translateY(10px);}
+		59% {opacity: 1;transform: translateY(-10px);}
+		62% {opacity: 1;transform: translateY(0px);}
+		83.5% {opacity: 1;transform: translateY(0px);}
+		91.5% {opacity: 1;transform: translateY(-24px);}
+		93.5% {opacity: 1;transform: translateY(24px);}
+		100% {opacity: 1;transform: translateY(0px);}
+	}
+	@keyframes letterjump-l {
+		0% {opacity: 0;transform: translateY(0px);}
+		16.5% {opacity: 0;transform: translateY(0px);}
+		17% {opacity: 1;transform: translateY(0px);}
+		19.5% {opacity: 1;transform: translateY(-24px);}
+		22% {opacity: 1;transform: translateY(0px);}
+		22.5% {opacity: 0;transform: translateY(0px);}
+		100% {opacity: 0;transform: translateY(0px);}
+	}
+	@keyframes letterjump-e {
+		0% {opacity: 0;transform: translateY(0px);}
+		22% {opacity: 0;transform: translateY(0px);}
+		22.5% {opacity: 1;transform: translateY(0px);}
+		24.5% {opacity: 1;transform: translateY(-24px);}
+		27% {opacity: 1;transform: translateY(0px);}
+		27.5% {opacity: 0;transform: translateY(0px);}
+		100% {opacity: 0;transform: translateY(0px);}
+	}
+	@keyframes letterjump-i {
+		0% {opacity: 0;transform: translateY(0px);}
+		27% {opacity: 0;transform: translateY(0px);}
+		27.5% {opacity: 1;transform: translateY(0px);}
+		30% {opacity: 1;transform: translateY(-24px);}
+		32.5% {opacity: 1;transform: translateY(0px);}
+		33% {opacity: 0;transform: translateY(0px);}
+		100% {opacity: 0;transform: translateY(0px);}
+	}
+	@keyframes letterjump-n {
+		0% {opacity: 0;transform: translateY(0px);}
+		32.5% {opacity: 0;transform: translateY(0px);}
+		33% {opacity: 1;transform: translateY(0px);}
+		34% {opacity: 1;transform: translateY(16px);}
+		36% {opacity: 1;transform: translateY(-10px);}
+		38% {opacity: 1;transform: translateY(5px);}
+		40% {opacity: 1;transform: translateY(0px);}
+		48% {opacity: 1;transform: translateY(0px);}
+		54% {opacity: 1;transform: translateY(-24px);}
+		57% {opacity: 1;transform: translateY(0px);}
+		57.5% {opacity: 0;transform: translateY(0px);}
+		100% {opacity: 0;transform: translateY(0px);}
+	}
+	@keyframes letterjump-text {
+		0% {opacity: 0;transform: translateY(-55px)}
+		56.5% {opacity: 0;transform: translateY(-55px);}
+		57% {transform: translateY(-55px);}
+		57.5% {transform: translateY(-25px);}
+		60% {opacity: 1;transform: translateY(0px);}
+		93.5% {opacity: 1; transform: translateY(0px);}
+		98% {opacity: 0;transform: translateY(-55px);}
+		100% {opacity: 0;transform: translateY(-55px);}
+	}
+	#logo-text {
+		animation: letterjump-text;
+	}
+	#logo-k {
+		animation: letterjump-k;
+	}
+	#logo-l {
+		animation: letterjump-l;
+	}
+	#logo-e {
+		animation: letterjump-e;
+	}
+	#logo-i {
+		animation: letterjump-i;
+	}
+	#logo-n {
+		animation: letterjump-n;
+	}
+	#logo-text, #logo-k, #logo-l, #logo-e, #logo-i, #logo-n {
+		animation-duration: 5.5s;
+		animation-delay: 0s;
+		animation-timing-function: ease-in;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+	}
+  </style>
+	<g id="logo-text">
+	<!-- KLEIN -->
+	<g id="logo-text-klein">
+    <polygon points="28.6 210.4 30 210.4 9.4 185.4 29.4 169.4 27.8 169.4 1 190.7 1 169.4 0 169.4 0 210.4 1 210.4 1 192 8.6 186 "/>
+      <polygon points="60.3 210.4 40.1 210.4 40.1 169.4 41.2 169.4 41.2 209.4 60.3 209.4 "/>
+    <polygon points="98.4 170.4 98.4 169.4 69.7 169.4 69.7 210.4 98.4 210.4 98.4 209.4 70.7 209.4 70.7 188.2 89 188.2 89 187.2 70.7 187.2 70.7 170.4 "/>
+      <rect x="109.4" y="169.4" width="1" height="41"/>
+    <polygon points="156.7 210.4 156.7 169.4 155.7 169.4 155.7 208.8 127.9 169.4 126.7 169.4 126.7 210.4 127.8 210.4 127.8 171 155.5 210.4 "/>
+	</g>
+	
+	<!-- VISUAL -->
+	<g id="logo-text-visual">
+    <path d="M16.8 244.8c-0.8 7.2-2.1 14.7-2.5 20.4h-0.1c-0.5-6.1-1.6-13.5-2.5-20.6l-2.8-21.4H0l9.2 52.7h9.9l9-52.7h-8.7L16.8 244.8z"/>
+    <rect x="31.8" y="223.2" width="8.1" height="52.7"/>
+    <path d="M59 244c-4.6-3.4-5.3-5.2-5.3-8.9 0-3.5 0.7-5.8 3.3-5.8 2.7 0 3.3 2.2 3.3 5.9v2.6h8.1V235c0-5.7-1.5-12.7-11.2-12.7 -9.5 0-11.6 7-11.6 13.9 0 7.8 3 10.7 8.7 15.1 5.7 4.5 6.9 6.2 6.9 11.9 0 3.4-0.8 6.4-4 6.4 -3.1 0-4.3-2.2-4.3-6.1v-3.3h-8.1v3.1c0 6.9 2.4 13.2 12.1 13.2 9.8 0 12.5-7.1 12.5-14.6C69.3 253.2 66.9 249.9 59 244z"/>
+    <path d="M90.9 263.3c0 3.6-1 6-4.3 6 -3.1 0-4.4-2.2-4.4-6v-40.1h-8.1v40c0 9 4 13.5 12.4 13.5 8.8 0 12.6-5.2 12.6-13.5v-39.9h-8.1V263.3z"/>
+    <path d="M111.1 223.2l-8.5 52.7h8.3l1.8-14.1h8.1l2.1 14.1h8.5l-8.8-52.7H111.1zM113.8 254.3c1.1-7.8 2.6-19.1 2.9-23.4h0.3c0.6 6 1.8 14.5 3 23.4H113.8z"/>
+    <polygon points="143.4 268.6 143.4 223.2 135.3 223.2 135.3 275.9 156 275.9 156.7 268.6 "/>
+	</g>
+	</g>
+	<!-- WHITESPACE -->
+  <rect y="0.1" class="st0" width="156.6" height="156.7"/>
+  
+  <!-- LOGOS -->
+  <path id="logo-n" d="M143.1 0.1H13.6C6.1 0.1 0 6.2 0 13.7v129.1 0.1 0.3c0 7.5 6.1 13.6 13.6 13.6h129.5c7.5 0 13.6-6.1 13.6-13.6V13.7C156.7 6.2 150.6 0.1 143.1 0.1zM85 13.7l-0.2 60.9v2.6c0 2.6 0.1 5.1 0.4 7.5 0.3 2.4 0.7 4.9 1.3 7.4 -2.2-3.6-4.2-7.5-6.2-11.7 -2-4.2-3.1-6.4-3.3-6.8L39.6 13.7H85zM41 142.7h-1.6V82.3v-3.1c0-2.6-0.1-5-0.4-7.4 -0.3-2.3-0.7-4.7-1.2-7.1 2 3.5 4.1 7.3 6.1 11.5s3.1 6.5 3.4 6.9l37.5 59.5h-2.1H41zM147.9 140.7c0 1.1-0.9 2.1-2.1 2.1h-19.3c-1.1 0-2.1-0.9-2.1-2.1v-14.2c0-1.1 0.9-2.1 2.1-2.1h19.3c1.1 0 2.1 0.9 2.1 2.1V140.7zM147.9 104c0 1.1-0.9 1.9-1.9 1.9h-19.5c-1.1 0-1.9-0.9-1.9-1.9V89.5c0-1.1 0.9-1.9 1.9-1.9h19.5c1.1 0 1.9 0.9 1.9 1.9V104zM147.9 67c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2V53c0-1.2 1-2.2 2.2-2.2h19c1.2 0 2.2 1 2.2 2.2V67zM147.9 30.3c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2V16.4c0-1.3 1-2.3 2.3-2.3h18.9c1.2 0 2.2 1 2.2 2.2V30.3z"/>
+  <path id="logo-i" d="M143.1 0.1H13.6C6.1 0.1 0 6.2 0 13.7v129.1 0.4c0 7.5 6.1 13.6 13.6 13.6h129.5c7.5 0 13.6-6.1 13.6-13.6V13.7C156.7 6.2 150.6 0.1 143.1 0.1zM115.7 142.7H82.6 42.3V13.7h73.4V142.7zM147.9 140.7c0 1.1-0.9 2.1-2.1 2.1h-19.3c-1.1 0-2.1-0.9-2.1-2.1v-14.2c0-1.1 0.9-2.1 2.1-2.1h19.3c1.1 0 2.1 0.9 2.1 2.1V140.7zM147.9 104c0 1.1-0.9 1.9-1.9 1.9h-19.5c-1.1 0-1.9-0.9-1.9-1.9V89.5c0-1.1 0.9-1.9 1.9-1.9h19.5c1.1 0 1.9 0.9 1.9 1.9V104zM147.9 67c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2V53c0-1.2 1-2.2 2.2-2.2h19c1.2 0 2.2 1 2.2 2.2V67zM147.9 30.3c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2V16.4c0-1.3 1-2.3 2.3-2.3h18.9c1.2 0 2.2 1 2.2 2.2V30.3z"/>
+  <path id="logo-e" d="M143.1 0.1H13.6C6.1 0.1 0 6.2 0 13.7v129.1 0.4c0 7.5 6.1 13.6 13.6 13.6h129.5c7.5 0 13.6-6.1 13.6-13.6V13.7C156.7 6.2 150.6 0.1 143.1 0.1zM115.7 142.7h-6.4v-31.4H41.5v-20h54.8V61.8H41.5V44.6h65V13.7h9.1V142.7zM147.9 140.7c0 1.1-0.9 2.1-2.1 2.1h-19.3c-1.1 0-2.1-0.9-2.1-2.1v-14.2c0-1.1 0.9-2.1 2.1-2.1h19.3c1.1 0 2.1 0.9 2.1 2.1V140.7zM147.9 104c0 1.1-0.9 1.9-1.9 1.9h-19.5c-1.1 0-1.9-0.9-1.9-1.9V89.5c0-1.1 0.9-1.9 1.9-1.9h19.5c1.1 0 1.9 0.9 1.9 1.9V104zM147.9 67c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2V53c0-1.2 1-2.2 2.2-2.2h19c1.2 0 2.2 1 2.2 2.2V67zM147.9 30.3c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2V16.4c0-1.3 1-2.3 2.3-2.3h18.9c1.2 0 2.2 1 2.2 2.2V30.3z"/>
+  <path id="logo-l" d="M143.1 0.1H13.6C6.1 0.1 0 6.2 0 13.7v129.1 0.4c0 7.5 6.1 13.6 13.6 13.6h129.5c7.5 0 13.6-6.1 13.6-13.6V13.7C156.7 6.2 150.6 0.1 143.1 0.1zM115.7 142.7h-14.1v-34.3H41.5V13.7h74.3V142.7zM147.9 140.7c0 1.1-0.9 2.1-2.1 2.1h-19.3c-1.1 0-2.1-0.9-2.1-2.1v-14.2c0-1.1 0.9-2.1 2.1-2.1h19.3c1.1 0 2.1 0.9 2.1 2.1V140.7zM147.9 104c0 1.1-0.9 1.9-1.9 1.9h-19.5c-1.1 0-1.9-0.9-1.9-1.9V89.5c0-1.1 0.9-1.9 1.9-1.9h19.5c1.1 0 1.9 0.9 1.9 1.9V104zM147.9 67c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2V53c0-1.2 1-2.2 2.2-2.2h19c1.2 0 2.2 1 2.2 2.2V67zM147.9 30.3c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2V16.4c0-1.3 1-2.3 2.3-2.3h18.9c1.2 0 2.2 1 2.2 2.2V30.3z"/>
+  <path id="logo-k" d="M143.1 0.1H13.6C6.1 0.1 0 6.2 0 13.7v129.5c0 7.5 6.1 13.6 13.6 13.6h129.5c7.5 0 13.6-6.1 13.6-13.6V13.7C156.7 6.2 150.6 0.1 143.1 0.1zM41 14.1h37L41 56.7V14.1zM41 142.8v-41l10.2-10.6 31.4 51.5H41V142.8zM115.8 117.4L80.1 61.5l35.7-36.8V117.4zM147.9 140.7c0 1.1-0.9 2.1-2.1 2.1h-19.3c-1.1 0-2.1-0.9-2.1-2.1v-14.2c0-1.1 0.9-2.1 2.1-2.1h19.3c1.1 0 2.1 0.9 2.1 2.1V140.7zM147.9 104.1c0 1.1-0.9 1.9-1.9 1.9h-19.5c-1.1 0-1.9-0.9-1.9-1.9V89.6c0-1.1 0.9-1.9 1.9-1.9H146c1.1 0 1.9 0.9 1.9 1.9V104.1zM147.9 67.1c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2v-14c0-1.2 1-2.2 2.2-2.2h19c1.2 0 2.2 1 2.2 2.2V67.1zM147.9 30.3c0 1.2-1 2.2-2.2 2.2h-19c-1.2 0-2.2-1-2.2-2.2V16.4c0-1.3 1-2.3 2.3-2.3h18.9c1.2 0 2.2 1 2.2 2.2L147.9 30.3 147.9 30.3z"/>
+</svg>
