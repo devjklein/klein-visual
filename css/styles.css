@@ -36,8 +36,17 @@ p {
 	display: block;
 	margin: 0 auto;
 	position: relative;
-	height: 3in;
+	height: 3.5in;
 	top: -50px;
+}
+#llama-suit {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	height: 2.5in;
+	top: -50px;
+	right: 15%;
+	z-index: -1;
 }
 #msg {
 	height: 40%;
@@ -47,7 +56,7 @@ p {
 	
 }
 #msg p {
-	font: 300 30px "Roboto", Arial, sans-serif;
+	font: normal 30px 'Give You Glory', cursive;
 }
 #msg p b {
 	font: 700 30px "Roboto", Arial, sans-serif;
