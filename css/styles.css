@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	font-family: roboto, arial, sans-serif;
 }
-h3 {
+h1 {
 	text-align: center;
 	font-size: 40px;
 	padding: 32px 0px;
@@ -35,6 +35,15 @@ span, p, a {
 	font-family: roboto, arial, sans-serif;
 	color: #FFF;
 }
+.hide {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
 /* ---------- 02. Grid ---------- */
 .row {
 	width: 1400px;
@@ -47,22 +56,15 @@ span, p, a {
 	clear: both;
 	display: table;
 }
-main .row {
+.row.content {
 	background-color: white;
-}
-footer {
-	
 }
 .overflow {
 	overflow: hidden;
 }
-[class*="col-"] img {
-	max-width: 100%;
-	width: 100%;
-}
 [class*="col-"] { 
 	float: left;
-	padding: 0 40px;
+	padding: 0 40px 40px 40px;
 	width: 100%;
 }
 @media (max-width: 600px) {
@@ -340,7 +342,7 @@ img.logo-sm {
 	position: relative;
 	display: block;
 	width: 100%;
-	height: auto;
+	max-height: 2000px;
 	background-color: #17994C;
 	z-index: -1;
 }
@@ -351,6 +353,7 @@ img.logo-sm {
 	position: relative;
 	z-index: -2;
 	display: none;
+	height: 580px;
 }
 .mtn-scene {
 	width: 100%;
@@ -424,6 +427,10 @@ img.logo-sm {
 	position: relative;
 	z-index: 1;
 }
+.hover-panel img {
+	max-width: 100%;
+	width: 100%;
+}
 .hover-panel span {
 	position: absolute;
 	bottom: 0;
@@ -446,9 +453,12 @@ img.logo-sm {
 /* ---------- 08 Footer ---------- */
 .footer {
 	width: 100%;
-	height: 250px;
+	max-height: 500px;
 	display: block;
 	background-color: #17994C;
 	border-bottom: 16px solid #FFA733;
+}
+.footer [class*="col-"] {
+	padding-bottom: 40px;
 }
 /* ---------- 00. Media Queries ---------- */
