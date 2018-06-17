@@ -26,12 +26,23 @@
 					<img src="img/logo-color-lg.svg" alt="Klein Visual Logo Large" class="logo-lg">
 					<img src="img/logo-color-sm.svg" alt="Klein Visual Logo Small" class="logo-sm">
 				</div>
-				<input id="toggle" type="checkbox">
-				<label class="toggle" for="toggle"></label>
-				<nav class="menu" id="menu" aria-label="Main" role="navigation">
+				<!--<label class="toggle" for="toggle"></label>-->
+				<button class="toggleMenu" aria-haspopup="true" aria-expanded="false">
+					<svg id="menuIcon" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="fill: #FFF" aria-label="Main Menu Icon">
+						<path id="bar-top" d="M16,132h416c8.8,0,16-7.2,16-16V76c0-8.8-7.2-16-16-16H16C7.2,60,0,67.2,0,76v40
+							C0,124.8,7.2,132,16,132z"/>
+						<path id="bar-bottom" d="M16,452h416c8.8,0,16-7.2,16-16v-40c0-8.8-7.2-16-16-16H16c-8.8,0-16,7.2-16,16v40
+							C0,444.8,7.2,452,16,452z"/>
+						<path id="bar-mid-2" d="M16,292h416c8.8,0,16-7.2,16-16v-40c0-8.8-7.2-16-16-16H16c-8.8,0-16,7.2-16,16v40
+							C0,284.8,7.2,292,16,292z"/>
+						<path id="bar-mid-1" d="M16,292h416c8.8,0,16-7.2,16-16v-40c0-8.8-7.2-16-16-16H16c-8.8,0-16,7.2-16,16v40
+							C0,284.8,7.2,292,16,292z"/>
+					</svg>
+				</button>
+				<nav class="menu" id="menu" aria-label="Main Navigation" role="navigation">
 					<ul>
 						<li><a href="#home" aria-current="page">Home</a></li>
-						<li class="dropdown">
+						<li class="has-dropdown">
 							<a href="#work" aria-haspopup="true" aria-expanded="false">Work</a>
 							<ul>
 							  <li><a href="#design">Design Portfolio</a></li>
@@ -41,7 +52,7 @@
 						</li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
-					<ul>
+					</ul>
 				</nav>
 			</div>
 		</div>
@@ -132,54 +143,17 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script type="text/javascript" src="js/clouds.js?"></script>
-
-<!-- PUT SOME OF THIS INTO A FILE -->
+<script type="text/javascript" src="js/clouds.js"></script>
+<script type="text/javascript" src="js/access.js"></script>
 <script>
-	//c = container
-	//d = duration (default 100/40)
-	//z = scale
-	//a = amount (default 40/15)
-	initClouds($cloudContainerSm,100,"sm", 20);
-	initClouds($cloudContainerMd,60,"md", 5);
-	initClouds($cloudContainerLg,40,"lg", 5);
-	var scene = document.getElementById('mtn-scene');
-	var parallaxInstance = new Parallax(scene);
-</script>
-<script>
-	/* Accessibility */
-	var menuItems = document.querySelectorAll('li.dropdown');
-	Array.prototype.forEach.call(menuItems, function(el, i){
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			el.addEventListener("click",  function(event){
-				if (this.className == "dropdown") {
-					this.className = "dropdown open";
-					this.setAttribute('aria-expanded', "true");
-					document.querySelector(".menu").className = "menu open";
-				} else {
-					this.className = "dropdown";
-					this.setAttribute('aria-expanded', "false");
-					document.querySelector(".menu.open").className = "menu";
-				}
-				event.preventDefault();
-				return false;
-			});
-		} else {
-			/* Looks for hover, then sets open class on dropdown menu */
-			el.addEventListener("mouseover", function(event){
-				document.querySelector(".menu").className = "menu open";
-				this.className = "dropdown open";
-				clearTimeout(timer);
-			});
-			/* Checks for absense of hover and closes dropdown menu */
-			/* Adds 1 second delay in menu closing for accessibility */
-			el.addEventListener("mouseout", function(event){
-				timer = setTimeout(function(event){
-					document.querySelector(".dropdown.open").className = "dropdown";
-					document.querySelector(".menu.open").className = "menu";
-				}, 1000);
-			});
-		}
-	});
+//c = container
+//d = duration (default 100/40)
+//z = scale
+//a = amount (default 40/15)
+initClouds($cloudContainerSm,100,"sm", 20);
+initClouds($cloudContainerMd,60,"md", 5);
+initClouds($cloudContainerLg,40,"lg", 5);
+var scene = document.getElementById('mtn-scene');
+var parallaxInstance = new Parallax(scene);
 </script>
 </html>
