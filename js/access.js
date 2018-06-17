@@ -10,11 +10,14 @@ $(".has-dropdown").each(function(i, el){
 		if (isMobile == true) {
 			el.addEventListener("touchstart", function(event){
 					if ($(".has-dropdown > a").attr('aria-expanded') == "true") {
-						$(".has-dropdown > a").attr('aria-expanded', "false");
-						$(".has-dropdown ul").slideUp("fast");
+						timer = setTimeout(function(event){
+							$(".has-dropdown > a").attr('aria-expanded', "false");
+							$(".has-dropdown ul").slideUp("fast");
+						}, 1000);
 					} else {
 						$(".has-dropdown > a").attr('aria-expanded', "true");
 						$(".has-dropdown ul").slideDown("fast");
+						clearTimeout(timer);
 					};
 			});
 		} else {
@@ -35,7 +38,6 @@ $(".has-dropdown").each(function(i, el){
 					$(".has-dropdown > a").attr('aria-expanded', "false");
 				} else {
 					$(".has-dropdown > a").attr('aria-expanded', "true");
-					console.log("test");
 				};
 				event.preventDefault();
 			});
