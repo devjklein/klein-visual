@@ -30,7 +30,7 @@ $(".has-dropdown > a").each(function(i, el){
 							$(".has-dropdown > a").attr('aria-expanded', "false");
 					}, 1000);
 			});
-			el.querySelector('.has-dropdown > a').addEventListener("click", function(event){
+			el.addEventListener("click", function(event){
 				$(".has-dropdown ul").slideToggle("fast");
 				if ($(".has-dropdown > a").attr('aria-expanded') == "true") {
 					$(".has-dropdown > a").attr('aria-expanded', "false");
