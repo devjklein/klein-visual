@@ -6,30 +6,33 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 };
 //https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
-$(".has-dropdown > a").each(function(i, el){
-		if (isMobile == true) {
-			el.addEventListener("touchstart", function(event){
-					if ($(".has-dropdown > a").attr('aria-expanded') == "true") {
-							$(".has-dropdown > a").attr('aria-expanded', "false");
-							$(".has-dropdown ul").slideUp("fast");
-					} else {
-						$(".has-dropdown > a").attr('aria-expanded', "true");
-						$(".has-dropdown ul").slideDown("fast");
-						clearTimeout(timer);
-					};
-			});
-		} else {
-			el.addEventListener("mouseover", function(event){
-					$(".has-dropdown ul").slideDown("fast");
+if (isMobile == true) {
+	$(".has-dropdown > a").each(function(i, el){
+		el.addEventListener("touchstart", function(event){
+				if ($(".has-dropdown > a").attr('aria-expanded') == "true") {
+						$(".has-dropdown > a").attr('aria-expanded', "false");
+						$(".has-dropdown ul").slideUp("fast");
+				} else {
 					$(".has-dropdown > a").attr('aria-expanded', "true");
+					$(".has-dropdown ul").slideDown("fast");
 					clearTimeout(timer);
-			});
-			el.addEventListener("mouseout", function(event){
-					timer = setTimeout(function(event){
-							$(".has-dropdown ul").slideUp("fast");
-							$(".has-dropdown > a").attr('aria-expanded', "false");
-					}, 1000);
-			});
+				};
+		});
+	});
+} else {
+	$(".has-dropdown").each(function(i, el){
+		el.addEventListener("mouseover", function(event){
+				$(".has-dropdown ul").slideDown("fast");
+				$(".has-dropdown > a").attr('aria-expanded', "true");
+				clearTimeout(timer);
+		});
+		el.addEventListener("mouseout", function(event){
+				timer = setTimeout(function(event){
+						$(".has-dropdown ul").slideUp("fast");
+						$(".has-dropdown > a").attr('aria-expanded', "false");
+				}, 1000);
+		});
+		$(".has-dropdown > a").each(function(i, el){
 			el.addEventListener("click", function(event){
 				$(".has-dropdown ul").slideToggle("fast");
 				if ($(".has-dropdown > a").attr('aria-expanded') == "true") {
@@ -39,8 +42,9 @@ $(".has-dropdown > a").each(function(i, el){
 				};
 				event.preventDefault();
 			});
-		};
-});
+		});
+	});
+};
 $(".toggleMenu").each(function(i, el){
 	if (isMobile == true) {
 			el.addEventListener("touchstart", function(event){
