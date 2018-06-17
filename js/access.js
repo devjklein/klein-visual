@@ -6,14 +6,12 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 };
 //https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
-$(".has-dropdown").each(function(i, el){
+$(".has-dropdown > a").each(function(i, el){
 		if (isMobile == true) {
 			el.addEventListener("touchstart", function(event){
 					if ($(".has-dropdown > a").attr('aria-expanded') == "true") {
-						timer = setTimeout(function(event){
 							$(".has-dropdown > a").attr('aria-expanded', "false");
 							$(".has-dropdown ul").slideUp("fast");
-						}, 1000);
 					} else {
 						$(".has-dropdown > a").attr('aria-expanded', "true");
 						$(".has-dropdown ul").slideDown("fast");
