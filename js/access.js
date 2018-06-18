@@ -21,6 +21,16 @@ if (isMobile == true) { // If on mobile, for each dropdown "a" link wait for tou
 					clearTimeout(timer);
 				};
 		});
+		$("main").addEventListener("touchstart", function(event){
+				if ($(".nav-dropdown > a").attr('aria-expanded') == "true") { 
+						$(".nav-dropdown > a").attr('aria-expanded', "false");
+						$(".nav-dropdown ul").slideUp("fast"); // Hard close
+				} else {
+					$(".nav-dropdown > a").attr('aria-expanded', "true");
+					$(".nav-dropdown ul").slideDown("fast"); // Hard open
+					clearTimeout(timer);
+				};
+		});
 	});
 } else { // If on desktop, use hover and click
 	$(".nav-dropdown").each(function(i, el){
