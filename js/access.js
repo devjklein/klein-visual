@@ -1,4 +1,7 @@
-/* Accessibility */
+/*------------------------------------*\
+  ACCESSIBILITY AND MENUS
+\*------------------------------------*/
+
 var timer;
 var isMobile = false;
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -6,89 +9,73 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 };
 //https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
-if (isMobile == true) {
-	$(".has-dropdown > a").each(function(i, el){
+if (isMobile == true) { // If on mobile, for each dropdown "a" link wait for touchstart
+	$(".nav-dropdown > a").each(function(i, el){
 		el.addEventListener("touchstart", function(event){
-				if ($(".has-dropdown > a").attr('aria-expanded') == "true") {
-						$(".has-dropdown > a").attr('aria-expanded', "false");
-						$(".has-dropdown ul").slideUp("fast");
+				if ($(".nav-dropdown > a").attr('aria-expanded') == "true") { 
+						$(".nav-dropdown > a").attr('aria-expanded', "false");
+						$(".nav-dropdown ul").slideUp("fast"); // Hard close
 				} else {
-					$(".has-dropdown > a").attr('aria-expanded', "true");
-					$(".has-dropdown ul").slideDown("fast");
+					$(".nav-dropdown > a").attr('aria-expanded', "true");
+					$(".nav-dropdown ul").slideDown("fast"); // Hard open
 					clearTimeout(timer);
 				};
 		});
 	});
-} else {
-	$(".has-dropdown").each(function(i, el){
+} else { // If on desktop, use hover and click
+	$(".nav-dropdown").each(function(i, el){
 		el.addEventListener("mouseover", function(event){
-				$(".has-dropdown ul").slideDown("fast");
-				$(".has-dropdown > a").attr('aria-expanded', "true");
+				$(".nav-dropdown ul").slideDown("fast"); // While mouseover, hard open
+				$(".nav-dropdown > a").attr('aria-expanded', "true");
 				clearTimeout(timer);
 		});
-		el.addEventListener("mouseout", function(event){
+		el.addEventListener("mouseout", function(event){ // While mouseout, hard close
 				timer = setTimeout(function(event){
-						$(".has-dropdown ul").slideUp("fast");
-						$(".has-dropdown > a").attr('aria-expanded', "false");
+						$(".nav-dropdown ul").slideUp("fast");
+						$(".nav-dropdown > a").attr('aria-expanded', "false");
 				}, 1000);
 		});
-		$(".has-dropdown > a").each(function(i, el){
+		$(".nav-dropdown > a").each(function(i, el){
 			el.addEventListener("click", function(event){
-				$(".has-dropdown ul").slideToggle("fast");
-				if ($(".has-dropdown > a").attr('aria-expanded') == "true") {
-					$(".has-dropdown > a").attr('aria-expanded', "false");
+				$(".nav-dropdown ul").slideToggle("fast"); // Toggle on click
+				if ($(".nav-dropdown > a").attr('aria-expanded') == "true") {
+					$(".nav-dropdown > a").attr('aria-expanded', "false");
 				} else {
-					$(".has-dropdown > a").attr('aria-expanded', "true");
+					$(".nav-dropdown > a").attr('aria-expanded', "true");
 				};
 				event.preventDefault();
 			});
 		});
 	});
 };
-$(".toggleMenu").each(function(i, el){
-	if (isMobile == true) {
+$(".main-nav-btn").each(function(i, el){
+	if (isMobile == true) { // If on mobile, use touch
 			el.addEventListener("touchstart", function(event){
-					if ($(".toggleMenu").attr('aria-expanded') == "true") {
-						$(".menu").slideUp("fast");
-						$(".toggleMenu").attr('aria-expanded', "false");
-						$(".toggleMenu").removeClass("open");
-						$('#menuIcon').attr("class", "");
-					} else {
-						$(".menu").slideDown("fast");
-						$(".toggleMenu").attr('aria-expanded', "true");
-						$(".toggleMenu").addClass("open");
-						$('#menuIcon').attr("class", "open");
-					};
+        if ($(".main-nav-btn").attr('aria-expanded') == "true") {
+          $(".main-nav").slideUp("fast");
+          $(".main-nav-btn").attr('aria-expanded', "false");
+          $(".main-nav-btn").removeClass("open");
+          $('#main-nav-btn__icon').attr("class", "");
+        } else {
+          $(".main-nav").slideDown("fast");
+          $(".main-nav-btn").attr('aria-expanded', "true");
+          $(".main-nav-btn").addClass("open");
+          $('#main-nav-btn__icon').attr("class", "open");
+        };
 			});
-		} else {
+		} else { // If on desktop, use click
 			el.addEventListener("click", function(event){
-				if ($(".toggleMenu").attr('aria-expanded') == "true") {
-					$(".menu").slideUp("fast");
-					$(".toggleMenu").attr('aria-expanded', "false");
-					$(".toggleMenu").removeClass("open");
-					$('#menuIcon').attr("class", "");
+				if ($(".main-nav-btn").attr('aria-expanded') == "true") {
+					$(".main-nav").slideUp("fast");
+					$(".main-nav-btn").attr('aria-expanded', "false");
+					$(".main-nav-btn").removeClass("open");
+					$('#main-nav-btn__icon').attr("class", "");
 				} else {
-					$(".menu").slideDown("fast");
-					$(".toggleMenu").attr('aria-expanded', "true");
-					$(".toggleMenu").addClass("open");
-					$('#menuIcon').attr("class", "open");
+					$(".main-nav").slideDown("fast");
+					$(".main-nav-btn").attr('aria-expanded', "true");
+					$(".main-nav-btn").addClass("open");
+					$('#main-nav-btn__icon').attr("class", "open");
 				};
 			});
 		};
 });
-
-
-
-
-function toggleMenu() {
-	$(".menu").slideToggle("fast");
-	if ($(".toggleMenu").attr('aria-expanded') == "true") {
-		$(".toggleMenu").attr('aria-expanded', "false");
-		$(".toggleMenu").removeClass("open");
-		$('#menuIcon').attr("class", "");
-	} else {
-		$(".toggleMenu").attr('aria-expanded', "true");
-		$(".toggleMenu").addClass("open");
-		$('#menuIcon').attr("class", "open");
-	};
-};
