@@ -21,7 +21,7 @@ if (isMobile == true) { // If on mobile, for each dropdown "a" link wait for tou
 					clearTimeout(timer);
 				};
 		});
-		$("main").addEventListener("touchstart", function(event){
+		el.addEventListener("mouseout", function(event){
 				if ($(".nav-dropdown > a").attr('aria-expanded') == "true") { 
 						$(".nav-dropdown > a").attr('aria-expanded', "false");
 						$(".nav-dropdown ul").slideUp("fast"); // Hard close
