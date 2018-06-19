@@ -380,7 +380,8 @@ strong:hover {
         border-width: 0;
         transition: border-width .2s;
       }
-      .main-nav a:hover {
+      .main-nav a:hover,
+      .main-nav a:focus {
         border-bottom: 8px solid #FFA733;
       }
       .main-nav a:active {
@@ -594,11 +595,11 @@ strong:hover {
     transition: transform .2s;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
   }
-    .hover-panel:hover img {
+    .hover-panel:hover img,
+    .hover-panel:focus img {
       transform: translate(0px, -50px);
       transition: transform .4s;
     }
-  
   .hover-panel span {
     position: absolute;
     bottom: 0;
