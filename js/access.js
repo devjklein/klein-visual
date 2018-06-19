@@ -12,15 +12,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
 
 
-$("html").each(function(i, el){
-  el.addEventListener("click", function(event){
-    $(".nav-dropdown > a").attr('aria-expanded', "false");
-    $(".nav-dropdown ul").slideUp("fast"); // Hard close
-  });
-});
-
-
-
 
 
 //https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
@@ -43,11 +34,6 @@ if (isMobile == true) { // If on mobile, for each dropdown "a" link wait for tou
   
 } else { // If on desktop, use hover and click
   $(".nav-dropdown").each(function(i, el){
-
-    
-    el.addEventListener("click", function(event){
-      event.stopPropagation();
-    });
     
     
     el.addEventListener("mouseover", function(event){
