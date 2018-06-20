@@ -118,9 +118,7 @@ span, p, a {
   color: #FFF;
 }
 strong {
-  background-color: rgba(255, 167, 51, 1);
-  color: #000;
-  padding: 0 2px;
+  font-weight: bold;
 }
 /*
   
