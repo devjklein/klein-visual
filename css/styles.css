@@ -116,12 +116,15 @@ span, p, a {
   line-height: 24px;
   font-family: roboto, arial, sans-serif;
   color: #FFF;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 strong {
   font-weight: bold;
 }
 /*
-  
+  wiggle hover effect
   transform: rotate(1deg);
   transition: transform 0.2s;
 }
@@ -246,7 +249,6 @@ strong:hover {
     background-color: #FFF;
     box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    transition: all .2s;
     }
     .logo--large {
       display: none;
@@ -314,19 +316,19 @@ strong:hover {
   }
 
   #bar-1, #bar-2, #bar-3, #bar-4 {
-    transition: .3s ease-in-out;
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
     transform-origin: 50% 50%;
   }
 
   #main-nav-btn__icon.open #bar-1 {
     opacity: 0;
-    transform: translate(0px,45px) scale(.5,.5);
+    transform: translate(0, 45px) scale(.5,.5);
 
   }
 
   #main-nav-btn__icon.open #bar-4 {
     opacity: 0;
-    transform: translate(0px,-45px) scale(.5,.5);
+    transform: translate(0, -45px) scale(.5,.5);
   }
 
   #main-nav-btn__icon.open #bar-2 {
@@ -375,15 +377,18 @@ strong:hover {
         text-decoration: none;
         line-height: 43px;
         height: 75px;
-        border-width: 0;
-        transition: border-width .2s;
+        border-bottom-width: 0;
+        border-bottom-style: solid;
+        border-bottom-color: #FFA733;
+        transition: border-width .2s ease-out;
       }
       .main-nav a:hover,
       .main-nav a:focus {
-        border-bottom: 8px solid #FFA733;
+        border-bottom-width: 8px;
       }
       .main-nav a:active {
-        background-color: #178C46;
+        background-color: #FFA733;
+        color: #231F20;
       }
 
 
@@ -491,46 +496,64 @@ strong:hover {
 }
 
 .splash__intro {
-  display: block;
+  display: table; /*was block */
   position: relative;
   max-width: 1200px;
   width: 100%;
   margin-top: 60px;
-  padding: 20px 40px;
+  padding: 0 40px;
+  transition: margin-top .2s;
 }
-    .splash__intro p:first-child {
+    .splash__type--header {
       color: #FFF;
-      font: normal 700 90px/0px roboto, arial, sans-serif;
-      text-transform: uppercase;
+      font: normal 700 90px/90px roboto, arial, sans-serif;
+      margin: 0;
+      padding-top: 0; /*was 20px, can be removed if style is kept */
+      text-align: center; /*can be removed */
+      width: 100%; /*can be removed */
     }
+    .splash__type--content {
+      padding-top: 20px;
+      text-align: left; /*can be removed */
+    }
+  .splash__avatar { /*can be removed */
+    display: table-header-group;
+  }
     .splash__avatar img {
       border-radius: 50%;
-      margin: 40px auto;
+      margin: 20px auto; /*was 40px auto */
       width: 100%;
-      max-width: 250px;
+      max-width: 150px; /*was 250px */
       height: auto;
     }
 
 @media (min-width: 768px) {
   .splash__intro {
-    margin-top: 170px;
+    margin-top: 198px;
     position: absolute;
+    display: block;
+  /*height: 402px; NOT NECESSARY*/
   }
     .splash__type {
-      width: 70%;
-      display: block;
+      width: 65%;
       float: left;
-      padding-right: 16px;
+      padding: 20px 16px 20px 0;
     }
+      .splash__type--header {
+        padding-top: 0; /*can be removed if style is kept*/
+        text-align: left;  /*can be removed */
+      }
     .splash__avatar {
-      width: 30%;
+      width: 35%;
       display: block;
       float: left;
+      padding: 20px 0;
     }
       .splash__avatar img {
         margin: 0 auto;
         width: auto;
-        height: 358px;
+        height: 362px;
+        max-width: 250px; /*can be removed */
       }
 }
 
@@ -547,7 +570,7 @@ strong:hover {
   position: relative;
   z-index: -2;
   display: none;
-  height: 580px;
+  height: 600px;
 }
   .mtn-scene__layer {
     width: 100%;
@@ -557,7 +580,7 @@ strong:hover {
   .mtn-scene__layer.mtn-center img {
     width: 200%;
     left: -35%;
-    bottom: -15px;
+    bottom: -35px;
   }
     .mtn-scene__layer img {
       position: absolute;
@@ -613,6 +636,61 @@ strong:hover {
 
 
 
+  
+/*------------------------------------*\
+  ##BUTTON
+\*------------------------------------*/
+.btn {
+  background-color: #FFA733;
+  margin: 20px 0;
+  display: block;
+  text-align: center;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  
+}
+  .btn a {
+    color: #231F20;
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: none;
+    line-height: 75px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+.btn::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  position: absolute;
+  transition: left .2s;
+  left: -100%;
+}
+.btn:hover::before {
+  left: 0%;
+}
+  .btn a:focus {
+    color: #231F20;
+    background-color: #FFF;
+  }
+  .btn:hover a{
+    color: #231F20;
+  }
+  .btn a:active {
+    color: #FFF;
+    background-color: #231F20;
+  }
+@media (min-width: 768px) {
+  .btn {
+    display: inline-block;
+    width: 200px;
+  }
+}
+
+
 
 /*------------------------------------*\
   ##FOOTER
@@ -626,5 +704,11 @@ strong:hover {
   border-bottom: 16px solid #FFA733;
 }
 .footer [class*="col-"] {
-  padding-bottom: 40px;
+  padding:20px;
 }
+  .footer__box a[title*="Double-A"]  {
+
+  }
+  .footer__box img[alt*="Double-A"] {
+
+  }
