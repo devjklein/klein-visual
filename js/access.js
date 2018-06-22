@@ -14,11 +14,9 @@ var navIcon = "#main-nav-btn__icon"
 var hasTouch = false;
 
 window.addEventListener("touchstart", function onFirstTouch() {
-    console.log("Can touch!");
 	hasTouch = true;
     window.removeEventListener("touchstart", onFirstTouch, false);
 }, false); 
-console.log(hasTouch);
 
 
 if (hasTouch == true) { // If touch, for each dropdown "a" link wait for touchstart
@@ -44,22 +42,18 @@ $(dropdownMenu).each(function(i, el){
 	function dropdownMouseover(event) {
 		openMenu("dropdown");
 		$(dropdownMenu).attr("hover", "true")
-		console.log("mouseover");
 	};
 
 	function dropdownMouseout(event) {
 		closeMenu("dropdownTimeout");
-		console.log("mouseout");
 	};
 
 	function dropdownClick(event) {
 		if ($(dropdownButton).attr("aria-expanded") == "true" && $(dropdownMenu).attr("hover") != "true") {
 			closeMenu("dropdown");
-			console.log("click close");
 		} else {
 			openMenu("dropdown");
 			$(dropdownMenu).attr("hover", "false");
-			console.log("click open");
 		};
 		event.preventDefault();
 		event.stopPropagation();
@@ -135,3 +129,10 @@ function closeMenu(type) {
 		}, 1000);
 	}
 };
+
+var prev = 0;
+$(window).on('scroll', function(){
+  var scrollTop = $(window).scrollTop();
+  $('.top-bar').toggleClass('scroll', scrollTop > prev);
+  prev = scrollTop;
+});

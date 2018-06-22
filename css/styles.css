@@ -21,6 +21,7 @@
  *  ##SPLASH
  *  ##MOUNTAIN-BG
  *  ##HOVER-PANEL
+ *  ##BUTTON
  *
  * #FOOTER
  */
@@ -102,12 +103,21 @@ h1, h2, h3, h4, h5, h6 {
   font-style:  normal;
   font-weight: 700;
   font-family: roboto, arial, sans-serif;
-}
-h1 {
+  padding: 0;
+  display: block;
+  width: 100%;
   text-align: center;
+}
+h2 {
   font-size: 40px;
-  padding: 32px 0;
+  padding: 40px 0;
   color: #231F20;
+}
+h3 {
+  padding: 20px 0;
+  color: #463E40;
+  font-size: 20px;
+  font-weight: 300;
 }
 span, p, a {
   font-style:  normal;
@@ -158,12 +168,17 @@ strong:hover {
 }
 [class*="col-"] { 
   float: left;
-  padding: 0 40px 40px 40px;
+  padding: 0 20px 40px 20px;
   width: 100%;
 }
 @media (max-width: 600px) {
   [class*="col-"] {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+    .col-s-nopadding {
+    padding: 0 0 40px 0;
   }
 }
 @media (min-width: 600px) { 
@@ -240,7 +255,17 @@ strong:hover {
   background-color: #17994C;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
   z-index: 99;
+  transition: top .4s;
 }
+  .top-bar.scroll {
+    top: -75px;
+  }
+  .top-bar.scroll .logo-tag {
+    top: -198px;
+  }
+  .top-bar.scroll .logo-tag {
+    top: -198px;
+  }
   .logo-tag {
     position: absolute;
     width: 70px;
@@ -249,6 +274,8 @@ strong:hover {
     background-color: #FFF;
     box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    top: 0;
+    transition: top .5s;
     }
     .logo--large {
       display: none;
@@ -263,7 +290,6 @@ strong:hover {
     height: 75px;
   }
     .logo-tag {
-      position: absolute;
       width:  128px;
       height: 198px;
       border-radius: 0 0 16px 16px;
@@ -501,23 +527,23 @@ strong:hover {
   max-width: 1200px;
   width: 100%;
   margin-top: 60px;
-  padding: 0 40px;
+  padding: 0 20px;
   transition: margin-top .2s;
 }
     .splash__type--header {
       color: #FFF;
       font: normal 700 90px/90px roboto, arial, sans-serif;
       margin: 0;
-      padding-top: 0; /*was 20px, can be removed if style is kept */
+      padding-top: 20px; /*was 20px, can be removed if style is kept */
       text-align: center; /*can be removed */
       width: 100%; /*can be removed */
     }
     .splash__type--content {
-      padding-top: 20px;
+      padding-top: 16px;
       text-align: left; /*can be removed */
     }
   .splash__avatar { /*can be removed */
-    display: table-header-group;
+    display: none;
   }
     .splash__avatar img {
       border-radius: 50%;
@@ -610,18 +636,30 @@ strong:hover {
   position: relative;
   z-index: 1;
 }
-  .hover-panel img {
-    max-width: 100%;
-    width: 100%;
+  .hover-panel__unit {
+    margin: 0;
+    padding: 0;
     transition: transform .2s;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
   }
-    .hover-panel:hover img,
-    .hover-panel:focus img {
+    .hover-panel:hover .hover-panel__unit,
+    .hover-panel:focus .hover-panel__unit {
       transform: translate(0px, -50px);
       transition: transform .4s;
     }
-  .hover-panel span {
+    .hover-panel__img {
+      max-width: 100%;
+      width: 100%;
+      box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    }
+    .hover-panel__unit > h3 {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+      
+  .hover-panel > span {
     position: absolute;
     bottom: 0;
     display: block;
@@ -655,7 +693,7 @@ strong:hover {
     font-weight: bold;
     font-size: 32px;
     text-decoration: none;
-    line-height: 75px;
+    line-height: 55px;
     width: 100%;
     position: relative;
     z-index: 1;
