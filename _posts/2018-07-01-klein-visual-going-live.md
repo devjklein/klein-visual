@@ -1,7 +1,7 @@
 ---
 title: Klein Visual Live!
 layout: blog-post
-categories: update
+categories:
 author: David Klein
 ---
 

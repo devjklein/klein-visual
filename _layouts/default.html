@@ -57,7 +57,7 @@
               <a href="#" class="access-bar__toggle js-high-contrast-on">On</a>
             </li>
             
-            <li><a class="main-nav__item" href="/index" {% if page.current == 'index' %}aria-current="page"{% endif %}>Home</a></li>
+            <li><a class="main-nav__item" href="{{ "/index" | relative_url }}" {% if page.current == 'index' %}aria-current="page"{% endif %}>Home</a></li>
             
             <li class="nav-dropdown">
               <a class="main-nav__item" href="#work" {% if page.current == 'work' %}aria-current="page"{% endif %} aria-haspopup="true" aria-expanded="false">Work</a>
@@ -68,11 +68,11 @@
               </ul>
             </li>
             
-            <li><a class="main-nav__item" href="/blog" {% if page.current == 'blog' %}aria-current="page"{% endif %}>Blog</a></li>
+            <li><a class="main-nav__item" href="{{ "/blog" | relative_url }}" {% if page.current == 'blog' %}aria-current="page"{% endif %}>Blog</a></li>
             
-            <li><a class="main-nav__item" href="#about" {% if page.current == 'about' %}aria-current="page"{% endif %}>About</a></li>
+            <li><a class="main-nav__item" href="{{ "/about" | relative_url }}" {% if page.current == 'about' %}aria-current="page"{% endif %}>About</a></li>
             
-            <li><a class="main-nav__item" href="#contact" {% if page.current == 'contact' %}aria-current="page"{% endif %}>Contact</a></li>
+            <li><a class="main-nav__item" href="{{ "/contact" | relative_url }}" {% if page.current == 'contact' %}aria-current="page"{% endif %}>Contact</a></li>
             
           </ul>
         </nav>
