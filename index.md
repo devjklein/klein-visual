@@ -52,7 +52,7 @@ current: index
       <h2>Explore exceptional.</h2>
       
       <div class="col-6 col-s-nopadding" >
-        <a href="/showcase/roaming-wild" class="hover-panel">
+        <a href="{{ "/showcase/roaming-wild" | relative_url }}" class="hover-panel">
           <div class="hover-panel__unit">
             <img class="hover-panel__img" src="{{ "/img/proj/roaming-wild-hero-m.jpg" | relative_url }}" alt="A view of Mount Godwin-Austen, the second highest mountain in the world, with the Roaming Wild logo mark overlayed in white. Mountain photo source credit: Flickr user Maria Ly">
           </div>
@@ -61,7 +61,7 @@ current: index
       </div>
       
       <div class="col-6  col-s-nopadding" >
-        <a href="/showcase/ttw" class="hover-panel">
+        <a href="{{ "/showcase/ttw" | relative_url }}" class="hover-panel">
         <div class="hover-panel__unit">
           <img class="hover-panel__img" src="{{ "/img/proj/teaching-the-word-hero-m.jpg" | relative_url }}" alt="The blue and orange Teaching the Word shield and sword logo on a tan, backlit background.">
         </div>
@@ -70,7 +70,7 @@ current: index
       </div>
       
       <div class="col-6  col-s-nopadding">
-        <a href="/showcase/ccc" class="hover-panel">
+        <a href="{{ "/showcase/ccc" | relative_url }}" class="hover-panel">
           <div class="hover-panel__unit">
             <img class="hover-panel__img" src="{{ "/img/proj/ccc-registration-hero-m.jpg" | relative_url }}" alt="A poster which reads STOP, REGISTER, and PAY LATER next to a illustrated traffic light. Below this, colorful yellow, green, and red text states student registration resources at Carroll Community College.">
           </div>
