@@ -5,14 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Homepage | Klein Visual: Exceptional Designs</title>
+  
+  
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
   <link rel="stylesheet" href="/klein-visual-dev/css/styles.css">
   <link rel="stylesheet" href="/klein-visual-dev/css/font-styles.css">
+  <link rel="stylesheet" href="/klein-visual-dev/css/syntax-default.css">
+  
+  
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700"> 
+  
+  
   <!-- Icons -->
   <link rel="shortcut icon" href="/klein-visual-dev/img/favicon.ico" type="image/x-icon">
+  
+  
 </head>
 <body>
   <header class="top-bar  green">
@@ -89,53 +98,53 @@
   
   <main>
   <!-- Home background & introduction -->
-  <section class="splash  overflow  green" aria-label="Homepage introduction">
-    <div class="row">
-      <div class="splash__intro">
-      
-          <div class="splash__type">
-            <h1 class="splash__type--header  light">Hello!</h1>
-            <p class="splash__type--content">My name is David Klein, and I am a multidisciplinary digital designer who specializes in branding and web development. My goal is to provide my clients with exceptional designs that excite the creative senses and instill total brand confidence.<br /><br /><strong>We can create something exceptional together.</strong></p>
-            <a class="btn button" href="mailto:hi@kleinvisual.com">Let's Talk</a>
-          </div>
-          
-          <div class="splash__avatar">
-            <img src="/klein-visual-dev/img/dk.jpg" alt="avatar" />
-          </div>
-      </div>
-      
-      
-      <!-- Parallax Background -->
-      <div class="mtn-scene" id="js-mtn-scene" data-hover-only="false" relative-input="true" data-scalar-x="10" data-scalar-y="25">
-      
-        <div data-depth="0.05" class="mtn-scene__layer" id="js-mtn-clouds-sm"></div>
+  <section class="row  splash  overflow  green" aria-label="Homepage introduction">
+      <div class="row">
+        <div class="splash__intro">
         
-        <div data-depth="0.1" class="mtn-scene__layer mtn-center">
-          <img src="/klein-visual-dev/img/mtn-scene/mountains.svg" />
+            <div class="splash__type">
+              <h1 class="splash__type--header  light">Hello!</h1>
+              <p class="splash__type--content">My name is David Klein, and I am a multidisciplinary digital designer who specializes in branding and web development. My goal is to provide my clients with exceptional designs that excite the creative senses and instill total brand confidence.</p>
+              <p class="splash__type--content"><strong>We can create something exceptional together.</strong></p>
+              <a class="btn button" href="mailto:hi@kleinvisual.com">Let's Talk</a>
+            </div>
+            
+            <div class="splash__avatar">
+              <img src="/klein-visual-dev/img/dk.jpg" alt="avatar" />
+            </div>
         </div>
         
-        <div data-depth="0.15" class="mtn-scene__layer" id="js-mtn-clouds-md"></div>
         
-        <div data-depth="0.2" class="mtn-scene__layer" id="js-mtn-clouds-lg"></div>
+        <!-- Parallax Background -->
+        <div class="mtn-scene" id="js-mtn-scene" data-hover-only="false" relative-input="true" data-scalar-x="10" data-scalar-y="25">
         
+          <div data-depth="0.05" class="mtn-scene__layer" id="js-mtn-clouds-sm"></div>
+          
+          <div data-depth="0.1" class="mtn-scene__layer mtn-center">
+            <img src="/klein-visual-dev/img/mtn-scene/mountains.svg" alt="An ilustrated mountain, tinted green, rises in the distance as clouds float by." />
+          </div>
+          
+          <div data-depth="0.15" class="mtn-scene__layer" id="js-mtn-clouds-md"></div>
+          
+          <div data-depth="0.2" class="mtn-scene__layer" id="js-mtn-clouds-lg"></div>
+          
+        </div>
+        
+        <div class="mtn-scene--fallback">
+        </div>
       </div>
-      
-      <div class="mtn-scene--fallback">
-      </div>
-    </div>
   </section>
   
   
   
   
   
-  <section aria-label="Design Samples">
-    <div class="row content">
+  <section class="row content" aria-label="Design Samples">
     
       <h2>Explore exceptional.</h2>
       
       <div class="col-6 col-s-nopadding">
-        <a href="#test" class="hover-panel">
+        <a href="/showcase/roaming-wild" class="hover-panel">
           <div class="hover-panel__unit">
             <img class="hover-panel__img" src="/klein-visual-dev/img/proj/roaming-wild-hero-m.jpg" alt="A view of Mount Godwin-Austen, the second highest mountain in the world, with the Roaming Wild logo mark overlayed in white. Mountain photo source credit: Flickr user Maria Ly" />
           </div>
@@ -144,7 +153,7 @@
       </div>
       
       <div class="col-6  col-s-nopadding">
-        <a href="#test" class="hover-panel">
+        <a href="/showcase/ttw" class="hover-panel">
         <div class="hover-panel__unit">
           <img class="hover-panel__img" src="/klein-visual-dev/img/proj/teaching-the-word-hero-m.jpg" alt="The blue and orange Teaching the Word shield and sword logo on a tan, backlit background." />
         </div>
@@ -153,7 +162,7 @@
       </div>
       
       <div class="col-6  col-s-nopadding">
-        <a href="#" class="hover-panel">
+        <a href="/showcase/ccc" class="hover-panel">
           <div class="hover-panel__unit">
             <img class="hover-panel__img" src="/klein-visual-dev/img/proj/ccc-registration-hero-m.jpg" alt="A poster which reads STOP, REGISTER, and PAY LATER next to a illustrated traffic light. Below this, colorful yellow, green, and red text states student registration resources at Carroll Community College." />
           </div>
@@ -166,7 +175,6 @@
         <a class="btn  btn--center  btn--large" href="#">View My Work.</a>
       </div>
       
-    </div>
   </section>
 </main>
 
@@ -187,9 +195,9 @@
         </ul>
       </div>
       <div class="col-12">
-        <p class="footer__legal  text--fine">&copy; Copyright 2018 David Klein. All rights reserved.</p>
-        <p class="footer__technical  text--white  text--fine">This website has been designed to fully comply with Level AA of the Web Content Accessibility Guidelines 2.0. If you find a noncompliance or experience difficulty using this website, please contact me immediately.</p>
-        <a style="margin: 0 auto; display: inline-block" href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance">
+        <p class="footer__text  footer__text--legal">&copy; Copyright 2018 David Klein. All rights reserved.</p>
+        <p class="footer__text  footer__text--technical">This website has been designed to fully comply with Level AA of the Web Content Accessibility Guidelines 2.0. If you find a noncompliance or experience difficulty using this website, please contact me immediately.</p>
+        <a style="margin: 1rem auto; display: inline-block" href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance">
           <img height="32" width="88" src="http://www.w3.org/WAI/wcag2AA-blue" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
         </a>
       </div>
@@ -199,11 +207,12 @@
 
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script type="text/javascript" src="/klein-visual-dev/js/clouds.js"></script>
-<script type="text/javascript" src="/klein-visual-dev/js/access.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="/klein-visual-dev/js/tota11y.min.js"></script>
+<script src="/klein-visual-dev/js/clouds.js"></script>
+<script src="/klein-visual-dev/js/access.js"></script>
 <script>
   //c = container
   //d = duration (default 100/40)

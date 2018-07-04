@@ -7,7 +7,26 @@ author: David Klein
 
 Some sample content in post number 1. *here's some strong text* **and here's bold**
 
+
 Here's a [link](1)
+
+And remember, as Abraham Lincoln said, 
+
+> "You can't trust everything you read on the internet"
+
+```html
+<nav class="main-nav  green" aria-label="Main Navigation">
+  <span>Test</span>      
+</nav>
+```
+
+1. You can do it
+2. You can.
+3. YOU CAN MAKE AN ORDERED LIST
+
+- You can make an unordered list too
+- And another list item
+
 
 
 

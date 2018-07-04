@@ -5,14 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Blog | Klein Visual: Exceptional Designs</title>
+  
+  
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
   <link rel="stylesheet" href="/klein-visual-dev/css/styles.css">
   <link rel="stylesheet" href="/klein-visual-dev/css/font-styles.css">
+  <link rel="stylesheet" href="/klein-visual-dev/css/syntax-default.css">
+  
+  
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700"> 
+  
+  
   <!-- Icons -->
   <link rel="shortcut icon" href="/klein-visual-dev/img/favicon.ico" type="image/x-icon">
+  
+  
 </head>
 <body>
   <header class="top-bar  green">
@@ -87,29 +96,26 @@
   
   
   
-  <div class="blog-header  green">
-  <h1 class="light">Blog</h1>
-</div>
+  <main class="row  content">
+    <header class="blog-header  green">
+      <h1 class="light">Blog</h1>
+    </header>
+    
+    
 
 
-
-<div class="row  content">
-  <ul class="myposts">
-  
-      <li><a href="/klein-visual-dev/2018/07/03/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-      <span class="postDate">Jul 3, 2018</span>
-      </li>
-  
-      <li><a href="/klein-visual-dev/2018/07/01/klein-visual-going-live.html">Klein Visual Live!</a>
-      <span class="postDate">Jul 1, 2018</span>
-      </li>
-  
-      <li><a href="/klein-visual-dev/2018/07/01/klein-visual-going-live-update.html">Klein Visual Going Live!</a>
-      <span class="postDate">Jul 1, 2018</span>
-      </li>
-  
-  </ul>
-</div>
+      <ul class="myposts">
+      
+          <li><a href="/klein-visual-dev/2018/07/03/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+          <span class="postDate">Jul 3, 2018</span>
+          </li>
+      
+          <li><a href="/klein-visual-dev/2018/07/01/klein-visual-going-live.html">Klein Visual Live!</a>
+          <span class="postDate">Jul 1, 2018</span>
+          </li>
+      
+      </ul>
+</main>
   
   
   
@@ -127,9 +133,9 @@
         </ul>
       </div>
       <div class="col-12">
-        <p class="footer__legal  text--fine">&copy; Copyright 2018 David Klein. All rights reserved.</p>
-        <p class="footer__technical  text--white  text--fine">This website has been designed to fully comply with Level AA of the Web Content Accessibility Guidelines 2.0. If you find a noncompliance or experience difficulty using this website, please contact me immediately.</p>
-        <a style="margin: 0 auto; display: inline-block" href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance">
+        <p class="footer__text  footer__text--legal">&copy; Copyright 2018 David Klein. All rights reserved.</p>
+        <p class="footer__text  footer__text--technical">This website has been designed to fully comply with Level AA of the Web Content Accessibility Guidelines 2.0. If you find a noncompliance or experience difficulty using this website, please contact me immediately.</p>
+        <a style="margin: 1rem auto; display: inline-block" href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance">
           <img height="32" width="88" src="http://www.w3.org/WAI/wcag2AA-blue" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
         </a>
       </div>
@@ -139,11 +145,12 @@
 
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script type="text/javascript" src="/klein-visual-dev/js/clouds.js"></script>
-<script type="text/javascript" src="/klein-visual-dev/js/access.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="/klein-visual-dev/js/tota11y.min.js"></script>
+<script src="/klein-visual-dev/js/clouds.js"></script>
+<script src="/klein-visual-dev/js/access.js"></script>
 <script>
   //c = container
   //d = duration (default 100/40)
