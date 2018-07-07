@@ -136,6 +136,12 @@ img {
 .row.content {
   background-color: #FFF;
 }
+.row.center {
+  text-align: center;
+}
+main > .row:last-child {
+  padding-bottom: 2em;
+}
 .overflow {
   overflow: hidden;
 }

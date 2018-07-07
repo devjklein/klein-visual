@@ -6,7 +6,7 @@ current: index
 
 <main>
   <!-- Home background & introduction -->
-  <section class="row  splash  overflow  green" aria-label="Homepage introduction" >
+  <section class="splash  overflow  green" aria-label="Homepage introduction" >
       <div class="row">
         <div class="splash__intro">
         
