@@ -1,7 +1,6 @@
 ---
 title: Klein Visual Live!
-layout: blog-post
-categories:
+tags: News
 author: David Klein
 ---
 

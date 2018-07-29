@@ -10,8 +10,6 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
   <link rel="stylesheet" href="/klein-visual-dev/css/styles.css">
-  <link rel="stylesheet" href="/klein-visual-dev/css/font-styles.css">
-  <link rel="stylesheet" href="/klein-visual-dev/css/syntax-default.css">
   
   
   <!-- Fonts -->
@@ -34,11 +32,13 @@
     </div>
     
     <div class="row">    
-      <div class="col-12">
-        <div class="logo-tag">
-          <img src="/klein-visual-dev/img/logo-color-lg.svg" alt="Klein Visual Logo Large" class="logo--large">
-          <img src="/klein-visual-dev/img/logo-color-sm.svg" alt="Klein Visual Logo Small" class="logo--small">
-        </div>
+      <div class="col-12  top-bar__no-margin">
+        <a href="/klein-visual-dev/index">
+          <div class="logo-tag">
+            <img class="logo--large" src="/klein-visual-dev/img/logo-color-lg.svg" alt="Klein Visual Logo Large">
+            <img class="logo--small" src="/klein-visual-dev/img/logo-color-sm.svg" alt="Klein Visual Logo Small">
+          </div>
+         </a>
         
         
         
@@ -69,11 +69,12 @@
             <li><a class="main-nav__item" href="/klein-visual-dev/index" aria-current="page">Home</a></li>
             
             <li class="nav-dropdown">
-              <a class="main-nav__item" href="#work"  aria-haspopup="true" aria-expanded="false">Work</a>
+              <a class="main-nav__item" href="/klein-visual-dev/portfolio"  aria-haspopup="true" aria-expanded="false">Portfolio</a>
               <ul class="green">
-                <li><a class="main-nav__item" href="#design">Design</a></li>
-                <li><a class="main-nav__item" href="#photo">Photography</a></li>
-                <li><a class="main-nav__item" href="#sound">Sound Design</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#design">Design</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#photography">Photography</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#video">Video + Motion Graphics</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#computer-graphics">Computer Graphics</a></li>
               </ul>
             </li>
             
@@ -96,7 +97,7 @@
   
   
   
-  <main>
+  <main class="content  white">
   <!-- Home background & introduction -->
   <section class="splash  overflow  green" aria-label="Homepage introduction">
       <div class="row">
@@ -110,7 +111,7 @@
             </div>
             
             <div class="splash__avatar">
-              <img src="/klein-visual-dev/img/dk.jpg" alt="avatar" />
+              <img src="/klein-visual-dev/img/portraits/me-light.jpg" alt="avatar" />
             </div>
         </div>
         
@@ -139,43 +140,97 @@
   
   
   
-  <section class="row content" aria-label="Design Samples">
+  <section class="row  white  full" aria-label="Design Samples">
     
-      <h2>Explore exceptional.</h2>
+      <h2>Featured Projects</h2>
       
-      <div class="col-6 col-s-nopadding">
-        <a href="/klein-visual-dev/showcase/roaming-wild" class="hover-panel">
-          <div class="hover-panel__unit">
-            <img class="hover-panel__img" src="/klein-visual-dev/img/proj/roaming-wild-hero-m.jpg" alt="A view of Mount Godwin-Austen, the second highest mountain in the world, with the Roaming Wild logo mark overlayed in white. Mountain photo source credit: Flickr user Maria Ly" />
+      
+        
+          <div class="col-4 col-s-nopadding">
+            <a href="/klein-visual-dev/portfolio/design/branding/roaming-wild" class="hover-panel">
+              <img class="hover-panel__img" src="/klein-visual-dev/img/proj/roaming-wild/roaming-wild-hero-m.jpg" alt="Roaming Wild" />
+              <div class="hover-panel__overlay  green"><h3 class="light">Roaming Wild Logo</h3></div>
+            </a>
           </div>
-          <span class="green">View Project</span>
-        </a>
-      </div>
+        
       
-      <div class="col-6  col-s-nopadding">
-        <a href="/klein-visual-dev/showcase/ttw" class="hover-panel">
-        <div class="hover-panel__unit">
-          <img class="hover-panel__img" src="/klein-visual-dev/img/proj/teaching-the-word-hero-m.jpg" alt="The blue and orange Teaching the Word shield and sword logo on a tan, backlit background." />
-        </div>
-        <span class="green">View Project</span>
-        </a>
-      </div>
+        
       
-      <div class="col-6  col-s-nopadding">
-        <a href="/klein-visual-dev/showcase/ccc" class="hover-panel">
-          <div class="hover-panel__unit">
-            <img class="hover-panel__img" src="/klein-visual-dev/img/proj/ccc-registration-hero-m.jpg" alt="A poster which reads STOP, REGISTER, and PAY LATER next to a illustrated traffic light. Below this, colorful yellow, green, and red text states student registration resources at Carroll Community College." />
+        
+      
+      
+      
+        
+      
+        
+      
+        
+          <div class="col-4 col-s-nopadding">
+            <a href="/klein-visual-dev/portfolio/design/teaching-the-word" class="hover-panel">
+              <img class="hover-panel__img" src="/klein-visual-dev/img/proj/teaching-the-word-hero-m.jpg" alt="" />
+              <div class="hover-panel__overlay  green"><h3 class="light">TeachingTheWord Brand</h3></div>
+            </a>
           </div>
-          <span class="green">View Project</span>
-        </a>
-      </div>
+        
+      
+      
+      
+        
+      
+        
+          <div class="col-4 col-s-nopadding">
+            <a href="/klein-visual-dev/portfolio/design/computer-graphics/still-life" class="hover-panel">
+              <img class="hover-panel__img" src="/klein-visual-dev/img/proj/painted-still-life-crop.jpg" alt="" />
+              <div class="hover-panel__overlay  green"><h3 class="light">Still Life with Cheese and Wine</h3></div>
+            </a>
+          </div>
+        
+      
+        
+      
       
       <div class="col-12">
-        <h3>Want to see more?</h3>
-        <a class="btn  btn--center  btn--large" href="#">View My Work.</a>
+        <a class="btn  btn--center  btn--large" href="#">See More</a>
       </div>
       
   </section>
+  
+  
+  
+  
+    <section class="row  white  full" aria-label="Capabilities">
+    <h2>My Capabilities</h2>
+      <div class="col-l-3 col-6 col-s-nopadding">
+        <a href="/klein-visual-dev/portfolio/design/" class="hover-panel">
+          <img class="hover-panel__img" src="/klein-visual-dev/img/llamas/llama-branding.png" alt="A view" />
+          <h3>Branding</h3>
+        </a>
+        
+      </div>
+      <div class="col-l-3 col-6 col-s-nopadding">
+        <a href="/klein-visual-dev/portfolio/design/" class="hover-panel">
+          <img class="hover-panel__img" src="/klein-visual-dev/img/llamas/llama-web.png" alt="A view" />
+          <h3>Web Design</h3>
+        </a>
+      </div>
+      <div class="col-l-3 col-6 col-s-nopadding">
+        <a href="/klein-visual-dev/portfolio/design/" class="hover-panel">
+          <img class="hover-panel__img" src="/klein-visual-dev/img/llamas/llama-photo.png" alt="A view" />
+          <h3>Photography</h3>
+        </a>
+      </div>
+      <div class="col-l-3 col-6 col-s-nopadding">
+        <a href="/klein-visual-dev/portfolio/design/" class="hover-panel">
+          <img class="hover-panel__img" src="/klein-visual-dev/img/llamas/llama-fancy.png" alt="A view" />
+          <h3>Video + Motion Graphics</h3>
+        </a>
+      </div>
+  </section>
+  
+  
+  
+  
+  
 </main>
 
   
@@ -186,7 +241,7 @@
   <footer class="footer  green ">
     <div class="row">
       <div class="col-12">
-        <h2 class="light">Let's Connect.</h2>
+        <h2 class="footer__header  light">Let's Connect.</h2>
         <ul class="footer__social">
           <li class="footer__social-item"><a title="(443) 593-558" href="tel:4435935538" class="icon-phone-square"></a></li>
           <li class="footer__social-item"><a title="Hi@KleinVisual.com" href="mailto:hi@kleinvisual.com" class="icon-envelope"></a></li>
@@ -210,7 +265,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script src="/klein-visual-dev/js/tota11y.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!--<script src="/klein-visual-dev/js/tota11y.min.js"></script>-->
 <script src="/klein-visual-dev/js/clouds.js"></script>
 <script src="/klein-visual-dev/js/access.js"></script>
 <script>

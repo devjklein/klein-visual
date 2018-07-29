@@ -4,7 +4,7 @@ layout: default
 current: index
 ---
 
-<main>
+<main class="content  white">
   <!-- Home background & introduction -->
   <section class="splash  overflow  green" aria-label="Homepage introduction" >
       <div class="row">
@@ -18,7 +18,7 @@ current: index
             </div>
             
             <div class="splash__avatar">
-              <img src="{{ "/img/dk.jpg" | relative_url }}" alt="avatar">
+              <img src="{{ "/img/portraits/me-light.jpg" | relative_url }}" alt="avatar">
             </div>
         </div>
         
@@ -47,41 +47,83 @@ current: index
   
   
   
-  <section class="row content" aria-label="Design Samples">
+  <section class="row  white  full" aria-label="Design Samples">
     
-      <h2>Explore exceptional.</h2>
+      <h2>Featured Projects</h2>
       
-      <div class="col-6 col-s-nopadding" >
-        <a href="{{ "/showcase/roaming-wild" | relative_url }}" class="hover-panel">
-          <div class="hover-panel__unit">
-            <img class="hover-panel__img" src="{{ "/img/proj/roaming-wild-hero-m.jpg" | relative_url }}" alt="A view of Mount Godwin-Austen, the second highest mountain in the world, with the Roaming Wild logo mark overlayed in white. Mountain photo source credit: Flickr user Maria Ly">
+      {% for project in site.portfolio %}
+        {% if project.featured == 1 %}
+          <div class="col-4 col-s-nopadding" >
+            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+              <img class="hover-panel__img" src="{{ project.img | relative_url }}" alt="{{ project.alt }}">
+              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+            </a>
           </div>
-          <span class="green">View Project</span>
-        </a>
-      </div>
+        {% endif %}
+      {% endfor %}
       
-      <div class="col-6  col-s-nopadding" >
-        <a href="{{ "/showcase/ttw" | relative_url }}" class="hover-panel">
-        <div class="hover-panel__unit">
-          <img class="hover-panel__img" src="{{ "/img/proj/teaching-the-word-hero-m.jpg" | relative_url }}" alt="The blue and orange Teaching the Word shield and sword logo on a tan, backlit background.">
-        </div>
-        <span class="green">View Project</span>
-        </a>
-      </div>
-      
-      <div class="col-6  col-s-nopadding">
-        <a href="{{ "/showcase/ccc" | relative_url }}" class="hover-panel">
-          <div class="hover-panel__unit">
-            <img class="hover-panel__img" src="{{ "/img/proj/ccc-registration-hero-m.jpg" | relative_url }}" alt="A poster which reads STOP, REGISTER, and PAY LATER next to a illustrated traffic light. Below this, colorful yellow, green, and red text states student registration resources at Carroll Community College.">
+      {% for project in site.portfolio %}
+        {% if project.featured == 2 %}
+          <div class="col-4 col-s-nopadding" >
+            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+              <img class="hover-panel__img" src="{{ project.img | relative_url }}" alt="{{ project.alt }}">
+              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+            </a>
           </div>
-          <span class="green">View Project</span>
-        </a>
-      </div>
+        {% endif %}
+      {% endfor %}
+      
+      {% for project in site.portfolio %}
+        {% if project.featured == 3 %}
+          <div class="col-4 col-s-nopadding" >
+            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+              <img class="hover-panel__img" src="{{ project.img | relative_url }}" alt="{{ project.alt }}">
+              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
       
       <div class="col-12">
-        <h3>Want to see more?</h3>
-        <a class="btn  btn--center  btn--large" href="#">View My Work.</a>
+        <a class="btn  btn--center  btn--large" href="#">See More</a>
       </div>
       
   </section>
+  
+  
+  
+  
+    <section class="row  white  full" aria-label="Capabilities">
+    <h2>My Capabilities</h2>
+      <div class="col-l-3 col-6 col-s-nopadding">
+        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
+          <img class="hover-panel__img" src="{{ "/img/llamas/llama-branding.png" | relative_url }}" alt="A view">
+          <h3>Branding</h3>
+        </a>
+        
+      </div>
+      <div class="col-l-3 col-6 col-s-nopadding">
+        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
+          <img class="hover-panel__img" src="{{ "/img/llamas/llama-web.png" | relative_url }}" alt="A view">
+          <h3>Web Design</h3>
+        </a>
+      </div>
+      <div class="col-l-3 col-6 col-s-nopadding">
+        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
+          <img class="hover-panel__img" src="{{ "/img/llamas/llama-photo.png" | relative_url }}" alt="A view">
+          <h3>Photography</h3>
+        </a>
+      </div>
+      <div class="col-l-3 col-6 col-s-nopadding">
+        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
+          <img class="hover-panel__img" src="{{ "/img/llamas/llama-fancy.png" | relative_url }}" alt="A view">
+          <h3>Video + Motion Graphics</h3>
+        </a>
+      </div>
+  </section>
+  
+  
+  
+  
+  
 </main>

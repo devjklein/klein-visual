@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<main class="row  content  white">
+  <header class="blog-header  green">
+    <h1 class="light">{{ page.title }}</h1>
+  </header>
+  {% for project in site.portfolio %}
+    <div class="col-4 col-s-nopadding" >
+      <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+        <img class="hover-panel__img" src="{{ project.img | relative_url }}" alt="{{ project.alt }}">
+        <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+      </a>
+    </div>
+  {% endfor %}
+</main>

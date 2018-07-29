@@ -1,4 +1,4 @@
-<svg id="llama-suit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.62 71.29">
+<svg id="llama-suit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 86">
   <defs>
     <style>
       .cls-1 {
@@ -93,8 +93,12 @@
 		animation: tail 9s .5s linear infinite normal;
 		transform-origin: 15px 45px;
 	  }
+    #llama-fancy {
+     transform: translate(25px,5px);
+    }
     </style>
   </defs>
+  <g id="llama-fancy">
   <ellipse id="shadow" class="cls-1" cx="15.95" cy="68.11" rx="15.19" ry="3.19"/>
   <g id="llama-2">
     <g id="legs">
@@ -136,5 +140,6 @@
       <polygon class="cls-8" points="26.29 32.83 29.11 31.29 26.29 29.75 26.29 32.83"/>
       <polygon class="cls-8" points="29.11 31.29 31.81 32.83 31.81 29.75 29.11 31.29"/>
     </g>
+  </g>
   </g>
 </svg>

@@ -24,6 +24,23 @@ url: "localhost:4000"
 twitter_username:  ""
 github_username:  ""
 
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:categories/:path
+    
+defaults:
+  - scope:
+      path: "blog"
+      type: "posts"
+    values:
+      layout: "blog-post"
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "project"
+
 # Build settings
 markdown: kramdown
 
@@ -35,14 +52,6 @@ theme: minima
 plugins:
   - jekyll-feed
   
-defaults:
-  -
-    scope:
-      path: "blog"
-      type: "posts"
-    values:
-      layout: "blog-post"
-    
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

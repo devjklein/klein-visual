@@ -10,8 +10,6 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
   <link rel="stylesheet" href="/klein-visual-dev/css/styles.css">
-  <link rel="stylesheet" href="/klein-visual-dev/css/font-styles.css">
-  <link rel="stylesheet" href="/klein-visual-dev/css/syntax-default.css">
   
   
   <!-- Fonts -->
@@ -34,11 +32,13 @@
     </div>
     
     <div class="row">    
-      <div class="col-12">
-        <div class="logo-tag">
-          <img src="/klein-visual-dev/img/logo-color-lg.svg" alt="Klein Visual Logo Large" class="logo--large">
-          <img src="/klein-visual-dev/img/logo-color-sm.svg" alt="Klein Visual Logo Small" class="logo--small">
-        </div>
+      <div class="col-12  top-bar__no-margin">
+        <a href="/klein-visual-dev/index">
+          <div class="logo-tag">
+            <img class="logo--large" src="/klein-visual-dev/img/logo-color-lg.svg" alt="Klein Visual Logo Large">
+            <img class="logo--small" src="/klein-visual-dev/img/logo-color-sm.svg" alt="Klein Visual Logo Small">
+          </div>
+         </a>
         
         
         
@@ -69,11 +69,12 @@
             <li><a class="main-nav__item" href="/klein-visual-dev/index" >Home</a></li>
             
             <li class="nav-dropdown">
-              <a class="main-nav__item" href="#work"  aria-haspopup="true" aria-expanded="false">Work</a>
+              <a class="main-nav__item" href="/klein-visual-dev/portfolio"  aria-haspopup="true" aria-expanded="false">Portfolio</a>
               <ul class="green">
-                <li><a class="main-nav__item" href="#design">Design</a></li>
-                <li><a class="main-nav__item" href="#photo">Photography</a></li>
-                <li><a class="main-nav__item" href="#sound">Sound Design</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#design">Design</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#photography">Photography</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#video">Video + Motion Graphics</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#computer-graphics">Computer Graphics</a></li>
               </ul>
             </li>
             
@@ -124,7 +125,7 @@
   <footer class="footer  green ">
     <div class="row">
       <div class="col-12">
-        <h2 class="light">Let's Connect.</h2>
+        <h2 class="footer__header  light">Let's Connect.</h2>
         <ul class="footer__social">
           <li class="footer__social-item"><a title="(443) 593-558" href="tel:4435935538" class="icon-phone-square"></a></li>
           <li class="footer__social-item"><a title="Hi@KleinVisual.com" href="mailto:hi@kleinvisual.com" class="icon-envelope"></a></li>
@@ -148,7 +149,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script src="/klein-visual-dev/js/tota11y.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!--<script src="/klein-visual-dev/js/tota11y.min.js"></script>-->
 <script src="/klein-visual-dev/js/clouds.js"></script>
 <script src="/klein-visual-dev/js/access.js"></script>
 <script>

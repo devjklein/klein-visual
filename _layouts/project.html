@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<main class="row  content  white">
+  <section class="blog-header  green">
+    <h1 class="light">
+      {{ page.title }}
+    </h1>    
+  </section>
+
+  <article class="row  white">
+    <p>Categories:
+      {% for category in page.categories %}
+        <a class="tag" href="{{ site.baseurl }}/portfolio#{{category}}">{{ category }}</a>
+      {% endfor %}
+    </p>
+    
+    <div class="col-12">
+      {{ content }}
+    </div>
+  </article>
+</main>

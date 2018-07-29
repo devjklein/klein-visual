@@ -10,8 +10,6 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
   <link rel="stylesheet" href="{{ "/css/styles.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/css/font-styles.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/css/syntax-default.css" | relative_url }}">
   
   
   <!-- Fonts -->
@@ -34,11 +32,13 @@
     </div>
     
     <div class="row">    
-      <div class="col-12">
-        <div class="logo-tag">
-          <img src="{{ "/img/logo-color-lg.svg" | relative_url }}" alt="Klein Visual Logo Large" class="logo--large">
-          <img src="{{ "/img/logo-color-sm.svg" | relative_url }}" alt="Klein Visual Logo Small" class="logo--small">
-        </div>
+      <div class="col-12  top-bar__no-margin">
+        <a href="{{ "/index" | relative_url }}">
+          <div class="logo-tag">
+            <img class="logo--large" src="{{ "/img/logo-color-lg.svg" | relative_url }}" alt="Klein Visual Logo Large">
+            <img class="logo--small" src="{{ "/img/logo-color-sm.svg" | relative_url }}" alt="Klein Visual Logo Small">
+          </div>
+         </a>
         
         
         
@@ -69,11 +69,12 @@
             <li><a class="main-nav__item" href="{{ "/index" | relative_url }}" {% if page.current == 'index' %}aria-current="page"{% endif %}>Home</a></li>
             
             <li class="nav-dropdown">
-              <a class="main-nav__item" href="#work" {% if page.current == 'work' %}aria-current="page"{% endif %} aria-haspopup="true" aria-expanded="false">Work</a>
+              <a class="main-nav__item" href="{{ "/portfolio" | relative_url }}" {% if page.current == 'portfolio' %}aria-current="page"{% endif %} aria-haspopup="true" aria-expanded="false">Portfolio</a>
               <ul class="green">
-                <li><a class="main-nav__item" href="#design">Design</a></li>
-                <li><a class="main-nav__item" href="#photo">Photography</a></li>
-                <li><a class="main-nav__item" href="#sound">Sound Design</a></li>
+                <li><a class="main-nav__item" href="{{ "/portfolio#design" | relative_url }}">Design</a></li>
+                <li><a class="main-nav__item" href="{{ "/portfolio#photography" | relative_url }}">Photography</a></li>
+                <li><a class="main-nav__item" href="{{ "/portfolio#video" | relative_url }}">Video + Motion Graphics</a></li>
+                <li><a class="main-nav__item" href="{{ "/portfolio#computer-graphics" | relative_url }}">Computer Graphics</a></li>
               </ul>
             </li>
             
@@ -105,7 +106,7 @@
   <footer class="footer  green ">
     <div class="row">
       <div class="col-12">
-        <h2 class="light">Let's Connect.</h2>
+        <h2 class="footer__header  light">Let's Connect.</h2>
         <ul class="footer__social">
           <li class="footer__social-item"><a title="(443) 593-558" href="tel:4435935538" class="icon-phone-square"></a></li>
           <li class="footer__social-item"><a title="Hi@KleinVisual.com" href="mailto:hi@kleinvisual.com" class="icon-envelope"></a></li>
@@ -129,7 +130,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script src="{{ "/js/tota11y.min.js" | relative_url }}"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!--<script src="{{ "/js/tota11y.min.js" | relative_url }}"></script>-->
 <script src="{{ "/js/clouds.js" | relative_url }}"></script>
 <script src="{{ "/js/access.js" | relative_url }}"></script>
 <script>

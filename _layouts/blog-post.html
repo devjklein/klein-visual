@@ -1,14 +1,23 @@
 ---
 layout: default
 ---
-<main class="row content">
-  <section class="blog-header  green">
-    <h1 class="light">{{ page.title }}</h1>
+<main class="row  content  white">
+  <section class="blog-header  green  content">
+    <h1 class="light">
+      {{ page.title }}
+    </h1>
     <p>{{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
+    <p><strong>{{page.time}} minute read</strong></p>
+    
   </section>
 
-
-  <article class="row  content">
+  <article class="row  white">
+    <p>Tags:
+      {% for tag in page.tags %}
+        <a class="tag" href="{{ site.baseurl }}/blog/tags/#{{tag}}">{{ tag }}</a>
+      {% endfor %}
+    </p>
+    
     <div class="col-12">
       {{ content }}
     </div>
