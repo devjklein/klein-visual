@@ -6,12 +6,21 @@ layout: default
   <header class="blog-header  green">
     <h1 class="light">{{ page.title }}</h1>
   </header>
-  {% for project in site.portfolio %}
-    <div class="col-4 col-s-nopadding" >
-      <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-        <img class="hover-panel__img" src="{{ project.img | relative_url }}" alt="{{ project.alt }}">
-        <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
-      </a>
-    </div>
-  {% endfor %}
+  <div class="js-portfolio-filter  col-12  clear-float">
+    <button class="btn--small  active" data-filter="*">Show All</button>
+    <button class="btn--small" data-filter=".js-filter-Branding">Branding</button>
+    <button class="btn--small" data-filter=".js-filter-Computer-Graphics">Computer Graphics</button>
+    <button class="btn--small" data-filter=".js-filter-Motion-Graphics">Video + Motion Graphics</button>
+  </div>
+  
+  <div class="grid">
+    {% for project in site.portfolio %}
+        <div class="col-4  col-s-nopadding  grid-item {% for category in project.categories %}js-filter-{{ category }} {% endfor %}" >
+          <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+            <img class="hover-panel__img" src="{{ project.image | relative_url }}" alt="{{ project.alt }}">
+            <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+          </a>
+        </div>
+    {% endfor %}
+  </div>
 </main>

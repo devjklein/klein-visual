@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
-<main class="row  content">
+<main class="row  content  white">
     <header class="blog-header  green">
       <h1 class="light">{{ page.title }}</h1>
     </header>
-    
-    {{ content }}
 
-      <ul class="myposts">
-      {% for post in site.posts %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+    {% for post in site.posts %}
+     <div class="col-6">
+        <a class="hover-panel" href="{{ site.baseurl }}{{ post.url }}">
+          <img class="hover-panel__img" src="{{ post.image | relative_url }}" alt="{{ post.alt }}">
+          <h3>{{ post.title}}</h3>
           <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </li>
-      {% endfor %}
-      </ul>
+        </a>
+    </div>
+    {% endfor %}
+
 </main>

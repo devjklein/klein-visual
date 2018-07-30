@@ -71,10 +71,8 @@
             <li class="nav-dropdown">
               <a class="main-nav__item" href="/klein-visual-dev/portfolio"  aria-haspopup="true" aria-expanded="false">Portfolio</a>
               <ul class="green">
-                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#design">Design</a></li>
-                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#photography">Photography</a></li>
-                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#video">Video + Motion Graphics</a></li>
-                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#computer-graphics">Computer Graphics</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio">Design</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio">Photography</a></li>
               </ul>
             </li>
             
@@ -97,25 +95,29 @@
   
   
   
-  <main class="row  content">
+  <main class="row  content  white">
     <header class="blog-header  green">
       <h1 class="light">Blog</h1>
     </header>
+
     
+     <div class="col-6">
+        <a class="hover-panel" href="/klein-visual-dev/blog/2018/07/28/klein-visual-live.html">
+          <img class="hover-panel__img" src="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png" alt="">
+          <h3>Klein Visual Live!</h3>
+          <span class="postDate">Jul 28, 2018</span>
+        </a>
+    </div>
+    
+     <div class="col-6">
+        <a class="hover-panel" href="/klein-visual-dev/blog/2018/07/26/klein-visual-almost.html">
+          <img class="hover-panel__img" src="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png" alt="">
+          <h3>Klein Visual almost live!</h3>
+          <span class="postDate">Jul 26, 2018</span>
+        </a>
+    </div>
     
 
-
-      <ul class="myposts">
-      
-          <li><a href="/klein-visual-dev/blog/2018/07/03/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-          <span class="postDate">Jul 3, 2018</span>
-          </li>
-      
-          <li><a href="/klein-visual-dev/blog/2018/07/01/klein-visual-going-live.html">Klein Visual Live!</a>
-          <span class="postDate">Jul 1, 2018</span>
-          </li>
-      
-      </ul>
 </main>
   
   
@@ -144,10 +146,8 @@
   </footer>
 </body>
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <!--<script src="/klein-visual-dev/js/tota11y.min.js"></script>-->
@@ -163,5 +163,18 @@
   initClouds($("#js-mtn-clouds-lg"),40,"lg", 5);
   var scene = document.getElementById('js-mtn-scene');
   var parallaxInstance = new Parallax(scene);
+</script>
+<script>
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+
+$('.js-portfolio-filter').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+  $(".js-portfolio-filter > button").removeClass("active");
+  $(this).addClass("active");
+});
 </script>
 </html>

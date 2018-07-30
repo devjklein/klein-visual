@@ -1,10 +1,12 @@
 ---
-title: Klein Visual Live!
+title: Klein Visual almost live!
 tags: News
 author: David Klein
+image: /img/blog/klein-visual-live/abstract-header-01.png
+read-time: 12
 ---
 
-Some sample content in post number 1. *here's some strong text* **and here's bold**
+Some sample content in post number 1. *here's some trong text* **and here's bold**
 
 
 Here's a [link](1)

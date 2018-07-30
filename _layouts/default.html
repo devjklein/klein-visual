@@ -71,10 +71,8 @@
             <li class="nav-dropdown">
               <a class="main-nav__item" href="{{ "/portfolio" | relative_url }}" {% if page.current == 'portfolio' %}aria-current="page"{% endif %} aria-haspopup="true" aria-expanded="false">Portfolio</a>
               <ul class="green">
-                <li><a class="main-nav__item" href="{{ "/portfolio#design" | relative_url }}">Design</a></li>
-                <li><a class="main-nav__item" href="{{ "/portfolio#photography" | relative_url }}">Photography</a></li>
-                <li><a class="main-nav__item" href="{{ "/portfolio#video" | relative_url }}">Video + Motion Graphics</a></li>
-                <li><a class="main-nav__item" href="{{ "/portfolio#computer-graphics" | relative_url }}">Computer Graphics</a></li>
+                <li><a class="main-nav__item" href="{{ "/portfolio" | relative_url }}">Design</a></li>
+                <li><a class="main-nav__item" href="{{ "/portfolio" | relative_url }}">Photography</a></li>
               </ul>
             </li>
             
@@ -125,10 +123,8 @@
   </footer>
 </body>
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <!--<script src="{{ "/js/tota11y.min.js" | relative_url }}"></script>-->
@@ -144,5 +140,18 @@
   initClouds($("#js-mtn-clouds-lg"),40,"lg", 5);
   var scene = document.getElementById('js-mtn-scene');
   var parallaxInstance = new Parallax(scene);
+</script>
+<script>
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+
+$('.js-portfolio-filter').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+  $(".js-portfolio-filter > button").removeClass("active");
+  $(this).addClass("active");
+});
 </script>
 </html>

@@ -55,7 +55,7 @@ current: index
         {% if project.featured == 1 %}
           <div class="col-4 col-s-nopadding" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              <img class="hover-panel__img" src="{{ project.img | relative_url }}" alt="{{ project.alt }}">
+              <img class="hover-panel__img" src="{{ project.image | relative_url }}" alt="{{ project.alt }}">
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -66,7 +66,7 @@ current: index
         {% if project.featured == 2 %}
           <div class="col-4 col-s-nopadding" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              <img class="hover-panel__img" src="{{ project.img | relative_url }}" alt="{{ project.alt }}">
+              <img class="hover-panel__img" src="{{ project.image | relative_url }}" alt="{{ project.alt }}">
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -77,7 +77,7 @@ current: index
         {% if project.featured == 3 %}
           <div class="col-4 col-s-nopadding" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              <img class="hover-panel__img" src="{{ project.img | relative_url }}" alt="{{ project.alt }}">
+              <img class="hover-panel__img" src="{{ project.image | relative_url }}" alt="{{ project.alt }}">
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -85,7 +85,7 @@ current: index
       {% endfor %}
       
       <div class="col-12">
-        <a class="btn  btn--center  btn--large" href="#">See More</a>
+        <a class="btn  btn--center  btn--large" href="{{ "/portfolio" | relative_url }}">See More</a>
       </div>
       
   </section>

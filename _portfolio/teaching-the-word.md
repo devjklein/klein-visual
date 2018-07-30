@@ -1,8 +1,8 @@
 ---
 title: TeachingTheWord Brand
-categories: design
+categories: Design Branding
 author: David Klein
-img: /img/proj/teaching-the-word-hero-m.jpg
+image: /img/proj/teaching-the-word-hero-m.jpg
 featured: 2
 ---
 

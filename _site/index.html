@@ -71,10 +71,8 @@
             <li class="nav-dropdown">
               <a class="main-nav__item" href="/klein-visual-dev/portfolio"  aria-haspopup="true" aria-expanded="false">Portfolio</a>
               <ul class="green">
-                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#design">Design</a></li>
-                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#photography">Photography</a></li>
-                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#video">Video + Motion Graphics</a></li>
-                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio#computer-graphics">Computer Graphics</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio">Design</a></li>
+                <li><a class="main-nav__item" href="/klein-visual-dev/portfolio">Photography</a></li>
               </ul>
             </li>
             
@@ -166,7 +164,7 @@
       
         
           <div class="col-4 col-s-nopadding">
-            <a href="/klein-visual-dev/portfolio/design/teaching-the-word" class="hover-panel">
+            <a href="/klein-visual-dev/portfolio/design/branding/teaching-the-word" class="hover-panel">
               <img class="hover-panel__img" src="/klein-visual-dev/img/proj/teaching-the-word-hero-m.jpg" alt="" />
               <div class="hover-panel__overlay  green"><h3 class="light">TeachingTheWord Brand</h3></div>
             </a>
@@ -179,7 +177,7 @@
       
         
           <div class="col-4 col-s-nopadding">
-            <a href="/klein-visual-dev/portfolio/design/computer-graphics/still-life" class="hover-panel">
+            <a href="/klein-visual-dev/portfolio/computer-graphics/still-life" class="hover-panel">
               <img class="hover-panel__img" src="/klein-visual-dev/img/proj/painted-still-life-crop.jpg" alt="" />
               <div class="hover-panel__overlay  green"><h3 class="light">Still Life with Cheese and Wine</h3></div>
             </a>
@@ -190,7 +188,7 @@
       
       
       <div class="col-12">
-        <a class="btn  btn--center  btn--large" href="#">See More</a>
+        <a class="btn  btn--center  btn--large" href="/klein-visual-dev/portfolio">See More</a>
       </div>
       
   </section>
@@ -260,10 +258,8 @@
   </footer>
 </body>
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <!--<script src="/klein-visual-dev/js/tota11y.min.js"></script>-->
@@ -279,5 +275,18 @@
   initClouds($("#js-mtn-clouds-lg"),40,"lg", 5);
   var scene = document.getElementById('js-mtn-scene');
   var parallaxInstance = new Parallax(scene);
+</script>
+<script>
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+
+$('.js-portfolio-filter').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+  $(".js-portfolio-filter > button").removeClass("active");
+  $(this).addClass("active");
+});
 </script>
 </html>
