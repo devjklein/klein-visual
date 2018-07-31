@@ -2,8 +2,7 @@
 title: Still Life with Cheese and Wine
 categories: Computer-Graphics
 author: David Klein
-image: /img/proj/painted-still-life-crop.jpg
-image-full: /img/proj/painted-still-life-crop.jpg
+image: /img/portfolio/painted-still-life/painted-still-life_lg-1x.jpg
 layout: portfolio-page--image
 featured: 3
 ---

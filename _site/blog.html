@@ -19,7 +19,7 @@
   <!-- Icons -->
   <link rel="shortcut icon" href="/klein-visual-dev/img/favicon.ico" type="image/x-icon">
   
-  
+  <script src="/klein-visual-dev/js/lazysizes.min.js"></script>
 </head>
 <body>
   <header class="top-bar  green">
@@ -103,6 +103,29 @@
     
      <div class="col-6">
         <a class="hover-panel" href="/klein-visual-dev/blog/2018/07/28/klein-visual-live.html">
+            
+            
+            <picture class="lazyload">
+ <source
+   media="(min-width: 900px)"
+   srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.webp 1x, /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-2x.webp 2x"
+   type="image/webp" >
+ <source
+   media="(min-width: 601px)"
+   srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_md-1x.webp 1x, /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_md-2x.webp 2x"
+   type="image/webp" >
+ <source
+   srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_sm-1x.webp 1x, /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_sm-2x.webp 2x"
+   type="image/webp" >
+ <img 
+   srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_sm-1x.jpg 600w,
+   /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.pngmd-1x.jpg 900w,
+   /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.jpg 1440w"
+   src="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.jpg"
+   type="image/jpeg"
+   alt="">
+</picture>
+          
           <img class="hover-panel__img" src="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png" alt="">
           <h3>Klein Visual Live!</h3>
           <span class="postDate">Jul 28, 2018</span>
@@ -111,6 +134,29 @@
     
      <div class="col-6">
         <a class="hover-panel" href="/klein-visual-dev/blog/2018/07/26/klein-visual-almost.html">
+            
+            
+            <picture class="lazyload">
+ <source
+   media="(min-width: 900px)"
+   srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.webp 1x, /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-2x.webp 2x"
+   type="image/webp" >
+ <source
+   media="(min-width: 601px)"
+   srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_md-1x.webp 1x, /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_md-2x.webp 2x"
+   type="image/webp" >
+ <source
+   srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_sm-1x.webp 1x, /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_sm-2x.webp 2x"
+   type="image/webp" >
+ <img 
+   srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_sm-1x.jpg 600w,
+   /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.pngmd-1x.jpg 900w,
+   /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.jpg 1440w"
+   src="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.jpg"
+   type="image/jpeg"
+   alt="">
+</picture>
+          
           <img class="hover-panel__img" src="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png" alt="">
           <h3>Klein Visual almost live!</h3>
           <span class="postDate">Jul 26, 2018</span>
@@ -145,25 +191,15 @@
     </div>
   </footer>
 </body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <!--<script src="/klein-visual-dev/js/tota11y.min.js"></script>-->
-<script src="/klein-visual-dev/js/clouds.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="/klein-visual-dev/js/access.js"></script>
-<script>
-  //c = container
-  //d = duration (default 100/40)
-  //z = scale
-  //a = amount (default 40/15)
-  initClouds($("#js-mtn-clouds-sm"),100,"sm", 20);
-  initClouds($("#js-mtn-clouds-md"),60,"md", 5);
-  initClouds($("#js-mtn-clouds-lg"),40,"lg", 5);
-  var scene = document.getElementById('js-mtn-scene');
-  var parallaxInstance = new Parallax(scene);
-</script>
+
+
+
+
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script>
 var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
@@ -175,6 +211,40 @@ $('.js-portfolio-filter').on( 'click', 'button', function() {
   $grid.isotope({ filter: filterValue });
   $(".js-portfolio-filter > button").removeClass("active");
   $(this).addClass("active");
+});
+</script>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="/klein-visual-dev/js/clouds.js"></script>
+<script>
+  //c = container
+  //d = duration (default 100/40)
+  //z = scale
+  //a = amount (default 40/15)
+  initClouds($("#js-mtn-clouds-sm"),100,"sm", 20);
+  initClouds($("#js-mtn-clouds-md"),60,"md", 5);
+  initClouds($("#js-mtn-clouds-lg"),40,"lg", 5);
+  var scene = document.getElementById('js-mtn-scene');
+  var parallaxInstance = new Parallax(scene);
+</script>
+
+
+
+
+
+<script>
+$(".modal-image").on( "click", function() {
+  $('#modal').fadeIn("fast");
+  $('.modal--content')[0].src = $(this).children("img")[0].src;
+  $('.modal--caption')[0].innerHTML = $(this).children("img")[0].alt;
+});
+$(".modal--close").on( "click", function() { 
+    $('.modal').fadeOut("fast");
 });
 </script>
 </html>

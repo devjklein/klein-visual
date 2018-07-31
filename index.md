@@ -18,7 +18,7 @@ current: index
             </div>
             
             <div class="splash__avatar">
-              <img src="{{ "/img/portraits/me-light.jpg" | relative_url }}" alt="avatar">
+              {% include image.html url="img/portraits/me-light" alt="Portrait of David Klein" %}
             </div>
         </div>
         
@@ -55,7 +55,9 @@ current: index
         {% if project.featured == 1 %}
           <div class="col-4 col-s-nopadding" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              <img class="hover-panel__img" src="{{ project.image | relative_url }}" alt="{{ project.alt }}">
+              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture alt %}{{ project.alt }}{% endcapture %}
+              {% include image.html url=image alt=alt%}
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -66,7 +68,9 @@ current: index
         {% if project.featured == 2 %}
           <div class="col-4 col-s-nopadding" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              <img class="hover-panel__img" src="{{ project.image | relative_url }}" alt="{{ project.alt }}">
+              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture alt %}{{ project.alt }}{% endcapture %}
+              {% include image.html url=image alt=alt%}
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -77,7 +81,9 @@ current: index
         {% if project.featured == 3 %}
           <div class="col-4 col-s-nopadding" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              <img class="hover-panel__img" src="{{ project.image | relative_url }}" alt="{{ project.alt }}">
+              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture alt %}{{ project.alt }}{% endcapture %}
+              {% include image.html url=image alt=alt%}
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -97,26 +103,26 @@ current: index
     <h2>My Capabilities</h2>
       <div class="col-l-3 col-6 col-s-nopadding">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          <img class="hover-panel__img" src="{{ "/img/llamas/llama-branding.png" | relative_url }}" alt="A view">
+          {% include image.html url="/img/llamas/llama-branding" alt="Llama in front of an easel with a color wheel painted on" %}
           <h3>Branding</h3>
         </a>
         
       </div>
       <div class="col-l-3 col-6 col-s-nopadding">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          <img class="hover-panel__img" src="{{ "/img/llamas/llama-web.png" | relative_url }}" alt="A view">
+          {% include image.html url="/img/llamas/llama-web" alt="Llama in front of an computer screen with a generic website shown" %}
           <h3>Web Design</h3>
         </a>
       </div>
       <div class="col-l-3 col-6 col-s-nopadding">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          <img class="hover-panel__img" src="{{ "/img/llamas/llama-photo.png" | relative_url }}" alt="A view">
+          {% include image.html url="/img/llamas/llama-photo" alt="Llama with a camera on a tripod" %}
           <h3>Photography</h3>
         </a>
       </div>
       <div class="col-l-3 col-6 col-s-nopadding">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          <img class="hover-panel__img" src="{{ "/img/llamas/llama-fancy.png" | relative_url }}" alt="A view">
+          {% include image.html url="/img/llamas/llama-fancy" alt="Llama with an old film camera on a tripod" %}
           <h3>Video + Motion Graphics</h3>
         </a>
       </div>

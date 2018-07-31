@@ -2,18 +2,30 @@
 layout: default
 ---
 <main class="row  content  white">
-    <header class="blog-header  green">
-      <h1 class="light">Gallery</h1>
-    </header>
-    
-    <div class="col-6">
-      <img class="" src="{{ page.image | relative_url }}" alt="">
-    </div>
-    <article class="col-6" >
-      {{ content }}
-    </article>
-    
-    
-
-    
+  <header class="blog-header  green">
+    <h1 class="light">Gallery</h1>
+  </header>
+  <div class="col-6">
+    <a class="hover-panel modal-image" href="#">
+      {% capture image %}{{ page.image | split: '_' | first}}{% endcapture %}
+      {% capture alt %}{{ page.alt }}{% endcapture %}
+      {% include image.html url=image alt=alt%}
+      <div class="hover-panel__overlay  green"><h3 class="light">View Larger</h3></div>
+    </a>
+  </div>
+  <article class="col-6  image" >
+    {{ content }}
+  </article>
 </main>
+
+
+
+
+
+<div class="modal  row  center" id="modal">
+  <div class="modal--container">
+    <button class="modal--close">&times;</button>
+    <img class="modal--content" src="">
+    <span class="modal--caption">Caption text!</span>
+  </div>
+</div>

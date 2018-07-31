@@ -17,7 +17,9 @@ layout: default
     {% for project in site.portfolio %}
         <div class="col-4  col-s-nopadding  grid-item {% for category in project.categories %}js-filter-{{ category }} {% endfor %}" >
           <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-            <img class="hover-panel__img" src="{{ project.image | relative_url }}" alt="{{ project.alt }}">
+            {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+            {% capture alt %}{{ project.alt }}{% endcapture %}
+            {% include image.html url=image alt=alt%}
             <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
           </a>
         </div>

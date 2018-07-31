@@ -2,36 +2,36 @@
 title: Roaming Wild Logo
 categories: Design Branding
 author: David Klein
-image: /img/proj/roaming-wild/roaming-wild-hero-m.jpg
+image: /img/portfolio/roaming-wild/rw-hero-portrait_lg-1x.jpg
 alt: Roaming Wild
 read-time: 12
 featured: 1
 ---
 
-![Roaming Wild Logo]({{ "/img/proj/roaming-wild/rw-logo-finals-crop.png" | relative_url }})
+![Roaming Wild Logo]({{ "/img/portfolio/roaming-wild/rw-logo-finals-crop.png" | relative_url }})
 
-## Client
-### Roaming Wild
-
-## Design Process
-
-### The challenge
+#Roaming Wild Logo
 
 Roaming Wild, a startup outdoor/adventure company, required a rugged, powerful, and versatile logo to represent and serve as the emblem of their mission to promote awareness of outdoor activities, conservation, and utilization of public lands.
 
+## What I did
+
+Sketching, Illustration
+
+## Design Process
 
 ### Concept Sketches
 
-![Roaming Wild concept sketches]({{ "/img/proj/roaming-wild/rw-concepts-page-03.jpg" | relative_url }})
-![More Roaming Wild concept sketches]({{ "/img/proj/roaming-wild/rw-concepts-page-04.jpg" | relative_url }})
+![Roaming Wild concept sketches]({{ "/img/portfolio/roaming-wild/rw-concepts-page-03.jpg" | relative_url }})
+![More Roaming Wild concept sketches]({{ "/img/portfolio/roaming-wild/rw-concepts-page-04.jpg" | relative_url }})
 
 ### Rationale
 
-![Roaming Wild logo placed over image of hikers climing a ridge]({{ "/img/proj/roaming-wild/rw-hiking.jpg" | relative_url }})
+![Roaming Wild logo placed over image of hikers climing a ridge]({{ "/img/portfolio/roaming-wild/rw-hiking.jpg" | relative_url }})
 
 The RW logo mark meets this need by fusing the power and grandeur of a mountain with the company initials – a representation of the fusion of many anonymous individuals into a collective with a single goal: to explore and experience the great outdoors. Additionally, many interacting diagonal forms instill a sense of motion, a quality that functions as a call to action, while the subtle silhouette of a half hidden sun in the sky, the right “bowl” of the letter R, suggests an ongoing journey – that the best is yet to come.
 
-![Roaming Wild logo on several products including shirts, jackets, and hats]({{ "/img/proj/roaming-wild/rw-products.jpg" | relative_url }})
+![Roaming Wild logo on several products including shirts, jackets, and hats]({{ "/img/portfolio/roaming-wild/rw-products.jpg" | relative_url }})
 
 Whether through hiking, skiing, hunting, or fishing, a unique quality of exploration is that it requires dexterity and versatility amidst ever-changing environments; consequently, Roaming Wild required a logo with equal versatility. To satisfy this necessity, the RW logo mark is designed to be exceptionally flexible – it can be reproduced in any color on any contrasting background, and with tactfully crafted simplicity, it can be recognized from distances at which it appears as small as a postage stamp. The logo typeface, Source Sans Pro Black, is simple and bold, and was chosen to reflect the values required of any tool of the outdoors, those being practicality and functionality.
 
@@ -41,7 +41,7 @@ The logo is available in two versions, one with a distressed grungy appearance a
 
 ## Client Testimonial
 
-This design was completed in a competition-style college project for a real client in which ten students competed to design Roaming Wild's new logo for use on their website and merchandise.
+This design was completed as part of a competition-style college project for a real client in which ten students competed to design Roaming Wild's new logo for use on their website and merchandise.
 
 The design above placed 1st and was ultimately chosen as Roaming Wild's new logo, which can be seen in use on their website, <a href="https://www.roamingwildadventures.com/" target="_blank">Roaming Wild Adventures</a>. Below is feedback from the owners of Roaming Wild on the design and presentation.
 

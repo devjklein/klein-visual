@@ -57,7 +57,7 @@ $(dropdownMenu).each(function(i, el){
 			openMenu("dropdown");
 			$(dropdownMenu).attr("hover", "false");
 		};
-		//event.preventDefault();
+		event.preventDefault();
 		event.stopPropagation();
 	};
 
