@@ -6,6 +6,7 @@ image: /img/portfolio/roaming-wild/rw-hero-portrait_lg-1x.jpg
 image-header: /img/portfolio/roaming-wild/rw-hero-header_lg-1x.jpg
 alt: Roaming Wild
 read-time: 12
+comments: true
 featured: 1
 ---
 
@@ -46,3 +47,24 @@ The design above placed 1st and was ultimately chosen as Roaming Wild's new logo
 
 > [David] dressed ready to win the business. He made eye contact, shook our hands and thanked us for the opportunity. He was extremely articulate and [his] presentation skills were that of someone much more experienced and seasoned not only in design but in general business. He understands how to execute a vision, do excellent design work and follow it through [with] a great sales pitch without being over the top. He spoke to what very specific details in the design represented. Specifically, that the emblem should be proud and versatile. He accurately identified that the design should speak to a collective, call to action, people working as a team, a journey. He smoothly looped back initial words or vision that [my business partner] said to him during the first meeting.<br><br>He educated us to what will work and not work in certain situations. He explained that we needed to carry the identity without impeding the process. Specifically, where small sizes with the grungy lettering wouldn't be clear. He provided details about printing processes. He followed that up with alternative solutions that [we] would like or other things we might consider. The fact that he took the time to place logos on items we might brand supported the idea that he understood our vision for not only the design but where we might take the organization. Finally he was the only one that discussed secondary branding elements. As an outsider, this was a key piece of education that I found helpful and can now envision using in clothing or other swag in the future.<br><br>-C & T,<br>Founders, Roaming Wild
 
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://klein-visual.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
