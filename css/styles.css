@@ -107,6 +107,15 @@ body {
   padding: 0;
   background-color: #FFF4EB;
 }
+main {
+  padding-top: 60px;
+  display: block;
+}
+@media (min-width: 768px) {
+  main {
+    padding-top: 120px;
+  }
+}
 /* Nice happy, rounded images*/
 img {
   display: block;
