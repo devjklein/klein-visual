@@ -171,8 +171,8 @@ $('.js-portfolio-filter').on( 'click', 'button', function() {
 <script>
 $(".modal-image").on( "click", function() {
   $('#modal').fadeIn("fast");
-  $('.modal--content')[0].src = $(this).children("img")[0].src;
-  $('.modal--caption')[0].innerHTML = $(this).children("img")[0].alt;
+  $('.modal--content')[0].src = "{{ site.baseurl }}{{ page.image-original}}"
+  //$('.modal--caption')[0].innerHTML = "{{ page.alt}}"
 });
 $(".modal--close").on( "click", function() { 
     $('.modal').fadeOut("fast");

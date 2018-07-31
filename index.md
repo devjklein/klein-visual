@@ -103,26 +103,26 @@ current: index
     <h2>My Capabilities</h2>
       <div class="col-l-3 col-6 col-s-nopadding">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          {% include image.html url="/img/llamas/llama-branding" alt="Llama in front of an easel with a color wheel painted on" %}
+          {% include image-png.html url="/img/llamas/llama-branding" alt="Llama in front of an easel with a color wheel painted on" %}
           <h3>Branding</h3>
         </a>
         
       </div>
       <div class="col-l-3 col-6 col-s-nopadding">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          {% include image.html url="/img/llamas/llama-web" alt="Llama in front of an computer screen with a generic website shown" %}
+          {% include image-png.html url="/img/llamas/llama-web" alt="Llama in front of an computer screen with a generic website shown" %}
           <h3>Web Design</h3>
         </a>
       </div>
       <div class="col-l-3 col-6 col-s-nopadding">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          {% include image.html url="/img/llamas/llama-photo" alt="Llama with a camera on a tripod" %}
+          {% include image-png.html url="/img/llamas/llama-photo" alt="Llama with a camera on a tripod" %}
           <h3>Photography</h3>
         </a>
       </div>
       <div class="col-l-3 col-6 col-s-nopadding">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          {% include image.html url="/img/llamas/llama-fancy" alt="Llama with an old film camera on a tripod" %}
+          {% include image-png.html url="/img/llamas/llama-fancy" alt="Llama with an old film camera on a tripod" %}
           <h3>Video + Motion Graphics</h3>
         </a>
       </div>

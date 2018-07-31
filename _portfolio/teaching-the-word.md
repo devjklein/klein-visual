@@ -19,42 +19,6 @@ https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-t
 https://jekyllrb.com/docs/includes/
 
 
-<figure>
-  <img class="" src="{{ page.image | relative_url }}" alt="">
-  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-</figure>
-
-<img srcset="{{ page.src-image | relative_url }}-320w.jpg 320w,
-             {{ page.src-image | relative_url }}-480w.jpg 480w,
-             {{ page.src-image | relative_url }}-800w.jpg 800w"
-      sizes="(min-width: 768px) 30vw,
-             100vw"
-        src="{{ page.image | relative_url }}" alt="page.alt">
-</img>
-
-<picture>
- <source
-   media=”(min-width: 900px)”
-   srcset=“image-lg_1x.webp 1x, image-lg_2x.webp 2x”
-   type=“image/webp” >
- <source
-   media=”(min-width: 601px)”
-   srcset=“image-md_1x.webp 1x, image-md_2x.webp 2x”
-   type=“image/webp” >
- <source
-   srcset=“image-sm_1x.webp 1x, image-sm_2x.webp 2x”
-   type=“image/webp” >
- <img 
-   srcset=“image-sm_1x.jpg 600w,
-           image-md_1x.jpg 900w,
-           image-lg_1x.jpg 1440w”
-   src=“image_lg_1x.jpg”
-   type=“image/jpeg”
-   alt=”image description”>
-</picture>
-
-
-
 
 # TeachingTheWord Ministries Brand
 

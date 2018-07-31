@@ -119,7 +119,7 @@
    type="image/webp" >
  <img 
    srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_sm-1x.jpg 600w,
-   /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.pngmd-1x.jpg 900w,
+   /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_md-1x.jpg 900w,
    /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.jpg 1440w"
    src="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.jpg"
    type="image/jpeg"
@@ -150,7 +150,7 @@
    type="image/webp" >
  <img 
    srcset="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_sm-1x.jpg 600w,
-   /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.pngmd-1x.jpg 900w,
+   /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_md-1x.jpg 900w,
    /klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.jpg 1440w"
    src="/klein-visual-dev/img/blog/klein-visual-live/abstract-header-01.png_lg-1x.jpg"
    type="image/jpeg"
@@ -240,8 +240,8 @@ $('.js-portfolio-filter').on( 'click', 'button', function() {
 <script>
 $(".modal-image").on( "click", function() {
   $('#modal').fadeIn("fast");
-  $('.modal--content')[0].src = $(this).children("img")[0].src;
-  $('.modal--caption')[0].innerHTML = $(this).children("img")[0].alt;
+  $('.modal--content')[0].src = "/klein-visual-dev"
+  //$('.modal--caption')[0].innerHTML = ""
 });
 $(".modal--close").on( "click", function() { 
     $('.modal').fadeOut("fast");

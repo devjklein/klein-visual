@@ -107,15 +107,6 @@ body {
   padding: 0;
   background-color: #FFF4EB;
 }
-main {
-  padding-top: 60px;
-  display: block;
-}
-@media (min-width: 768px) {
-  main {
-    padding-top: 120px;
-  }
-}
 /* Nice happy, rounded images*/
 img {
   display: block;
@@ -736,13 +727,20 @@ blockquote::before {
   ##BLOG-HEADER
 \*------------------------------------*/
 .blog-header {
+  padding-top: 60px;
   width: 100%;
   color: #FFF;
   text-align: center;
   height: auto;
+  overflow: hidden;
 }
-.blog-header__ {
-  
+.blog-header img {
+  border-radius: 0;
+}
+@media (min-width: 768px) {
+  .blog-header {
+    padding-top: 120px;
+  }
 }
 
 
@@ -1156,14 +1154,14 @@ blockquote::before {
     text-align: right;
   }
     .modal--close {
-      max-height: 5vh;
-      min-height: 5vh;
+      max-height: 6vh;
+      min-height: 6vh;
       display: inline-block;
       background-color: transparent;
       border: none;
       color: #FFF;
       font-size: 2rem;
-      line-height: 5vh;
+      line-height: 6vh;
       cursor: pointer;
       
     }

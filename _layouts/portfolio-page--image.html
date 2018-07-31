@@ -9,7 +9,7 @@ layout: default
     <a class="hover-panel modal-image" href="#">
       {% capture image %}{{ page.image | split: '_' | first}}{% endcapture %}
       {% capture alt %}{{ page.alt }}{% endcapture %}
-      {% include image.html url=image alt=alt%}
+      {% include image.html url=image alt=alt %}
       <div class="hover-panel__overlay  green"><h3 class="light">View Larger</h3></div>
     </a>
   </div>
@@ -26,6 +26,5 @@ layout: default
   <div class="modal--container">
     <button class="modal--close">&times;</button>
     <img class="modal--content" src="">
-    <span class="modal--caption">Caption text!</span>
   </div>
 </div>

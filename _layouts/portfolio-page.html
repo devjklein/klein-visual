@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
+<header class="blog-header">
+  {% capture image %}{{ page.image-header | split: '_' | first}}{% endcapture %}
+  {% capture image-tall %}{{ page.image | split: '_' | first}}{% endcapture %}
+  {% capture alt %}{{ page.alt }}{% endcapture %}
+  {% include image-header.html url=image url-tall=image-tall alt=alt %}
+</header>
 <main class="row  content  white">
-  <section class="blog-header  green">
-    <h1 class="light">
-      {{ page.title }}
-    </h1>    
-  </section>
-
   <article class="row  white">
     <div class="col-12">
       {{ content }}
