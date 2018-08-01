@@ -25,9 +25,12 @@ twitter_username:  ""
 github_username:  ""
 
 collections:
-  portfolio:
+  design:
     output: true
-    permalink: /:collection/:categories/:path
+    permalink: portfolio/:collection/:path
+  computer-graphics:
+    output: true
+    permalink: portfolio/:collection/:path
     
 defaults:
   - scope:
@@ -35,11 +38,19 @@ defaults:
       type: "posts"
     values:
       layout: "blog-post"
+      comments: "true"
   - scope:
       path: ""
-      type: "portfolio"
+      type: "design"
     values:
       layout: "portfolio-page"
+      comments: "true"
+  - scope:
+      path: ""
+      type: "computer-graphics"
+    values:
+      layout: "portfolio-page"
+      comments: "true"
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,1 @@
+var $grid=$(".grid").isotope({itemSelector:".grid-item",layoutMode:"fitRows"});$(".js-portfolio-filter").on("click","button",function(){var t=$(this).attr("data-filter");$grid.isotope({filter:t}),$(".js-portfolio-filter > button").removeClass("active"),$(this).addClass("active")});

@@ -1,28 +1,48 @@
 ---
 layout: default
 ---
-
 <main class="row  content  white">
   <header class="blog-header  green">
     <h1 class="light">{{ page.title }}</h1>
   </header>
   <div class="js-portfolio-filter  col-12  clear-float">
-    <button class="btn--small  active" data-filter="*">Show All</button>
-    <button class="btn--small" data-filter=".js-filter-Branding">Branding</button>
-    <button class="btn--small" data-filter=".js-filter-Computer-Graphics">Computer Graphics</button>
-    <button class="btn--small" data-filter=".js-filter-Motion-Graphics">Video + Motion Graphics</button>
+    {% if page.title == "Design Portfolio" %}
+      <button class="btn--small  active" data-filter="*">Show All</button>
+      <button class="btn--small" data-filter=".js-filter-Branding">Branding</button>
+      <button class="btn--small" data-filter=".js-filter-Logo">Logo</button>
+      <button class="btn--small" data-filter=".js-filter-Motion-Graphics">Motion Graphics</button>
+      <button class="btn--small" data-filter=".js-filter-Web-Design">Web Design</button>
+    {% else %}
+      <button class="btn--small  active" data-filter="*">Show All</button>
+      <button class="btn--small" data-filter=".js-filter-Architecture">Architecture</button>
+      <button class="btn--small" data-filter=".js-filter-Food">Food</button>
+      <button class="btn--small" data-filter=".js-filter-Photorealism">Photorealism</button>
+      <button class="btn--small" data-filter=".js-filter-Simulation">Simulation</button>
+    {% endif %}
   </div>
-  
   <div class="grid">
-    {% for project in site.portfolio %}
-        <div class="col-4  col-s-nopadding  grid-item {% for category in project.categories %}js-filter-{{ category }} {% endfor %}" >
-          <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-            {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
-            {% capture alt %}{{ project.alt }}{% endcapture %}
-            {% include image.html url=image alt=alt%}
-            <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
-          </a>
-        </div>
-    {% endfor %}
+    {% if page.title == "Design Portfolio" %}
+      {% for project in site.design %}
+          <div class="col-4  grid-item {% for category in project.categories %}js-filter-{{ category }} {% endfor %}" >
+            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+              {% capture image %}{{ project.image}}{% endcapture %}
+              {% capture alt %}{{ project.alt }}{% endcapture %}
+              {% include image.html url=image alt=alt%}
+              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+            </a>
+          </div>
+      {% endfor %}
+    {% else %}
+      {% for project in site.computer-graphics %}
+          <div class="col-4  grid-item {% for category in project.categories %}js-filter-{{ category }} {% endfor %}" >
+            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+              {% capture image %}{{ project.image}}{% endcapture %}
+              {% capture alt %}{{ project.alt }}{% endcapture %}
+              {% include image.html url=image alt=alt%}
+              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+            </a>
+          </div>
+      {% endfor %}
+    {% endif %}
   </div>
 </main>

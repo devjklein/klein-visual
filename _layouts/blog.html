@@ -9,10 +9,6 @@ layout: default
     {% for post in site.posts %}
      <div class="col-6">
         <a class="hover-panel" href="{{ site.baseurl }}{{ post.url }}">
-            {% capture image %}{{ post.image }}{% endcapture %}
-            {% capture alt %}{{ post.alt }}{% endcapture %}
-            {% include image.html url=image alt=alt %}
-          
           <img class="hover-panel__img" src="{{ post.image | relative_url }}" alt="{{ post.alt }}">
           <h3>{{ post.title}}</h3>
           <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>

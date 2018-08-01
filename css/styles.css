@@ -107,6 +107,23 @@ body {
   padding: 0;
   background-color: #FFF4EB;
 }
+<<<<<<< HEAD
+header, nav, main, footer, article, section, aside {
+   display:block;
+}
+main {
+  padding-top: 60px;
+=======
+main {
+  padding-top: 60px;
+  display: block;
+>>>>>>> 9b96a6a39ccf3f002a09001f48e54f649ca978ef
+}
+@media (min-width: 768px) {
+  main {
+    padding-top: 120px;
+  }
+}
 /* Nice happy, rounded images*/
 img {
   display: block;
@@ -116,11 +133,6 @@ img {
 }
 article p > img {
   margin: 2em 0;
-}
-@media (max-width: 768px) {
-  img {
-    border-radius: 0;
-  }
 }
 object {
   width: 100%;
@@ -146,9 +158,6 @@ object {
   content: "";
   clear: both;
   display: table;
-}
-.row.center {
-  text-align: center;
 }
 .row.full {
   width: 100%;
@@ -251,7 +260,9 @@ object {
 .clear-float {
   float: none;
 }
-
+.center {
+  text-align: center;
+}
 
 
 
@@ -371,9 +382,9 @@ article.image > h2 {
 article li {
   margin-left: 2.5rem;
 }
-a.tag {
-  background-color: #17994C;
-  color: #FFF;
+.tag {
+  background-color: #FFF;
+  color: #17994C;
   text-decoration: none;
   padding: 0 .25em;
   font-weight: 700px;
@@ -727,7 +738,6 @@ blockquote::before {
   ##BLOG-HEADER
 \*------------------------------------*/
 .blog-header {
-  padding-top: 60px;
   width: 100%;
   color: #FFF;
   text-align: center;
@@ -736,11 +746,6 @@ blockquote::before {
 }
 .blog-header img {
   border-radius: 0;
-}
-@media (min-width: 768px) {
-  .blog-header {
-    padding-top: 120px;
-  }
 }
 
 
@@ -1124,11 +1129,6 @@ blockquote::before {
 .hover-panel:hover {
   transform: scale(1.05, 1.05);
 }
-@media (max-width: 768px) {
-  .hover-panel, .hover-panel__overlay {
-    border-radius: 0;
-  }
-}
 
 
 
@@ -1137,6 +1137,14 @@ blockquote::before {
 /*------------------------------------*\
   ##MODAL
 \*------------------------------------*/
+.modal--open {
+  background-color: rgba(23, 153, 76, 0.8);
+}
+.modal--open span {
+  width: 100%;
+  text-align: center;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */

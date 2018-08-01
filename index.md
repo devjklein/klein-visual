@@ -2,6 +2,9 @@
 title: Homepage
 layout: default
 current: index
+custom_js: https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min
+custom_js_2: https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min
+local_js: js/clouds
 ---
 
 <main class="content  white">
@@ -50,10 +53,21 @@ current: index
   <section class="row  white  full" aria-label="Design Samples">
     
       <h2>Featured Projects</h2>
-      
-      {% for project in site.portfolio %}
+      {% for project in site.design %}
         {% if project.featured == 1 %}
-          <div class="col-4 col-s-nopadding" >
+          <div class="col-4">
+            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture alt %}{{ project.alt }}{% endcapture %}
+              {% include image.html url=image alt=alt%}
+              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% for project in site.computer-graphics %}
+        {% if project.featured == 1 %}
+          <div class="col-4">
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
               {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
@@ -64,9 +78,22 @@ current: index
         {% endif %}
       {% endfor %}
       
-      {% for project in site.portfolio %}
+      
+      {% for project in site.design %}
         {% if project.featured == 2 %}
-          <div class="col-4 col-s-nopadding" >
+          <div class="col-4" >
+            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture alt %}{{ project.alt }}{% endcapture %}
+              {% include image.html url=image alt=alt%}
+              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% for project in site.computer-graphics %}
+        {% if project.featured == 2 %}
+          <div class="col-4" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
               {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
@@ -77,9 +104,22 @@ current: index
         {% endif %}
       {% endfor %}
       
-      {% for project in site.portfolio %}
+      
+      {% for project in site.design %}
         {% if project.featured == 3 %}
-          <div class="col-4 col-s-nopadding" >
+          <div class="col-4" >
+            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture alt %}{{ project.alt }}{% endcapture %}
+              {% include image.html url=image alt=alt%}
+              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% for project in site.computer-graphics %}
+        {% if project.featured == 3 %}
+          <div class="col-4" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
               {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
@@ -101,28 +141,28 @@ current: index
   
     <section class="row  white  full" aria-label="Capabilities">
     <h2>My Capabilities</h2>
-      <div class="col-l-3 col-6 col-s-nopadding">
+      <div class="col-l-3 col-6">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          {% include image-png.html url="/img/llamas/llama-branding" alt="Llama in front of an easel with a color wheel painted on" %}
+          {% include image.html url="/img/llamas/llama-branding" alt="Llama in front of an easel with a color wheel painted on" type="png" %}
           <h3>Branding</h3>
         </a>
         
       </div>
-      <div class="col-l-3 col-6 col-s-nopadding">
+      <div class="col-l-3 col-6">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          {% include image-png.html url="/img/llamas/llama-web" alt="Llama in front of an computer screen with a generic website shown" %}
+          {% include image.html url="/img/llamas/llama-web" alt="Llama in front of an computer screen with a generic website shown" type="png" %}
           <h3>Web Design</h3>
         </a>
       </div>
-      <div class="col-l-3 col-6 col-s-nopadding">
+      <div class="col-l-3 col-6">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          {% include image-png.html url="/img/llamas/llama-photo" alt="Llama with a camera on a tripod" %}
+          {% include image.html url="/img/llamas/llama-photo" alt="Llama with a camera on a tripod" type="png" %}
           <h3>Photography</h3>
         </a>
       </div>
-      <div class="col-l-3 col-6 col-s-nopadding">
+      <div class="col-l-3 col-6">
         <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
-          {% include image-png.html url="/img/llamas/llama-fancy" alt="Llama with an old film camera on a tripod" %}
+          {% include image.html url="/img/llamas/llama-fancy" alt="Llama with an old film camera on a tripod" type="png" %}
           <h3>Video + Motion Graphics</h3>
         </a>
       </div>

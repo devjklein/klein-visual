@@ -52,3 +52,13 @@ $("#pause").click(function(){
 $("#reverse").click(function(){
   allClouds.reverse();
 });
+
+//c = container
+//d = duration (default 100/40)
+//z = scale
+//a = amount (default 40/15)
+initClouds($("#js-mtn-clouds-sm"),100,"sm", 20);
+initClouds($("#js-mtn-clouds-md"),60,"md", 5);
+initClouds($("#js-mtn-clouds-lg"),40,"lg", 5);
+var scene = document.getElementById('js-mtn-scene');
+var parallaxInstance = new Parallax(scene);
