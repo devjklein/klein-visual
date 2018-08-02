@@ -143,7 +143,7 @@ local_js: js/clouds
     <h2>My Capabilities</h2>
       <div class="skill-panel">
         <div class="col-4  skills-panel__image">
-          <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
+          <a href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
             {% include image.html url="/img/llamas/llama-branding" alt="An illustrated cartoon llama stands in front of an easel displaying a color wheel." type="png" %}
           </a>
           
@@ -159,20 +159,20 @@ local_js: js/clouds
       
       <div class="skill-panel">
         <div class="col-4  skills-panel__image">
-          <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
+          <a href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
             {% include image.html url="/img/llamas/llama-web" alt="An illustrated cartoon llama stands in front of an computer screen with a generic website shown." type="png" %}
           </a> 
         </div>
         <div class="col-8  skill-panel__body">
           <h3 class="skill-panel__header">Web Design</h3>
-          <p class="skill-panel__copy">Fast. Responsive. Accessible. Search-engine optimized. As a web designer, I obsess over these details and revel in playing the optimization game because I understand the tight correlation between site performance and conversion rates, where even fractions of a millisecond make all the difference.</p>
+          <p class="skill-panel__copy">Fast. Responsive. Accessible. Search engine optimized. As a web designer, I obsess over these details and revel in playing the optimization game because I understand the tight correlation between site performance and conversion rates, where even fractions of a millisecond make all the difference.</p>
         </div>
       </div>
       
       
       <div class="skill-panel">
         <div class="col-4  skills-panel__image">
-          <a href="{{ "/portfolio/photography/" | relative_url }}" class="hover-panel  white">
+          <a href="{{ "/portfolio/photography" | relative_url }}" class="hover-panel  white">
           {% include image.html url="/img/llamas/llama-photo" alt="An illustrated cartoon llama with a camera on a tripod." type="png" %}
         </a>
         </div>
@@ -184,7 +184,7 @@ local_js: js/clouds
       
       <div class="skill-panel">
         <div class="col-4  skills-panel__image">
-          <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
+          <a href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
             {% include image.html url="/img/llamas/llama-fancy" alt="An illustrated cartoon llama with an old film camera on a tripod." type="png" %}
         </a>
         </div>
