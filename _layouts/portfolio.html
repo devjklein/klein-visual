@@ -5,12 +5,14 @@ layout: default
   <header class="blog-header  green">
     <h1 class="light">{{ page.title }}</h1>
   </header>
-  <div class="js-portfolio-filter  col-12  clear-float">
+  <div role="group" aria-labelledby="filter-buttons" class="js-portfolio-filter  col-12  clear-float">
+    <span id="filter-buttons">Filter by category</span>
     {% if page.title == "Design Portfolio" %}
       <button class="btn--small  active" data-filter="*">Show All</button>
       <button class="btn--small" data-filter=".js-filter-Branding">Branding</button>
       <button class="btn--small" data-filter=".js-filter-Logo">Logo</button>
       <button class="btn--small" data-filter=".js-filter-Motion-Graphics">Motion Graphics</button>
+      <button class="btn--small" data-filter=".js-filter-Print">Print</button>
       <button class="btn--small" data-filter=".js-filter-Web-Design">Web Design</button>
     {% else %}
       <button class="btn--small  active" data-filter="*">Show All</button>

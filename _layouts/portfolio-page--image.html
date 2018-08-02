@@ -7,7 +7,7 @@ layout: default
   </header>
   <div class="col-12">
     <a class="hover-panel modal-image" href="#">
-      {% capture image %}{{ page.image-original | split: '_' | first}}{% endcapture %}
+      {% capture image %}{{ page.image-original }}{% endcapture %}
       {% capture alt %}{{ page.alt }}{% endcapture %}
       {% include image.html url=image alt=alt vw="100vw"%}
       <div class="hover-panel__overlay    modal--open"><span class="light">View Full Size in Lightbox</span></div>
@@ -50,6 +50,6 @@ layout: default
 <div class="modal  row  center" id="modal">
   <div class="modal--container">
     <button class="modal--close">&times;</button>
-    <img class="modal--content" src="">
+    <img class="modal--content" src="" alt="">
   </div>
 </div>

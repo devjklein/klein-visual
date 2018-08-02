@@ -4,14 +4,14 @@
            {{ include.url | relative_url | split: '_' | first}}_md-1x.webp 900w,
            {{ include.url | relative_url | split: '_' | first}}_lg-1x.webp 1440w,
            {{ include.url | relative_url | split: '_' | first}}_xl-1x.webp 2880w"
-    sizes="(min-width: 768px){% if include.vw %}{{ include.vw }}{% else %} 50vw{% endif %}), 100vw"
+    sizes="(min-width: 768px){% if include.vw %}{{ include.vw }}{% else %} 100vw{% endif %}), 100vw"
      type="image/webp" >
  <img
   srcset="{{ include.url | relative_url | split: '_' | first}}_sm-1x.{% if include.type %}{{ include.type }}{% else %}jpg{% endif %} 600w,
           {{ include.url | relative_url | split: '_' | first}}_md-1x.{% if include.type %}{{ include.type }}{% else %}jpg{% endif %} 900w,
           {{ include.url | relative_url | split: '_' | first}}_lg-1x.{% if include.type %}{{ include.type }}{% else %}jpg{% endif %} 1440w,
           {{ include.url | relative_url | split: '_' | first}}_xl-1x.{% if include.type %}{{ include.type }}{% else %}jpg{% endif %} 2880w"
-   sizes="(min-width: 768px){% if include.vw %}{{ include.vw }}{% else %} 50vw{% endif %}, 100vw"
+   sizes="(min-width: 768px){% if include.vw %}{{ include.vw }}{% else %} 100vw{% endif %}, 100vw"
      src="{{ include.url | relative_url | split: '_' | first}}_lg-1x.{% if include.type %}{{ include.type }}{% else %}jpg {% endif %}"
     type="image/{% if include.type %}{{ include.type }}{% else %}jpeg{% endif %}"
      alt="{{ include.alt }}" >

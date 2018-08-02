@@ -4,7 +4,7 @@ categories: Branding Logo
 author: David Klein
 image: /img/portfolio/roaming-wild/rw-hero-portrait_lg-1x.jpg
 image-header: /img/portfolio/roaming-wild/rw-hero-header_lg-1x.jpg
-alt: Roaming Wild
+alt: A scene of a massive, snowcapped Himalayan mountain overlayed with the Roaming Wild logo.
 read-time: 12
 comments: true
 featured: 1

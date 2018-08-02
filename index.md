@@ -21,7 +21,7 @@ local_js: js/clouds
             </div>
             
             <div class="splash__avatar">
-              {% include image.html url="img/portraits/me" alt="Portrait of David Klein" %}
+              {% include image.html url="img/portraits/me" alt="Portrait of David Klein wearing a blue plaid button down shirt." %}
             </div>
         </div>
         
@@ -57,9 +57,9 @@ local_js: js/clouds
         {% if project.featured == 1 %}
           <div class="col-4">
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture image %}{{ project.image }}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt%}
+              {% include image.html url=image alt=alt %}
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -69,9 +69,9 @@ local_js: js/clouds
         {% if project.featured == 1 %}
           <div class="col-4">
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture image %}{{ project.image }}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt%}
+              {% include image.html url=image alt=alt %}
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -83,9 +83,9 @@ local_js: js/clouds
         {% if project.featured == 2 %}
           <div class="col-4" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture image %}{{ project.image }}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt%}
+              {% include image.html url=image alt=alt %}
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -95,9 +95,9 @@ local_js: js/clouds
         {% if project.featured == 2 %}
           <div class="col-4" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture image %}{{ project.image }}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt%}
+              {% include image.html url=image alt=alt %}
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -109,9 +109,9 @@ local_js: js/clouds
         {% if project.featured == 3 %}
           <div class="col-4" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture image %}{{ project.image }}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt%}
+              {% include image.html url=image alt=alt %}
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -121,9 +121,9 @@ local_js: js/clouds
         {% if project.featured == 3 %}
           <div class="col-4" >
             <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image | split: '_' | first}}{% endcapture %}
+              {% capture image %}{{ project.image }}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt%}
+              {% include image.html url=image alt=alt %}
               <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
             </a>
           </div>
@@ -139,32 +139,59 @@ local_js: js/clouds
   
   
   
-    <section class="row  white  full" aria-label="Capabilities">
+    <section class="row  white" aria-label="Capabilities">
     <h2>My Capabilities</h2>
-      <div class="col-l-3 col-6">
-        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
-          {% include image.html url="/img/llamas/llama-branding" alt="Llama in front of an easel with a color wheel painted on" type="png" %}
-          <h3>Branding</h3>
-        </a>
-        
+      <div class="skill-panel">
+        <div class="col-4  skills-panel__image">
+          <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
+            {% include image.html url="/img/llamas/llama-branding" alt="An illustrated cartoon llama stands in front of an easel displaying a color wheel." type="png" %}
+          </a>
+          
+        </div>
+        <div class="col-8  skill-panel__body">
+          <h3 class="skill-panel__header">Branding</h3>
+          <p class="skill-panel__copy">My passion is breathing life into an idea. In the case of branding, that idea is everything your business could be, and the roadmap to what it should be. I take pride in designing exceptional brands that give you and your customers total confidence in your business.</p>
+        </div>
       </div>
-      <div class="col-l-3 col-6">
-        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
-          {% include image.html url="/img/llamas/llama-web" alt="Llama in front of an computer screen with a generic website shown" type="png" %}
-          <h3>Web Design</h3>
-        </a>
+      
+      
+      
+      
+      <div class="skill-panel">
+        <div class="col-4  skills-panel__image">
+          <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
+            {% include image.html url="/img/llamas/llama-web" alt="An illustrated cartoon llama stands in front of an computer screen with a generic website shown." type="png" %}
+          </a> 
+        </div>
+        <div class="col-8  skill-panel__body">
+          <h3 class="skill-panel__header">Web Design</h3>
+          <p class="skill-panel__copy">Fast. Responsive. Accessible. Search-engine optimized. As a web designer, I obsess over these details and revel in playing the optimization game because I understand the tight correlation between site performance and conversion rates, where even fractions of a millisecond make all the difference.</p>
+        </div>
       </div>
-      <div class="col-l-3 col-6">
-        <a href="{{ "/portfolio/photography/" | relative_url }}" class="hover-panel  white">
-          {% include image.html url="/img/llamas/llama-photo" alt="Llama with a camera on a tripod" type="png" %}
-          <h3>Photography</h3>
+      
+      
+      <div class="skill-panel">
+        <div class="col-4  skills-panel__image">
+          <a href="{{ "/portfolio/photography/" | relative_url }}" class="hover-panel  white">
+          {% include image.html url="/img/llamas/llama-photo" alt="An illustrated cartoon llama with a camera on a tripod." type="png" %}
         </a>
+        </div>
+        <div class="col-8  skill-panel__body">
+          <h3 class="skill-panel__header">Photography</h3>
+          <p class="skill-panel__copy">Need that perfect corporate headshot? Or maybe you're interested in a family photo shoot? How about real estate photos that make your home shine? I love spending time behind the lens, and I specialize in leveraging technical skill alongside artistic creativity to capture winning images that you will love.</p>
+        </div>
       </div>
-      <div class="col-l-3 col-6">
-        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
-          {% include image.html url="/img/llamas/llama-fancy" alt="Llama with an old film camera on a tripod" type="png" %}
-          <h3>Video + Motion Graphics</h3>
+      
+      <div class="skill-panel">
+        <div class="col-4  skills-panel__image">
+          <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
+            {% include image.html url="/img/llamas/llama-fancy" alt="An illustrated cartoon llama with an old film camera on a tripod." type="png" %}
         </a>
+        </div>
+        <div class="col-8  skill-panel__body">
+          <h3 class="skill-panel__header">Motion Graphics</h3>
+          <p class="skill-panel__copy">Ready to take your multimedia to the next level? There's nothing like seeing your ideas or products in motion, and I can help with that! My motion graphics capabilities include filming, editing, integration of computer generated imagery, and every step in between.</p>
+        </div>
       </div>
   </section>
   

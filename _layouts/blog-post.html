@@ -3,7 +3,7 @@ layout: default
 ---
 <main>
   <header class="blog-header">
-    {% capture image %}{{ page.image | split: '_' | first}}{% endcapture %}
+    {% capture image %}{{ page.image }}{% endcapture %}
     {% capture alt %}{{ page.alt }}{% endcapture %}
     {% include image.html url=image alt=alt vw="100w" %}
   </header>

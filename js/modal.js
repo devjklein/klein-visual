@@ -1,1 +1,0 @@
-$(".modal-image").on("click",function(){$("#modal").fadeIn("fast"),$(".modal--content")[0].src="{{ site.baseurl }}{{ page.image-original}}"}),$(".modal--close").on("click",function(){$(".modal").fadeOut("fast")});
