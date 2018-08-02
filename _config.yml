@@ -25,8 +25,8 @@ social:
     links:
       - https://www.instagram.com/kleinvisual/
       - https://www.youtube.com/channel/UCt5qUGnBGI1bgmlbvDcKt1g
-baseurl: "/klein-visual"
-url: "localhost:4000"
+baseurl: ""
+url: "kleinvisual.com"
 google_site_verification: jLURuYtb2QX7ci4rvZEu2MjOvHknFe8YRfoLv1s_zXU
 lang: en_US
 github_username:  "devjklein"
