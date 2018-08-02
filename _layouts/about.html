@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<main class="row  content  white">
+  <header class="blog-header  green">
+    <h1 class="light">{{ page.title }}</h1>
+  </header>
+  <article class="row  content  white  left">
+    <div class="col-4">
+      {% include image.html url="img/portraits/me" alt="Portrait of David Klein" %}
+    </div>
+    <div class="col-8  no-padding-heading ">
+      {{ content }}
+    </div>
+  </article>
+</main>

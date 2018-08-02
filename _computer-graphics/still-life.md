@@ -10,5 +10,6 @@ alt: A still life depicting cheese, wine, a brass pot, and pears placed on a rus
 layout: portfolio-page--image
 featured: 3
 ---
-## Client: Personal Project
+
+# Still Life with Cheese and Wine
 This is a personal project based on a still life painting by [Zoltan Preiner](http://www.westminstergallery.co/zoltan-preiner/)

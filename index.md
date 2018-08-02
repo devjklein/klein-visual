@@ -15,13 +15,13 @@ local_js: js/clouds
         
             <div class="splash__type">
               <h1 class="splash__type--header  light">Hello!</h1>
-              <p class="splash__type--content">My name is David Klein, and I am a multidisciplinary digital designer who specializes in branding and web development. My goal is to provide my clients with exceptional designs that excite the creative senses and instill total brand confidence.</p>
+              <p class="splash__type--content">My name is David Klein, and I am a multidisciplinary designer who specializes in branding and web development. My goal is to provide my clients with exceptional designs that excite the creative senses and instill total brand confidence.</p>
               <p class="splash__type--content"><strong>We can create something exceptional together.</strong></p>
               <a class="btn button" href="mailto:hi@kleinvisual.com">Let's Talk</a>
             </div>
             
             <div class="splash__avatar">
-              {% include image.html url="img/portraits/me-light" alt="Portrait of David Klein" %}
+              {% include image.html url="img/portraits/me" alt="Portrait of David Klein" %}
             </div>
         </div>
         
@@ -142,26 +142,26 @@ local_js: js/clouds
     <section class="row  white  full" aria-label="Capabilities">
     <h2>My Capabilities</h2>
       <div class="col-l-3 col-6">
-        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
+        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
           {% include image.html url="/img/llamas/llama-branding" alt="Llama in front of an easel with a color wheel painted on" type="png" %}
           <h3>Branding</h3>
         </a>
         
       </div>
       <div class="col-l-3 col-6">
-        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
+        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
           {% include image.html url="/img/llamas/llama-web" alt="Llama in front of an computer screen with a generic website shown" type="png" %}
           <h3>Web Design</h3>
         </a>
       </div>
       <div class="col-l-3 col-6">
-        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
+        <a href="{{ "/portfolio/photography/" | relative_url }}" class="hover-panel  white">
           {% include image.html url="/img/llamas/llama-photo" alt="Llama with a camera on a tripod" type="png" %}
           <h3>Photography</h3>
         </a>
       </div>
       <div class="col-l-3 col-6">
-        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel">
+        <a href="{{ "/portfolio/design/" | relative_url }}" class="hover-panel  white">
           {% include image.html url="/img/llamas/llama-fancy" alt="Llama with an old film camera on a tripod" type="png" %}
           <h3>Video + Motion Graphics</h3>
         </a>

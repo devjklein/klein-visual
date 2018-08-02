@@ -14,15 +14,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Klein Visual: Exceptional Designs"
-email: hi@kleinvisual.com
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/klein-visual-dev"
+  Klein Visual is the design portfolio and freelance business
+  website of David Klein, a Carroll County, Maryland Multimedia
+  Designer. We can create something exceptional together!
+email: hi@kleinvisual.com
+logo: img/kv-logo-full-color.png
+social: 
+    name: Klein Visual
+    links:
+      - https://www.instagram.com/kleinvisual/
+      - https://www.youtube.com/channel/UCt5qUGnBGI1bgmlbvDcKt1g
+baseurl: "/klein-visual"
 url: "localhost:4000"
-twitter_username:  ""
-github_username:  ""
+google_site_verification: jLURuYtb2QX7ci4rvZEu2MjOvHknFe8YRfoLv1s_zXU
+lang: en_US
+github_username:  "devjklein"
 
 collections:
   design:
@@ -34,11 +41,12 @@ collections:
     
 defaults:
   - scope:
-      path: "blog"
+      path: ""
       type: "posts"
     values:
       layout: "blog-post"
       comments: "true"
+      permalink: blog/:path
   - scope:
       path: ""
       type: "design"
@@ -63,6 +71,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

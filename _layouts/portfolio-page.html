@@ -3,9 +3,9 @@ layout: default
 ---
 <main>
   <header class="blog-header">
-  {% capture image %}{{ page.image-header | split: '_' | first}}{% endcapture %}
-  {% capture alt %}{{ page.alt }}{% endcapture %}
-  {% include image.html url=image alt=alt vw="100w" %}
+    {% capture image %}{{ page.image-header | split: '_' | first}}{% endcapture %}
+    {% capture alt %}{{ page.alt }}{% endcapture %}
+    {% include image.html url=image alt=alt vw="100w" %}
   </header>
   
   <article class="row  content  white">
