@@ -27,6 +27,6 @@ I’ve learned and accomplished so much more than I thought possible with the re
 
 I want to say thanks to all my Instagram followers, without whom I might not have believed anyone would take an interest in my designs or photography.
 
-My biggest thank you goes to my amazing wife who was, and always has been, there to encourage me, helpfully critique my work, tell me when I needed sleep,
+My biggest thank you goes to my amazing wife who has always supported me unconditionally in all my endeavors, and who provided so much valuable feedback on the design of this site. You rock, babe! <3
 
-I sincerely thank you for visiting my site, please leave your comments and critiques below, and have a great day!
+Finally, thank you for visiting my site, please feel free to leave your comments and critiques below, and have a great day!
