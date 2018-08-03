@@ -131,7 +131,7 @@ local_js: js/clouds
       {% endfor %}
       
       <div class="col-12">
-        <a class="btn  btn--center  btn--large" href="{{ "/portfolio" | relative_url }}">See More</a>
+        <a class="btn  btn--center  btn--large" href="{{ "/portfolio/design" | relative_url }}">See More</a>
       </div>
       
   </section>
