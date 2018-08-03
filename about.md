@@ -12,4 +12,4 @@ I've pretty much always been a designer. From the time I could <del>eat</del> ho
 
 In 2014, I started school at Carroll Community College for Multimedia Design. There I honed my technical skills in all areas of design including visual, web, computer generated, and motion graphics. My most valuable college experience was the opportunity I had to work directly with two local businesses during an internship and as a freelance designer; this real-world experience proved invaluable in developing my professional skills while still in college.
 
-By day, I work as a Technical Illustrator in the rail vehicle industry, by night, I like to <del>sleep</del> pursue my passion of web design. When I'm not designing for myself or freelancing, I can be found behind my camera lens and/or exploring the great outdoors with my awesome travel buddy, my wife.
+By day, I work as a Technical Illustrator in the rail vehicle industry; by night, I like to <del>sleep</del> pursue my passion of web design. When I'm not designing for myself or freelancing, I can be found behind my camera lens and/or exploring the great outdoors with my awesome travel buddy, my wife.

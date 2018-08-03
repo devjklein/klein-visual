@@ -1,9 +1,10 @@
 ---
 title: Photography Portfolio
-layout: header-only
+layout: basic
 current: portfolio
 permalink: portfolio/photography
 ---
-## Gallery Coming Soon!
-
-I currently post my latest images directly to my Instagram account, which is located here: [https://www.instagram.com/kleinvisual/](https://www.instagram.com/kleinvisual/). Thank you for your interest!
+<article class="row  content  white  center">
+  <h2>Gallery Coming Soon!</h2>
+  <p>Visit and follow <a href="https://www.instagram.com/kleinvisual/" target="_blank">@KleinVisual</a> on Instagram, where I currently post my latest photography. Thank you for your interest!</p>
+</article>
