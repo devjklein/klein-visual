@@ -21,4 +21,4 @@ In this video I attempted to capture the rustic beauty of these machines, partic
 <iframe width="640" height="360" src="https://www.youtube.com/embed/iLlXrYmz2bI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
-> Accessibility note: I am currently in the process of transcribing the video located on this page and providing a descriptive audio alternative, per success criteria 1.2.1 and 1.2.5 of the Web Content Accessibility Guidelines 2.0. Until that time, this page only is not compliant with these guidelines. Thank you for your understanding.
+*Accessibility note: I am currently in the process of transcribing the video located on this page and providing a descriptive audio alternative, per success criteria 1.2.1 and 1.2.5 of the Web Content Accessibility Guidelines 2.0. Until that time, this page only is not compliant with these guidelines. Thank you for your understanding.*
