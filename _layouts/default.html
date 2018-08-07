@@ -7,10 +7,9 @@
   
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
-  <!--<link rel="stylesheet" href="{{ "/css/styles.css" | relative_url }}">-->
   <style>
-    {% include styles.css %}
+    {% include normalize.min.css %}
+    {% include styles.min.css %}
   </style>
   
   
@@ -49,7 +48,7 @@
     
     <div class="row">    
       <div class="col-12  top-bar__no-margin">
-        <a href="{{ "/index" | relative_url }}">
+        <a aria-label="Return to homepage" href="{{ "/index" | relative_url }}">
           <div class="logo-tag">
             <img class="logo--large" src="{{ "/img/logo-color-lg.svg" | relative_url }}" alt="Klein Visual Logo Large">
             <img class="logo--small" src="{{ "/img/logo-color-sm.svg" | relative_url }}" alt="Klein Visual Logo Small">
@@ -133,7 +132,7 @@
       <div class="col-12">
         <p class="footer__text  footer__text--legal">&copy; Copyright 2018 David Klein. All rights reserved.</p>
         <p class="footer__text  footer__text--technical">This website has been designed to fully comply with Level AA of the Web Content Accessibility Guidelines 2.0. If you find a noncompliance or experience difficulty using this website, please contact me immediately.</p>
-        <a style="margin: 1rem auto; display: inline-block" href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance">
+        <a style="margin: 1rem auto; display: inline-block" href="http://www.w3.org/WAI/WCAG2AA-Conformance" aria-label="Explanation of WCAG 2.0 Level Double-A Conformance">
           <img height="32" width="88" src="http://www.w3.org/WAI/wcag2AA-blue" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
         </a>
       </div>
@@ -143,7 +142,7 @@
 <!--<script src="{{ "/js/tota11y.min.js" | relative_url }}"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
-var timer,dropdownMenu=".nav-dropdown",dropdownButton=".nav-dropdown > a",dropdownList=".nav-dropdown > ul",navButton=".main-nav-btn",navList=".main-nav",navIcon="#main-nav-btn__icon",hasTouch=!1;function dropdownMouseover(n){openMenu("dropdown"),$(dropdownMenu).attr("hover","true")}function dropdownMouseout(n){closeMenu("dropdownTimeout")}function dropdownClick(n){"true"==$(dropdownButton).attr("aria-expanded")&&"true"!=$(dropdownMenu).attr("hover")?closeMenu("dropdown"):(openMenu("dropdown"),$(dropdownMenu).attr("hover","false")),n.preventDefault(),n.stopPropagation()}function navClick(n){"true"==$(navButton).attr("aria-expanded")?closeMenu("nav"):openMenu("nav")}function htmlClose(n,o,t,e){$("html")[0].addEventListener(n,function(n){"true"==$(o).attr("aria-expanded")&&closeMenu(t)}),$(e)[0].addEventListener(n,function(n){n.stopPropagation()})}function openMenu(n){"nav"==n?($(navButton).attr("aria-expanded","true"),$(navList).slideDown("fast"),$(navButton).addClass("open"),$(navIcon).attr("class","open")):"dropdown"==n&&($(dropdownList).slideDown("fast"),$(dropdownButton).attr("aria-expanded","true"),clearTimeout(timer))}function closeMenu(n){"nav"==n?($(navList).slideUp("fast"),$(navButton).attr("aria-expanded","false"),$(navButton).removeClass("open"),$(navIcon).attr("class","")):"dropdown"==n?($(dropdownList).slideUp("fast"),$(dropdownButton).attr("aria-expanded","false")):"dropdownTimeout"==n&&(timer=setTimeout(function(n){$(dropdownList).slideUp("fast"),$(dropdownButton).attr("aria-expanded","false")},1e3))}window.addEventListener("touchstart",function n(){$(":focus").css("outline","none"),hasTouch=!0,console.log("Touch!"),window.removeEventListener("touchstart",n,!1)},!1),1==hasTouch&&$(dropdownButton).each(function(n,o){o.addEventListener("touchstart",function(n){"true"==$(dropdownButton).attr("aria-expanded")?closeMenu("dropdown"):openMenu("dropdown")})}),$(dropdownMenu).each(function(n,o){o.addEventListener("mouseover",dropdownMouseover),o.addEventListener("mouseout",dropdownMouseout),$(dropdownButton)[0].addEventListener("click",dropdownClick),htmlClose("click",dropdownButton,"dropdown",dropdownMenu)}),1==hasTouch&&el.addEventListener("touchstart",function(n){"true"==$(navButton).attr("aria-expanded")?closeMenu("nav"):openMenu("nav")}),$(navButton).each(function(n,o){o.addEventListener("click",navClick),htmlClose("click",navButton,"nav",navButton),$(navList)[0].addEventListener("click",function(n){n.stopPropagation()})});var prev=0;$(window).on("scroll",function(){var n=$(window).scrollTop();n>120&&($(".top-bar").toggleClass("scroll",n>prev),prev=n)}),$(".js-high-contrast-off").click(function(){$(this).hasClass("active")||($(".js-high-contrast-off").addClass("active"),$(".js-high-contrast-on").removeClass("active"),$(".mtn-scene").removeClass("mtn-scene--hidden"),$(".mtn-scene--fallback").removeClass("mtn-scene--fallback--show"),$(".green").each(function(n,o){$(this).removeClass("high-contrast")}))}),$(".js-high-contrast-on").click(function(){$(this).hasClass("active")||($(".js-high-contrast-on").addClass("active"),$(".js-high-contrast-off").removeClass("active"),$(".mtn-scene").addClass("mtn-scene--hidden"),$(".mtn-scene--fallback").addClass("mtn-scene--fallback--show"),$(".green").each(function(n,o){$(this).addClass("high-contrast")}))}),$(".modal-image").on("click",function(){$("#modal").fadeIn("fast"),$(".modal--content")[0].src="{{ site.baseurl }}{{ page.image-original}}",$(".modal--content")[0].alt="{{ page.alt }}"}),$(".modal--close").on("click",function(){$(".modal").fadeOut("fast")});
+  {% include lib.min.js %}
 </script>
 
 

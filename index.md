@@ -17,7 +17,7 @@ local_js: js/clouds
               <h1 class="splash__type--header  light">Hello!</h1>
               <p class="splash__type--content">My name is David Klein, and I am a multidisciplinary designer who specializes in branding and web development. My goal is to provide my clients with exceptional designs that excite the creative senses and instill total brand confidence.</p>
               <p class="splash__type--content"><strong>We can create something exceptional together.</strong></p>
-              <a class="btn button" href="mailto:hi@kleinvisual.com">Let's Talk</a>
+              <a aria-label="Email Klein Visual" class="btn button" href="mailto:hi@kleinvisual.com">Let's Talk</a>
             </div>
             
             <div class="splash__avatar">
@@ -131,7 +131,7 @@ local_js: js/clouds
       {% endfor %}
       
       <div class="col-12">
-        <a class="btn  btn--center  btn--large" href="{{ "/portfolio/design" | relative_url }}">See More</a>
+        <a aria-label="See more projects" class="btn  btn--center  btn--large" href="{{ "/portfolio/design" | relative_url }}">See More</a>
       </div>
       
   </section>
@@ -143,7 +143,7 @@ local_js: js/clouds
     <h2>My Capabilities</h2>
     <div class="skill-panel">
       <div class="col-4  skill-panel__image">
-        <a href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
+        <a aria-label="Visit design portfolio" href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
           {% include image.html url="/img/llamas/llama-branding" alt="An illustrated cartoon llama stands in front of an easel displaying a color wheel." type="png" %}
         </a>
       </div>
@@ -162,8 +162,8 @@ local_js: js/clouds
         <p class="skill-panel__copy">Fast. Responsive. Accessible. Search engine optimized. As a web designer, I obsess over these details and revel in playing the optimization game because I understand the tight correlation between site performance and conversion rates, where even fractions of a millisecond make all the difference.</p>
       </div>
       <div class="col-4  skill-panel__image">
-        <a href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
-          {% include image.html url="/img/llamas/llama-web" alt="An illustrated cartoon llama stands in front of an computer screen with a generic website shown." type="png" %}
+        <a aria-label="Visit design portfolio" href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
+          {% include image.html url="/img/llamas/llama-web" alt="An illustrated cartoon llama stands in front of a computer screen with a generic website shown." type="png" %}
         </a> 
       </div>
     </div>
@@ -171,7 +171,7 @@ local_js: js/clouds
     
     <div class="skill-panel">
       <div class="col-4  skill-panel__image">
-        <a href="{{ "/portfolio/photography" | relative_url }}" class="hover-panel  white">
+        <a aria-label="Visit photography portfolio" href="{{ "/portfolio/photography" | relative_url }}" class="hover-panel  white">
         {% include image.html url="/img/llamas/llama-photo" alt="An illustrated cartoon llama with a camera on a tripod." type="png" %}
       </a>
       </div>
@@ -187,7 +187,7 @@ local_js: js/clouds
         <p class="skill-panel__copy">Ready to take your multimedia to the next level? There's nothing like seeing your ideas or products in motion, and I can help with that! My motion graphics capabilities include filming, editing, integration of computer generated imagery, and every step in between.</p>
       </div>
       <div class="col-4  skill-panel__image">
-        <a href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
+        <a aria-label="Visit design portfolio" href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
           {% include image.html url="/img/llamas/llama-fancy" alt="An illustrated cartoon llama with an old film camera on a tripod." type="png" %}
       </a>
       </div>

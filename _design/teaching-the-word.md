@@ -9,7 +9,7 @@ alt: The TeachingTheWord shield and sword logo over a light tan gradient backgro
 featured: 2
 ---
 
-# TeachingTheWord Ministries Brand
+<h1>Teaching<wbr>The<wbr>Word Ministries Brand</h1>
 
 TeachingTheWord Ministries is local non-profit with a global reach and a mission of "equipping the scripture-driven church". Their weekly email newsletter reaches more than 16,000 people worldwide. With such a far-reaching ministry, the organization recognized the need for a refresh of their visual identity, complete with a new logo.
 
@@ -72,7 +72,7 @@ The style guide is also viewable for reference only here: <a href="{{ "/img/port
 
 TeachingTheWord is actively becoming more involved in distributing new and different forms of multimedia. To ensure a consistent and professional presence of their new brand across all platforms, I developed an animated version of the new logo.
 
-The modeling, texturing, lighting, and rendering of the animated logo took place entirely in Blender 3D. Featured in the video is the TeachingTheWord banner flying onto the screen as cloth and emblazoning itself neatly across the sword and shield. This effect was created simply by animating and rendering the entire logo sequence backwards and then reversing it, such that the cloth simulation started in it's final position and a simulation blew it off screen in natural motion.
+The modeling, texturing, lighting, and rendering of the animated logo took place entirely in Blender 3D. Featured in the video is the TeachingTheWord banner flying onto the screen as cloth and emblazoning itself neatly across the sword and shield. This effect was created simply by animating and rendering the entire logo sequence backwards and then reversing it, such that the cloth simulation started in its final position and a simulation blew it off screen in natural motion.
 
 <div class="video-responsive  center">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/I6VpkGmBqbk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
