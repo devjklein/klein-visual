@@ -15,9 +15,9 @@ It's been a long 4 months. This past April, I sat down and decided that I wanted
 
 The earliest weeks into the project I spent brainstorming site maps and layouts, which I generally sketched on paper. From there, I was able to develop a wireframe layout in Adobe Illustrator. It's funny all the UI elements you imagine in your head or maybe sketch on paper that don't work in practice. *There's not enough space for my dreams!*
 
-With the wireframe complete, I spent several days creating a "style tile", a unique tool I read about on [this](http://styletil.es/) website that enables you to define the overall "visual language" of your site, from backgrounds to buttons. This proved invaluable in keeping my site's CSS concise.
+With the wireframe complete, I spent several days creating a "style tile", a unique tool I read about on [this](https://styletil.es/) website that enables you to define the overall "visual language" of your site, from backgrounds to buttons. This proved invaluable in keeping my site's CSS concise.
 
-With all my wireframes complete, I began the arduous task of building the HTML and CSS content. CSS is an amazing, beautiful beast that doesn't always do what you expect. Fortunately, I learned about and employed the [BEM Method](http://getbem.com/naming/) in the development of my styles. I quickly found that consistency is the key to keeping code clean and avoiding bugs. For two months I coded, tweaked, retweaked, recoded, and simplified every aspect of my site's base template.
+With all my wireframes complete, I began the arduous task of building the HTML and CSS content. CSS is an amazing, beautiful beast that doesn't always do what you expect. Fortunately, I learned about and employed the [BEM Method](getbem.com/naming/) in the development of my styles. I quickly found that consistency is the key to keeping code clean and avoiding bugs. For two months I coded, tweaked, retweaked, recoded, and simplified every aspect of my site's base template.
 
 It was only within the past month I began building out additional pages. To accomplish this, I used the super awesome and open source static site generator [Jekyll](https://jekyllrb.com/).
 

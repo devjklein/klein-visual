@@ -10,40 +10,43 @@ local_js: js/clouds
 <main class="content  white">
   <!-- Home background & introduction -->
   <section class="splash  overflow  green" aria-label="Homepage introduction" >
-      <div class="row">
-        <div class="splash__intro">
-        
-            <div class="splash__type">
-              <h1 class="splash__type--header  light">Hello!</h1>
-              <p class="splash__type--content">My name is David Klein, and I am a multidisciplinary designer who specializes in branding and web development. My goal is to provide my clients with exceptional designs that excite the creative senses and instill total brand confidence.</p>
-              <p class="splash__type--content"><strong>We can create something exceptional together.</strong></p>
-              <a aria-label="Email Klein Visual" class="btn button" href="mailto:hi@kleinvisual.com">Let's Talk</a>
-            </div>
-            
-            <div class="splash__avatar">
-              {% include image.html url="img/portraits/me" alt="Portrait of David Klein wearing a blue plaid button down shirt." %}
-            </div>
-        </div>
-        
-        
-        <!-- Parallax Background -->
-        <div class="mtn-scene" id="js-mtn-scene" data-hover-only="false" relative-input="true" data-scalar-x="10" data-scalar-y="25">
-        
-          <div data-depth="0.05" class="mtn-scene__layer" id="js-mtn-clouds-sm"></div>
-          
-          <div data-depth="0.1" class="mtn-scene__layer mtn-center">
-            <img src="{{ "/img/mtn-scene/mountains.svg" | relative_url }}" alt="An ilustrated mountain, tinted green, rises in the distance as clouds float by.">
+    <div class="row">
+      <div class="splash__intro">
+      
+          <div class="splash__type">
+            <h1 class="splash__type--header  light">Hello!</h1>
+            <p class="splash__type--content">My name is David Klein, and I am a multidisciplinary designer who specializes in branding and web development. My goal is to provide my clients with exceptional designs that excite the creative senses and instill total brand confidence.</p>
+            <p class="splash__type--content"><strong>We can create something exceptional together.</strong></p>
+            <a aria-label="Email Klein Visual" class="btn button" href="mailto:hi@kleinvisual.com">Let's Talk</a>
           </div>
           
-          <div data-depth="0.15" class="mtn-scene__layer" id="js-mtn-clouds-md"></div>
-          
-          <div data-depth="0.2" class="mtn-scene__layer" id="js-mtn-clouds-lg"></div>
-          
+          <div class="splash__avatar">
+            {% include image.html url="img/portraits/me" alt="Portrait of David Klein wearing a blue plaid button down shirt." %}
+          </div>
+      </div>
+      
+      
+      <!-- Parallax Background -->
+      <div class="mtn-scene" id="js-mtn-scene" data-hover-only="false" relative-input="true" data-scalar-x="10" data-scalar-y="25">
+      
+        <div data-depth="0.05" class="mtn-scene__layer" id="js-mtn-clouds-sm"></div>
+        
+        <div data-depth="0.1" class="mtn-scene__layer mtn-center">
+          <img src="{{ "/img/mtn-scene/mountains.svg" | relative_url }}" alt="An ilustrated mountain, tinted green, rises in the distance as clouds float by.">
         </div>
         
-        <div class="mtn-scene--fallback">
-        </div>
+        <div data-depth="0.15" class="mtn-scene__layer" id="js-mtn-clouds-md"></div>
+        
+        <div data-depth="0.2" class="mtn-scene__layer" id="js-mtn-clouds-lg"></div>
+        
       </div>
+      
+      <div class="mtn-scene--fallback">
+      </div>
+      
+      
+    </div>
+        
   </section>
   
   
@@ -131,7 +134,7 @@ local_js: js/clouds
       {% endfor %}
       
       <div class="col-12">
-        <a aria-label="See more projects" class="btn  btn--center  btn--large" href="{{ "/portfolio/design" | relative_url }}">See More</a>
+        <a aria-label="Explore more projects" class="btn  btn--center  btn--large" href="{{ "/portfolio/design" | relative_url }}">See More</a>
       </div>
       
   </section>

@@ -1,5 +1,5 @@
 ---
-title: TeachingTheWord Brand
+title: Teaching<wbr>The<wbr>Word Brand
 categories: Branding Logo Web-Design
 
 image: /img/portfolio/teaching-the-word/ttw-hero-portrait_lg-1x.jpg
@@ -65,7 +65,7 @@ To ensure consistent usage of the new brand by different individuals throughout 
 
 <p>{% include image.html url="/img/portfolio/teaching-the-word/style-guide-sample-01" alt="A sample page inside the completed style guide booklet." %}</p>
 
-The style guide is also viewable for reference only here: <a href="{{ "/img/portfolio/teaching-the-word/ttw-style-guide-2016.pdf" }}" target="_blank">TeachingTheWord Style Guide 2016</a>
+The style guide is also viewable for reference here: <a aria-label="Link to the TeachingTheWord Style Guide" href="{{ "/img/portfolio/teaching-the-word/ttw-style-guide-2016.pdf" }}" target="_blank">TeachingTheWord Style Guide 2016</a>
  
 ### Animated Logo
 

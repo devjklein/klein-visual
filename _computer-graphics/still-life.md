@@ -11,4 +11,4 @@ layout: portfolio-page--image
 ---
 
 # Still Life with Cheese and Wine
-This is a personal project based on a still life painting by [Zoltan Preiner](http://www.westminstergallery.co/zoltan-preiner/)
+This is a personal project based on a still life painting by [Zoltan Preiner](https://www.westminstergallery.co/zoltan-preiner/)
