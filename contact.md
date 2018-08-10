@@ -8,7 +8,7 @@ permalink: /contact/
     <object style="height: 250px" data="{{ "/img/llamas/llama-fancy.svg" | relative_url }}" type="image/svg+xml">An animated cartoon llama in a tuxedo shuffles apprehensively.</object>
 
     <h2>I see you're interested in my design services.</h2>
-    <p>Unfortunately, I am not currently scheduling new client projects. But don't despair! I read all my emails, and if you're still interested in getting me on your team, just shoot me an line, tell me a little bit about your exciting new design project, and I'll get back with you when I'm available!</p>
+    <p>Unfortunately, I am not currently scheduling new client projects. But don't despair! I read all my emails, and if you're still interested in getting me on your team, just shoot me an line, tell me a little bit about your exciting new design project, and I'll get back with you when I'm available.</p>
 
     <ul>
       <li>Email: <a aria-label="Email Klein Visual" href="mailto:hi@kleinvisual.com">Hi@KleinVisual.com</a></li>

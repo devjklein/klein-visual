@@ -7,9 +7,11 @@ alt: An abstract design of layered green, orange, black, and white diagonal shap
 read-time: 2
 ---
 
+It's been a long 4 months. This past April, I sat down and decided that I wanted a personal portfolio website to showcase my design work. Being the stubborn type, I determined to build it entirely on my own, from scratch, without using any third-party templates or styles. 
+
 ## We have liftoff!
 
-It's been a long 4 months. This past April, I sat down and decided that I wanted a personal portfolio website to showcase my design work. Being the stubborn type, I determined to build it entirely on my own, from scratch, without using any third-party templates or styles. Four months and over 150 hours later, I can call the website completed. It's been a long road of late nights, learning from my mistakes, crying, and scouring StackOverflow for solutions to obscure JavaScript bugs (not necessarily in that order), but I believe as a result this project I am a significantly more capable designer than ever before.
+Four months and over 150 hours later, I can call the website completed. It's been a long road of late nights, learning from my mistakes, crying, and scouring StackOverflow for solutions to obscure JavaScript bugs (not necessarily in that order), but I believe as a result of this project I am a significantly more capable designer than ever before.
 
 ### A rocky road, littered with snakes and broken glass
 

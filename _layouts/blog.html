@@ -2,13 +2,13 @@
 layout: default
 ---
 <main class="row  content  white">
-    <header class="blog-header  green">
+    <header class="green">
       <h1 class="light">{{ page.title }}</h1>
     </header>
 
     {% for post in site.posts %}
      <div class="col-6">
-        <a class="hover-panel  blog-panel" href="{{ site.baseurl }}{{ post.url }}">
+        <a aria-label="Link to {{post.title | strip_html }} article" class="hover-panel  blog-panel" href="{{ site.baseurl }}{{ post.url }}">
           {% capture image %}{{ post.image}}{% endcapture %}
           {% capture alt %}{{ post.alt }}{% endcapture %}
           {% include image.html url=image alt=alt vw="100vw" %}

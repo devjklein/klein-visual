@@ -7,6 +7,7 @@ image-header: /img/portfolio/ccc-registration-poster/ccc-registration-header_lg-
 
 alt: A poster reading Stop, Register, Pay Later in large lettering next to an illustrated traffic light.
 comments: true
+featured: 3
 ---
 
 I was commissioned by the Carroll Community College Student Life Office to create a large-format poster, for utilization at several locations around the campus, that would raise awareness of the college's early registration program for returning students. Existing pamphlets contained two columns of text on the program, and did not effectively highlight its benefits.

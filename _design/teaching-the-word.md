@@ -11,7 +11,7 @@ featured: 2
 
 <h1>Teaching<wbr>The<wbr>Word Ministries Brand</h1>
 
-TeachingTheWord Ministries is local non-profit with a global reach and a mission of "equipping the scripture-driven church". Their weekly email newsletter reaches more than 16,000 people worldwide. With such a far-reaching ministry, the organization recognized the need for a refresh of their visual identity, complete with a new logo.
+TeachingTheWord Ministries is a local non-profit with a global reach and a mission of "equipping the scripture-driven church". Their weekly email newsletter reaches more than 16,000 people worldwide. With such a broad outreach, the organization recognized the need for a refresh of their visual identity, complete with a new logo.
 
 ## What I did
 
@@ -21,7 +21,7 @@ Sketching, Wireframing, Illustration, Web Design, Motion Graphics, Copywriting
 
 ### Logo Concept Sketches
 
-I first met with the client and we discussed both the direction they wanted the visual identity to take, as well as the scope of the project and final deliverables. From there, I created paper sketches of logo concepts based on our discussion; these sketches were then provided to the client for review. They liked the "shield and banner" concept the most, so I took to the computer and developed several variations of the initial design in Adobe Illustrator.
+I first met with the client and we discussed both the direction they wanted the visual identity to take, as well as the scope of the project and final deliverables. From there, I sketched several logo concepts based on our discussion; these sketches were then provided to the client for review. They liked the "shield and banner" concept the most, so I took to the computer and developed several variations of the initial design in Adobe Illustrator.
 
 <p>{% include image.html url="/img/portfolio/teaching-the-word/ttw-logo-sketch" alt="An initial sketch of the TeachingTheWord logo." %}</p>
 
@@ -39,7 +39,7 @@ The client wished to retain the typography present in their existing logo, so I 
 
 ### Rationale
 
-As a Bible ministry, the Biblical concept of armor - the sword and shield - resonated deeply with TeachingTheWord's mission ideals. The secondary elements placed on the shield highlight their goal of equipping churches around the world with sound doctrine, while the banner references their ministry verse, found in the Book of John.
+As a Bible ministry, the Biblical concept of armor - the sword and shield - resonated deeply with TeachingTheWord's mission ideals. The secondary elements placed on the shield highlight their goal of equipping churches around the world with biblical truth, while the banner references their ministry verse, found in the Book of John.
 
 ## Deliverables
 
@@ -53,13 +53,13 @@ A huge part of TeachingTheWord's ministry is their worldwide distribution of pri
 
 ### Email Newsletter
 
-An equal half of my time working with TeachingTheWord was spent developing a new email newsletter template within their email distribution service, ConstantContact. The newsletter was designed to match both the color palette and feel of the new logo.
+An equal half of my time with TeachingTheWord was spent developing a new email newsletter template within their email distribution service, ConstantContact. The newsletter was designed to match both the color palette and feel of the new logo/brand.
 
 <p>{% include image.html url="/img/portfolio/teaching-the-word/ttw-newsletter" alt="The combined TeachingTheWord logomark and typography." %}</p>
 
 ### Style Guide
 
-To ensure consistent usage of the new brand by different individuals throughout the company, I was also required to develop a style guide that specified exact usage of the new brand and logo. The booklet was designed in Adobe InDesign where I compiled all the necessary graphics and wrote the specifications, then the file was printed  and spiral-bound in-house.
+To ensure consistent usage of the new brand by individuals throughout the company, I was also required to develop a style guide that specified exact usage of the new brand and logo. The booklet was designed in Adobe InDesign where I compiled all the necessary graphics and wrote the specifications, then printed and spiral-bound in-house.
 
 <p>{% include image.html url="/img/portfolio/teaching-the-word/style-guide-cover" alt="The completed, spiral-bound style guide booklet laying on a table." %}</p>
 
@@ -72,7 +72,7 @@ The style guide is also viewable for reference here: <a aria-label="Link to the 
 
 TeachingTheWord is actively becoming more involved in distributing new and different forms of multimedia. To ensure a consistent and professional presence of their new brand across all platforms, I developed an animated version of the new logo.
 
-The modeling, texturing, lighting, and rendering of the animated logo took place entirely in Blender 3D. Featured in the video is the TeachingTheWord banner flying onto the screen as cloth and emblazoning itself neatly across the sword and shield. This effect was created simply by animating and rendering the entire logo sequence backwards and then reversing it, such that the cloth simulation started in its final position and a simulation blew it off screen in natural motion.
+The modeling, texturing, lighting, and rendering of the animated logo took place entirely in Blender 3D. Featured in the video is the TeachingTheWord banner flying onto the screen as cloth and emblazoning itself neatly across the sword and shield. This effect was created by animating and rendering the entire logo sequence backwards and then reversing it, such that the cloth simulation started in its final position and a simulation blew it off screen in natural motion.
 
 <div class="video-responsive  center">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/I6VpkGmBqbk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

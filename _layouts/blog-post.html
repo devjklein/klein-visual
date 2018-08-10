@@ -2,7 +2,7 @@
 layout: default
 ---
 <main>
-  <header class="blog-header">
+  <header class="header-img">
     {% capture image %}{{ page.image }}{% endcapture %}
     {% capture alt %}{{ page.alt }}{% endcapture %}
     {% include image.html url=image alt=alt vw="100w" %}
@@ -10,18 +10,17 @@ layout: default
 
   
   <article class="row  content  white">
-    <section class="center">
-      <h1>{{ page.title }}</h1>
-      <p>{{ page.date | date: "%b %-d, %Y" }} | <strong>{{page.read-time}} minute read</strong></p>
-      <p></p>
-      <p>Tags:
+    <section class="blog-header">
+      <h1 class="blog-header__heading">{{ page.title }}</h1>
+      <p class="blog-header__info">{{ page.date | date: "%b %-d, %Y" }} | <strong>{{page.read-time}} minute read</strong></p>
+      <p class="blog-header__tags">Tags:
         {% for tag in page.tags %}
           <a class="tag" href="{{ site.baseurl }}/blog/tags#{{tag}}">{{ tag }}</a>
         {% endfor %}
       </p>
     </section>
     
-    <div class="col-12">
+    <div class="col-12  blog-content">
       {{ content }}
     </div>
   </article>

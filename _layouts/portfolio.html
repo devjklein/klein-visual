@@ -2,7 +2,7 @@
 layout: default
 ---
 <main class="row  content  white">
-  <header class="blog-header  green">
+  <header class="green">
     <h1 class="light">{{ page.title }}</h1>
   </header>
   <div role="group" aria-labelledby="filter-buttons" class="js-portfolio-filter  col-12  clear-float">
@@ -25,7 +25,7 @@ layout: default
     {% if page.title == "Design Portfolio" %}
       {% for project in site.design %}
           <div class="col-4  grid-item {% for category in project.categories %}js-filter-{{ category }} {% endfor %}" >
-            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+            <a aria-label="Link to {{project.title | strip_html }} project" href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
               {% capture image %}{{ project.image}}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
               {% include image.html url=image alt=alt%}
@@ -36,7 +36,7 @@ layout: default
     {% else %}
       {% for project in site.computer-graphics %}
           <div class="col-4  grid-item {% for category in project.categories %}js-filter-{{ category }} {% endfor %}" >
-            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+            <a aria-label="Link to {{project.title | strip_html }} project" href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
               {% capture image %}{{ project.image}}{% endcapture %}
               {% capture alt %}{{ project.alt }}{% endcapture %}
               {% include image.html url=image alt=alt%}

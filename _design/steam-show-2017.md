@@ -7,7 +7,6 @@ image-header: /img/portfolio/steam-show-2017/steam-show-2017-header_lg-1x.jpg
 alt: A close up of some of the bright red moving parts of an antique steam engine rigged to power a sawmill.
 
 comments: true
-featured: 3
 ---
 
 # {{page.title}}

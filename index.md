@@ -2,9 +2,6 @@
 title: Homepage
 layout: default
 current: index
-custom_js: https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min
-custom_js_2: https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min
-local_js: js/clouds
 ---
 
 <main class="content  white">
@@ -44,7 +41,11 @@ local_js: js/clouds
       <div class="mtn-scene--fallback">
       </div>
       
-      
+      <div class="mtn-scene__controls">
+        <button aria-label="Run background animation" class="mtn-scene__play  js-mtn-scene__play">Play</button>
+        <button aria-label="Stop background animation" class="mtn-scene__stop  js-mtn-scene__stop">Stop</button>
+        <button aria-label="Reverse background animation" class="mtn-scene__reverse  js-mtn-scene__reverse">Reverse</button>
+      </div>
     </div>
         
   </section>
@@ -56,81 +57,19 @@ local_js: js/clouds
   <section class="row  white  full" aria-label="Design Samples">
     
       <h2>Featured Projects</h2>
-      {% for project in site.design %}
-        {% if project.featured == 1 %}
-          <div class="col-4">
-            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image }}{% endcapture %}
-              {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt %}
-              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
-            </a>
-          </div>
-        {% endif %}
-      {% endfor %}
-      {% for project in site.computer-graphics %}
-        {% if project.featured == 1 %}
-          <div class="col-4">
-            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image }}{% endcapture %}
-              {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt %}
-              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
-            </a>
-          </div>
-        {% endif %}
-      {% endfor %}
-      
-      
-      {% for project in site.design %}
-        {% if project.featured == 2 %}
-          <div class="col-4" >
-            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image }}{% endcapture %}
-              {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt %}
-              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
-            </a>
-          </div>
-        {% endif %}
-      {% endfor %}
-      {% for project in site.computer-graphics %}
-        {% if project.featured == 2 %}
-          <div class="col-4" >
-            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image }}{% endcapture %}
-              {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt %}
-              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
-            </a>
-          </div>
-        {% endif %}
-      {% endfor %}
-      
-      
-      {% for project in site.design %}
-        {% if project.featured == 3 %}
-          <div class="col-4" >
-            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image }}{% endcapture %}
-              {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt %}
-              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
-            </a>
-          </div>
-        {% endif %}
-      {% endfor %}
-      {% for project in site.computer-graphics %}
-        {% if project.featured == 3 %}
-          <div class="col-4" >
-            <a href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
-              {% capture image %}{{ project.image }}{% endcapture %}
-              {% capture alt %}{{ project.alt }}{% endcapture %}
-              {% include image.html url=image alt=alt %}
-              <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
-            </a>
-          </div>
-        {% endif %}
+      {% for num in (1..3) %}
+        {% for project in site.design %}
+          {% if project.featured == num %}
+            <div class="col-4">
+              <a aria-label="Link to {{project.title | strip_html }} project" href="{{ site.baseurl }}{{ project.url }}" class="hover-panel">
+                {% capture image %}{{ project.image }}{% endcapture %}
+                {% capture alt %}{{ project.alt }}{% endcapture %}
+                {% include image.html url=image alt=alt %}
+                <div class="hover-panel__overlay  green"><h3 class="light">{{ project.title }}</h3></div>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
       
       <div class="col-12">
@@ -152,7 +91,7 @@ local_js: js/clouds
       </div>
       <div class="col-8  skill-panel__body">
         <h3 class="skill-panel__header">Branding</h3>
-        <p class="skill-panel__copy">My passion is breathing life into an idea. In the case of branding, that idea is everything your business could be, and the roadmap to what it should be. I take pride in designing exceptional brands that give you and your customers total confidence in your business.</p>
+        <p class="skill-panel__copy">My passion is breathing life into an idea. In the case of branding, that idea is everything you need to take your business to the next level. I take pride in designing exceptional brands that give you and your customers total confidence in your company.</p>
       </div>
     </div>
     
@@ -162,7 +101,7 @@ local_js: js/clouds
     <div class="skill-panel">
       <div class="col-8  skill-panel__body">
         <h3 class="skill-panel__header">Web Design</h3>
-        <p class="skill-panel__copy">Fast. Responsive. Accessible. Search engine optimized. As a web designer, I obsess over these details and revel in playing the optimization game because I understand the tight correlation between site performance and conversion rates, where even fractions of a millisecond make all the difference.</p>
+        <p class="skill-panel__copy">Fast. Responsive. Accessible. Search engine optimized. As a web designer, I obsess over these details because I understand the tight correlation between site performance and conversion rates, where even fractions of a millisecond make all the difference.</p>
       </div>
       <div class="col-4  skill-panel__image">
         <a aria-label="Visit design portfolio" href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
@@ -187,7 +126,7 @@ local_js: js/clouds
     <div class="skill-panel">
       <div class="col-8  skill-panel__body">
         <h3 class="skill-panel__header">Motion Graphics</h3>
-        <p class="skill-panel__copy">Ready to take your multimedia to the next level? There's nothing like seeing your ideas or products in motion, and I can help with that! My motion graphics capabilities include filming, editing, integration of computer generated imagery, and every step in between.</p>
+        <p class="skill-panel__copy">Ready to take your multimedia to the next level? There's nothing like seeing your ideas or products in motion, and I can help with that! My motion graphics capabilities include filming, editing, CGI, and every step in between.</p>
       </div>
       <div class="col-4  skill-panel__image">
         <a aria-label="Visit design portfolio" href="{{ "/portfolio/design" | relative_url }}" class="hover-panel  white">
