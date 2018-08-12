@@ -4,9 +4,9 @@ layout: default
 current: index
 ---
 
-<main class="content  white">
+<main class="content  white" id="main">
   <!-- Home background & introduction -->
-  <section class="splash  overflow  green" aria-label="Homepage introduction" >
+  <section aria-label="Homepage introduction" class="row  splash  overflow  green">
     <div class="row">
       <div class="splash__intro">
       
@@ -24,7 +24,7 @@ current: index
       
       
       <!-- Parallax Background -->
-      <div class="mtn-scene" id="js-mtn-scene" data-hover-only="false" relative-input="true" data-scalar-x="10" data-scalar-y="25">
+      <div class="mtn-scene  js-mtn-scene" data-hover-only="false" relative-input="true" data-scalar-x="10" data-scalar-y="25">
       
         <div data-depth="0.05" class="mtn-scene__layer" id="js-mtn-clouds-sm"></div>
         
@@ -40,16 +40,17 @@ current: index
       
       <div class="mtn-scene--fallback">
       </div>
-      
-      <div class="mtn-scene__controls">
-        <button aria-label="Run background animation" class="mtn-scene__play  js-mtn-scene__play">Play</button>
-        <button aria-label="Stop background animation" class="mtn-scene__stop  js-mtn-scene__stop">Stop</button>
-        <button aria-label="Reverse background animation" class="mtn-scene__reverse  js-mtn-scene__reverse">Reverse</button>
-      </div>
     </div>
-        
   </section>
   
+  <section aria-label="" class="row">
+    <div class="mtn-scene__controls">
+      <!--<button aria-label="Reverse background animation and run parallax" class="js-mtn-scene__button  mtn-scene__button  mtn-scene__reverse  js-mtn-scene__reverse">Reverse</button>-->
+      <span class="mtn-scene__label">Background<br>animation:&nbsp;&nbsp;</span>
+      <button aria-label="Run background animation and parallax" class="js-mtn-scene__button  btn-small  mtn-scene__play  js-mtn-scene__play  active">Play</button>
+      <button aria-label="Stop background animation and parallax" class="js-mtn-scene__button  btn-small  mtn-scene__stop  js-mtn-scene__stop">Stop</button>
+    </div>
+  </section>
   
   
   

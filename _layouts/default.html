@@ -39,9 +39,10 @@
   <header class="top-bar  green">
     <div class="orange">
       <div class="row  access-bar  access-bar--desktop">  
-        <span>Toggle High Contrast:&nbsp;&nbsp;</span>
-        <a aria-label="Toggle high contrast mode off" href="#" class="access-bar__toggle  js-high-contrast-off  active">Off</a>
-        <a aria-label="Toggle high contrast mode on" href="#" class="access-bar__toggle js-high-contrast-on">On</a>
+        <a aria-label="Skip to the main content" href="#main" class="access-bar__label">Main content</a>
+        <span class="access-bar__label">High Contrast:</span>
+        <button aria-label="Toggle high contrast mode off" class="btn-small btn-small--inline  js-high-contrast-off  active">Off</button>
+        <button aria-label="Toggle high contrast mode on" class="btn-small btn-small--inline  js-high-contrast-on">On</button>
       </div>
     </div>
     
@@ -75,9 +76,9 @@
         <nav class="main-nav  green" aria-label="Main Navigation">
           <ul>
             <li class="access-bar  access-bar--mobile  orange">
-              <span>Toggle High Contrast:&nbsp;&nbsp;</span>
-              <a aria-label="Toggle high contrast mode off" href="#" class="access-bar__toggle  js-high-contrast-off  active">Off</a>
-              <a aria-label="Toggle high contrast mode on" href="#" class="access-bar__toggle js-high-contrast-on">On</a>
+              <span>High Contrast:&nbsp;&nbsp;</span>
+              <button aria-label="Toggle high contrast mode off" class="btn-small btn-small--inline  js-high-contrast-off  active">Off</button>
+              <button aria-label="Toggle high contrast mode on" class="btn-small btn-small--inline  js-high-contrast-on">On</button>
             </li>
             
             <li><a class="main-nav__item" href="{{ "/index" | relative_url }}" {% if page.current == 'index' %}aria-current="page"{% endif %}>Home</a></li>

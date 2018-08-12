@@ -1,24 +1,24 @@
 ---
 layout: default
 ---
-<main class="row  content  white">
+<main class="row  content  white" id="main">
   <header class="green">
     <h1 class="light">{{ page.title }}</h1>
   </header>
   <div role="group" aria-labelledby="filter-buttons" class="js-portfolio-filter  col-12  clear-float">
     <span id="filter-buttons">Filter by category</span>
     {% if page.title == "Design Portfolio" %}
-      <button class="btn--small  active" data-filter="*">Show All</button>
-      <button class="btn--small" data-filter=".js-filter-Branding">Branding</button>
-      <button class="btn--small" data-filter=".js-filter-Logo">Logo</button>
-      <button class="btn--small" data-filter=".js-filter-Motion-Graphics">Motion Graphics</button>
-      <button class="btn--small" data-filter=".js-filter-Print">Print</button>
-      <button class="btn--small" data-filter=".js-filter-Web-Design">Web Design</button>
+      <button class="btn-small  active" data-filter="*">Show All</button>
+      <button class="btn-small" data-filter=".js-filter-Branding">Branding</button>
+      <button class="btn-small" data-filter=".js-filter-Logo">Logo</button>
+      <button class="btn-small" data-filter=".js-filter-Motion-Graphics">Motion Graphics</button>
+      <button class="btn-small" data-filter=".js-filter-Print">Print</button>
+      <button class="btn-small" data-filter=".js-filter-Web-Design">Web Design</button>
     {% else %}
-      <button class="btn--small  active" data-filter="*">Show All</button>
-      <button class="btn--small" data-filter=".js-filter-Architecture">Architecture</button>
-      <button class="btn--small" data-filter=".js-filter-Food">Food</button>
-      <button class="btn--small" data-filter=".js-filter-Photorealism">Photorealism</button>
+      <button class="btn-small  active" data-filter="*">Show All</button>
+      <button class="btn-small" data-filter=".js-filter-Architecture">Architecture</button>
+      <button class="btn-small" data-filter=".js-filter-Food">Food</button>
+      <button class="btn-small" data-filter=".js-filter-Photorealism">Photorealism</button>
     {% endif %}
   </div>
   <div class="grid">
