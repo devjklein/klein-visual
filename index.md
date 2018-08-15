@@ -14,7 +14,7 @@ current: index
             <h1 class="splash__type--header  light">Hello!</h1>
             <p class="splash__type--content">My name is David Klein, and I am a multidisciplinary designer who specializes in branding and web development. My goal is to provide my clients with exceptional designs that excite the creative senses and instill total brand confidence.</p>
             <p class="splash__type--content"><strong>We can create something exceptional together.</strong></p>
-            <a aria-label="Email Klein Visual" class="btn button" href="mailto:hi@kleinvisual.com">Let's Talk</a>
+            <a aria-label="Email Klein Visual" class="btn button" href="mailto:kleinvisual@outlook.com">Let's Talk</a>
           </div>
           
           <div class="splash__avatar">
